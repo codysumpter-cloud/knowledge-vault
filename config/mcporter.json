@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "codex-bridge": {
+      "command": "node /Users/codysumpter/github/codysumpter-cloud/buddy-brain/mcp/codex-bridge/index.js"
+    },
+    "arcade-fs": {
+      "command": "python3 /Users/codysumpter/github/codysumpter-cloud/arcade-mcp/examples/mcp_servers/local_filesystem/src/local_filesystem/server.py"
+    },
+    "arcade-telemetry": {
+      "command": "python3 /Users/codysumpter/github/codysumpter-cloud/arcade-mcp/examples/mcp_servers/telemetry_passback/src/telemetry_passback/server.py"
+    },
+    "pixellab": {
+      "command": "node /Users/codysumpter/github/codysumpter-cloud/pixellab-mcp/index.js"
+    }
+  }
+}
