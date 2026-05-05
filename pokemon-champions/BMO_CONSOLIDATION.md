@@ -7,13 +7,13 @@
 - **BMO** is the only front-facing agent.
 - **Council members** are internal subagents / role components.
 - **PrismBot** is archived source material.
-- **omni-bmo** is a donor repo for local embodied runtime features.
+- **omni-buddy** is a donor repo for local embodied runtime features.
 
 ## What this means
 
 Do not design new features as if PrismBot is still an active runtime.
 
-Use PrismBot and omni-bmo only for:
+Use PrismBot and omni-buddy only for:
 
 - migration reference
 - feature import
@@ -33,13 +33,13 @@ Legacy names such as `PRISMBOT_API_TOKEN` are compatibility fallbacks only.
 ## Repo roles
 
 - `BeMore-stack` = host runtime, orchestration, skills, autonomy, operator policy
-- `omni-bmo` = local embodied runtime donor repo
+- `omni-buddy` = local embodied runtime donor repo
 - `PrismBot` = archived workspace / product donor repo
 
 ## Import priorities
 
 1. operator parity from PrismBot
-2. embodied runtime parity from omni-bmo
+2. embodied runtime parity from omni-buddy
 3. only then consider deeper repo consolidation
 
 ## Guardrails

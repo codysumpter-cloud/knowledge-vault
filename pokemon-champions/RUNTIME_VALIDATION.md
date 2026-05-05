@@ -43,4 +43,4 @@ Record:
 
 ## Notes
 
-Borrow validation discipline from `omni-bmo`, but do not import Pi-specific or hardware-specific assumptions as stack-wide defaults.
+Borrow validation discipline from `omni-buddy`, but do not import Pi-specific or hardware-specific assumptions as stack-wide defaults.

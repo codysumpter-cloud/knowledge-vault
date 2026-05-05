@@ -51,7 +51,7 @@ Own here:
 
 Consume `prismtek-buddy-core`; do not become the long-term home of crown-jewel Buddy logic.
 
-### `bmo-stack`
+### `buddy-brain`
 
 Own here:
 
@@ -62,9 +62,9 @@ Own here:
 - repo boundary docs
 - open-core examples and public integration guidance
 
-Do **not** let `bmo-stack` become the product-core repo for Buddy identity, memory ranking, or premium pack logic.
+Do **not** let `buddy-brain` become the product-core repo for Buddy identity, memory ranking, or premium pack logic.
 
-### `omni-bmo`
+### `omni-buddy`
 
 Own here:
 
@@ -169,4 +169,4 @@ Track these from the first alpha:
 2. create the private `prismtek-buddy-core` repo
 3. move schema definitions there before more pack-specific code spreads
 4. implement Creator Buddy first inside `prismtek-apps`
-5. keep runtime boundaries explicit in `omni-bmo`
+5. keep runtime boundaries explicit in `omni-buddy`

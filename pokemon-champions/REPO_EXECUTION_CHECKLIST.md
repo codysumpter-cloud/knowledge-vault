@@ -6,7 +6,7 @@ Turn `REPO_OWNERSHIP.md` into an execution document so the Prismtek ecosystem ca
 
 This checklist assumes the current ownership spine is:
 - `openclaw` = engine
-- `bmo-stack` = brain / policy / council / Buddy identity
+- `buddy-brain` = brain / policy / council / Buddy identity
 - `prismtek-site` = public web + site-owned surfaces
 - `prismtek.dev_mega-app` = unresolved product monorepo decision
 
@@ -34,16 +34,16 @@ Until this is decided:
 | Repo | Current class | Target class | Canonical owner for domain | Immediate action | Notes | Status |
 |---|---|---|---|---|---|---|
 | `openclaw` | Canonical | Canonical | `openclaw` | Keep canonical | Runtime engine / substrate | TODO |
-| `bmo-stack` | Canonical | Canonical | `bmo-stack` | Keep canonical | Brain / policy / Buddy identity | TODO |
+| `buddy-brain` | Canonical | Canonical | `buddy-brain` | Keep canonical | Brain / policy / Buddy identity | TODO |
 | `prismtek-site` | Canonical | Canonical | `prismtek-site` | Keep canonical | Public web + site-backed surfaces | TODO |
 | `prismtek.dev_mega-app` | Unresolved | Canonical or Satellite | TBD | Decide promote vs demote | Most important unresolved repo | BLOCKED |
 | `BMO-app` | Satellite-ish | Satellite or Archive | Product monorepo if promoted | Decide fold vs freeze | Transitional app naming; should not remain half-canonical | TODO |
-| `PrismBot` | Shadow lineage | Archive | `bmo-stack` or product monorepo depending content | Add superseded banner, extract anything still needed | Private legacy line | TODO |
-| `Prismbot-BMO` | Shadow lineage | Archive | `bmo-stack` | Add superseded banner | Naming drift / historical lineage | TODO |
+| `PrismBot` | Shadow lineage | Archive | `buddy-brain` or product monorepo depending content | Add superseded banner, extract anything still needed | Private legacy line | TODO |
+| `Prismbot-BMO` | Shadow lineage | Archive | `buddy-brain` | Add superseded banner | Naming drift / historical lineage | TODO |
 | `Prismbot-Public` | Shadow lineage | Archive | `prismtek-site` | Add superseded banner | Public-facing historical line | TODO |
 | `WixPrismBot` | Shadow lineage | Archive | `prismtek-site` | Add superseded banner | Historical Wix-era line | TODO |
 | `prismbot.wix` | Shadow lineage | Archive | `prismtek-site` | Add superseded banner | Historical Wix-era line | TODO |
-| `omni-bmo` | Satellite | Satellite or Archive | `bmo-stack` unless sharply distinct | Decide keep-if-distinct vs fold | Keep only if it still owns a real concept | TODO |
+| `omni-buddy` | Satellite | Satellite or Archive | `buddy-brain` unless sharply distinct | Decide keep-if-distinct vs fold | Keep only if it still owns a real concept | TODO |
 | `claw-code` | Satellite | Satellite or Archive | `openclaw` or product monorepo depending scope | Write one-line ownership rule | Keep only if sharply scoped | TODO |
 | `FlowMaster` | Experimental | Experimental | none | Mark experimental in README | No flagship ambiguity | TODO |
 | `nemoclaw` | Experimental | Experimental or Satellite | `openclaw` if it graduates | Mark experimental unless promoted | Prototype / concept line | TODO |
@@ -52,7 +52,7 @@ Until this is decided:
 | `Wildlands-Critter-Clash` | Separate product | Separate product | itself | Keep separate if active | Does not need to fold into BeMore by default | TODO |
 | `Prismtek.dev` | Shadow web line | Archive or redirect-only | `prismtek-site` | Clarify whether this is superseded | Potential naming confusion with `prismtek-site` | TODO |
 | `prismtek-site-replica` | Shadow / support | Archive or internal support | `prismtek-site` | Clarify support role or freeze | Should not compete with canonical web repo | TODO |
-| `Automind-Lab/bmo-stack` | Cross-org duplicate | Archive or redirect | `codysumpter-cloud/bmo-stack` unless intentionally moved | Clarify authoritative copy | Avoid split-brain docs | TODO |
+| `Automind-Lab/buddy-brain` | Cross-org duplicate | Archive or redirect | `codysumpter-cloud/buddy-brain` unless intentionally moved | Clarify authoritative copy | Avoid split-brain docs | TODO |
 | `Automind-Lab/prismtek.dev_mega-app` | Cross-org duplicate | Archive or redirect | chosen canonical monorepo | Clarify authoritative copy | Avoid split-brain implementation | TODO |
 | `Automind-Lab/prismtek.dev_mega-appALL` | Cross-org duplicate | Archive | chosen canonical monorepo | Freeze or remove ambiguity | Name alone creates confusion | TODO |
 | `automindlab-stack` | Separate org repo | Satellite or separate canonical domain | Automind-Lab | Clarify whether separate product or donor | Keep only if it owns truly separate scope | TODO |
@@ -81,7 +81,7 @@ Start with the most confusing names first:
 ### 4. Stop source-of-truth overlap
 For each core surface, confirm one owner only:
 - [ ] runtime → `openclaw`
-- [ ] policy / identity / Buddy philosophy → `bmo-stack`
+- [ ] policy / identity / Buddy philosophy → `buddy-brain`
 - [ ] public web → `prismtek-site`
 - [ ] shipped app family → product monorepo if promoted
 

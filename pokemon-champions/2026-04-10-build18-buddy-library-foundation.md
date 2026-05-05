@@ -5,12 +5,12 @@ Current `master` ships a Build 17 Buddy surface in `apps/openclaw-shell-ios`, bu
 ## Smallest useful wedge
 
 Land the smallest Build 18 Buddy foundation inside `apps/openclaw-shell-ios`:
-- port the canonical Buddy contracts, schemas, examples, and Council Starter Pack data from PR #231 into `bmo-stack`,
+- port the canonical Buddy contracts, schemas, examples, and Council Starter Pack data from PR #231 into `buddy-brain`,
 - bundle those files into the iOS target,
 - replace the generated Buddy scaffold with a Buddy Library that installs clean local Buddy instances from the starter pack,
 - persist Buddy instances plus Buddy runtime events as machine-readable state,
 - regenerate readable `.openclaw/buddy.md` and `.openclaw/buddies.md` from that state,
-- keep all build, validation, and release ownership in `bmo-stack`,
+- keep all build, validation, and release ownership in `buddy-brain`,
 - prove the wedge with local simulator build and test coverage.
 
 ## Assumptions
@@ -30,7 +30,7 @@ Land the smallest Build 18 Buddy foundation inside `apps/openclaw-shell-ios`:
 ## Owner path
 
 - Safe owner: `apps/openclaw-shell-ios`
-- Delivery owner: `bmo-stack` remains the iOS build and release owner for this wedge
+- Delivery owner: `buddy-brain` remains the iOS build and release owner for this wedge
 - Reference only: PR #231 Buddy contracts/data, PR #232 ownership posture
 
 ## Files likely to change

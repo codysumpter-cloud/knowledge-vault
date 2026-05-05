@@ -1,22 +1,22 @@
-# omni-bmo Integration for BMO Stack
+# omni-buddy Integration for BMO Stack
 
 ## Goal
 
-Run `omni-bmo` on the same MacBook while keeping `BeMore-stack` as the canonical host/orchestration layer.
+Run `omni-buddy` on the same MacBook while keeping `BeMore-stack` as the canonical host/orchestration layer.
 
 This bridge does **not** make PrismBot a runtime dependency.
 
 It gives you a clean way to:
 
-- sync `omni-bmo`
+- sync `omni-buddy`
 - check readiness
 - provide a shared BMO-first env contract
-- launch `omni-bmo` from the `BeMore-stack` workspace
+- launch `omni-buddy` from the `BeMore-stack` workspace
 
 ## Repo roles
 
 - `BeMore-stack` = canonical host/runtime/orchestration stack
-- `omni-bmo` = donor repo for local embodied runtime features
+- `omni-buddy` = donor repo for local embodied runtime features
 - `PrismBot` = archived donor repo only
 
 ## Quickstart
@@ -24,14 +24,14 @@ It gives you a clean way to:
 1. Sync the repo:
 
 ```bash
-bash scripts/sync-omni-bmo.sh
+bash scripts/sync-omni-buddy.sh
 ```
 
 2. Prepare env:
 
 ```bash
 mkdir -p ~/.config
-cp config/omni-bmo.env.example ~/.config/bmo-omni.env
+cp config/omni-buddy.env.example ~/.config/bmo-omni.env
 ```
 
 3. Run the doctor:
@@ -48,7 +48,7 @@ bash scripts/bmo-omni-launch.sh
 
 ## What the doctor checks
 
-- presence of `omni-bmo`
+- presence of `omni-buddy`
 - `agent.py`
 - local venv path
 - configured env file
@@ -68,29 +68,29 @@ Legacy names such as `PRISMBOT_API_TOKEN` are fallback-only compatibility bridge
 
 ## Current assumptions
 
-- `omni-bmo` lives at `./omni-bmo` by default
+- `omni-buddy` lives at `./omni-buddy` by default
 - you can override with `OMNI_BMO_DIR`
 - env file defaults to `~/.config/bmo-omni.env`
 - Omni base URL defaults to `http://127.0.0.1:8799/api/omni`
 
 ## What this does not do yet
 
-- it does not provision `omni-bmo` dependencies automatically
-- it does not rewrite `omni-bmo/config.json`
+- it does not provision `omni-buddy` dependencies automatically
+- it does not rewrite `omni-buddy/config.json`
 - it does not install LaunchAgent/systemd services for you
 - it does not make PrismBot a runtime dependency
 
 ## Recommended operator flow
 
 - keep `BeMore-stack` as the source of truth
-- use PrismBot and `omni-bmo` as donor repos only
-- use helper scripts here to verify and launch `omni-bmo`
+- use PrismBot and `omni-buddy` as donor repos only
+- use helper scripts here to verify and launch `omni-buddy`
 - only add tighter integration after the bridge is stable
 
 ## Related
 
 - `docs/BMO_CONSOLIDATION.md`
-- `scripts/sync-omni-bmo.sh`
+- `scripts/sync-omni-buddy.sh`
 - `scripts/bmo-omni-doctor.sh`
 - `scripts/bmo-omni-launch.sh`
-- `config/omni-bmo.env.example`
+- `config/omni-buddy.env.example`

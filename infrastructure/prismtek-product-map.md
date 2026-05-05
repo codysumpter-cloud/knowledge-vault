@@ -4,7 +4,7 @@ created: 2026-05-05
 updated: 2026-05-05
 type: concept
 tags: [prismtek, product, architecture, map]
-sources: [bmo-stack/README.md, omni-bmo/README.md, prismtek-apps/README.md]
+sources: [buddy-brain/README.md, omni-buddy/README.md, prismtek-apps/README.md]
 confidence: medium
 ---
 
@@ -34,4 +34,4 @@ The specialized application of the stack to third-party games.
 - **Knowledge:** Powered by the Knowledge Vault.
 
 [[buddy-system-architecture]]
-[[omni-bmo-sync-protocol]]
+[[omni-buddy-sync-protocol]]

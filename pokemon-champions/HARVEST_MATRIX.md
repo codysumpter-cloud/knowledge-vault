@@ -14,18 +14,18 @@ The capability harvest process was manual and undocumented, making it hard to tr
 This document tracks the systematic assimilation of capabilities from donor forks into the canonical repos.
 
 ## Canonical Boundary Mapping
-- **bmo-stack**: Contracts, policy, runbooks, integrations, orchestration.
+- **buddy-brain**: Contracts, policy, runbooks, integrations, orchestration.
 - **prismtek-apps**: Product shell, Buddy UX, feature packs, app surface.
-- **omni-bmo**: Runtime, device interface, offline/pairing boundary, MCP core.
+- **omni-buddy**: Runtime, device interface, offline/pairing boundary, MCP core.
 
 ## Harvest Matrix
 
 | Donor Repo | Status | Target Repo | Capability to Harvest | Validation Plan | Merge Gate |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `hermes-agent-self-evolution` | Not Started | `bmo-stack` | DSPy/GEPA Optimization Loop | Benchmarking vs baseline skills | 100% Test Pass + Benchmarks |
-| `agentic-stack` | Not Started | `bmo-stack` | Portable Brain Structure (`.agent/`) | Cross-harness state transfer test | Integration Test Pass |
-| `context-mode` | Not Started | `omni-bmo` | Session Continuity / Sandboxing | Context window usage audit | $\le$ 2% context drift |
-| `arcade-mcp` | Not Started | `omni-bmo` | Standardized MCP Auth/Deploy | Server deployment verification | Successful `arcade deploy` |
+| `hermes-agent-self-evolution` | Not Started | `buddy-brain` | DSPy/GEPA Optimization Loop | Benchmarking vs baseline skills | 100% Test Pass + Benchmarks |
+| `agentic-stack` | Not Started | `buddy-brain` | Portable Brain Structure (`.agent/`) | Cross-harness state transfer test | Integration Test Pass |
+| `context-mode` | Not Started | `omni-buddy` | Session Continuity / Sandboxing | Context window usage audit | $\le$ 2% context drift |
+| `arcade-mcp` | Not Started | `omni-buddy` | Standardized MCP Auth/Deploy | Server deployment verification | Successful `arcade deploy` |
 | `nemoclaw` | Partially | `prismtek-apps` | Specialized shell extensions | Runtime functional audit | Buddy UX Smoke Test |
 | `hermes-workspace` | Partially | `prismtek-apps` | Dashboard / API orchestration | API endpoint connectivity test | End-to-end API Green |
 

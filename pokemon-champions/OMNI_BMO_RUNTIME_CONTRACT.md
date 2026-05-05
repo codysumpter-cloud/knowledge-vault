@@ -4,7 +4,7 @@ This document mirrors the Omni-BMO runtime contract at the operator and integrat
 
 ## Purpose
 
-`omni-bmo` remains the executable runtime reference. `bmo-stack` mirrors the contract here so operators, downstream repos, and runbooks have a canonical source of truth for:
+`omni-buddy` remains the executable runtime reference. `buddy-brain` mirrors the contract here so operators, downstream repos, and runbooks have a canonical source of truth for:
 
 - runtime modes
 - transport state
@@ -14,8 +14,8 @@ This document mirrors the Omni-BMO runtime contract at the operator and integrat
 
 ## Ownership split
 
-- `omni-bmo` — executable runtime implementation, health checks, bridge adapters, operator controls
-- `bmo-stack` — contract mirror, operator runbooks, validation posture, cross-repo boundary documentation
+- `omni-buddy` — executable runtime implementation, health checks, bridge adapters, operator controls
+- `buddy-brain` — contract mirror, operator runbooks, validation posture, cross-repo boundary documentation
 - `prismtek-apps` — product-safe pairing and reachability surfaces only
 
 ## Canonical transport modes
@@ -95,4 +95,4 @@ Runbooks should always describe:
 
 ## Source-of-truth rule
 
-When the executable `omni-bmo` implementation evolves, this mirrored contract in `bmo-stack` must be updated in the same change window so downstream repos do not drift.
+When the executable `omni-buddy` implementation evolves, this mirrored contract in `buddy-brain` must be updated in the same change window so downstream repos do not drift.

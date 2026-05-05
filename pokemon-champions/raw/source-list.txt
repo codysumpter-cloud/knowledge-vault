@@ -217,7 +217,7 @@
 /Users/codysumpter/knowledge-vault/pokemon-champions/PRINCESS_BUBBLEGUM.md
 /Users/codysumpter/knowledge-vault/pokemon-champions/2026-04-09-bmo-mythos-lite-security-review.md
 /Users/codysumpter/knowledge-vault/pokemon-champions/IMPROVEMENT_ROADMAP.md
-/Users/codysumpter/knowledge-vault/pokemon-champions/2026-04-23-omni-bmo-runtime-contract.md
+/Users/codysumpter/knowledge-vault/pokemon-champions/2026-04-23-omni-buddy-runtime-contract.md
 /Users/codysumpter/knowledge-vault/pokemon-champions/SPAWN_AGENT_OPERATING_MODEL.md
 /Users/codysumpter/knowledge-vault/pokemon-champions/CONTINUATION.md
 /Users/codysumpter/knowledge-vault/pokemon-champions/AGENTS.md

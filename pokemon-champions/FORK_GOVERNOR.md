@@ -1,6 +1,6 @@
 # Fork Governor Runbook
 
-`bmo-stack` hosts the central fork governor.
+`buddy-brain` hosts the central fork governor.
 
 ## What it does
 
@@ -17,7 +17,7 @@ This keeps fork repos fresh from upstream without sending fork-local work back t
 
 ## Required secret
 
-Add this repository secret to `bmo-stack`:
+Add this repository secret to `buddy-brain`:
 
 - `FORK_GOVERNOR_TOKEN`
 

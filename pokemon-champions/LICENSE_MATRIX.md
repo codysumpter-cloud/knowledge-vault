@@ -8,7 +8,7 @@ This document records the currently observed license posture of repositories fee
 |---|---|---:|---|
 | `codysumpter-cloud/BeMore-stack` | Platform/runtime spine | Apache-2.0 | Root `LICENSE` and `NOTICE` added; preserve third-party provenance records |
 | `codysumpter-cloud/nemoclaw` | OpenShell / NemoClaw vendor fork | Apache-2.0 | Safe to vendor/fork with notice preservation |
-| `codysumpter-cloud/omni-bmo` | Embodied BMO / Pi runtime | MIT | Permissive, but preserve attribution and copyright notice |
+| `codysumpter-cloud/omni-buddy` | Embodied BMO / Pi runtime | MIT | Permissive, but preserve attribution and copyright notice |
 | `codysumpter-cloud/PrismBot` | Product/workspace/apps/core | AGPL-3.0 | Strong copyleft; combining code directly into platform changes downstream obligations |
 | `codysumpter-cloud/prismtek-site` | Public site and site-backed APIs | Apache-2.0 | Root `LICENSE` and `NOTICE` added in the repo refresh |
 | `codysumpter-cloud/Prismtek.dev` | Public site repo | **No top-level license file found** | Treat as all-rights-reserved unless/until licensed |
@@ -35,7 +35,7 @@ That is not automatically bad. In fact, it can be a strong signal of legitimacy 
 
 ### MIT and Apache are easy to work with
 
-`omni-bmo`, `be-more-hailo`, and `nemoclaw` are substantially easier to integrate from a licensing standpoint.
+`omni-buddy`, `be-more-hailo`, and `nemoclaw` are substantially easier to integrate from a licensing standpoint.
 
 Requirements still exist:
 - preserve license text

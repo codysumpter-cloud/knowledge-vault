@@ -44,4 +44,4 @@ To reach "Phantom-Free" stability, the BMO stack should integrate these as follo
 3. **Top Layer (L3):** `context-mode` to prevent tool-output flooding.
 
 [[buddy-system-architecture]]
-[[omni-bmo-sync-protocol]]
+[[omni-buddy-sync-protocol]]

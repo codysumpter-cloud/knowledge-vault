@@ -230,7 +230,7 @@ Normalization should make dimensions, frame counts, frame ordering, transparent 
 
 ### Validation
 
-Validation should reject malformed assets and surface structured issues. Existing bmo-stack buddy_art validators provide the foundation for ASCII dimensions, pixel dimensions, imagePath presence, normalized metadata, and provenance receipt helpers.
+Validation should reject malformed assets and surface structured issues. Existing buddy-brain buddy_art validators provide the foundation for ASCII dimensions, pixel dimensions, imagePath presence, normalized metadata, and provenance receipt helpers.
 
 ### Scoring
 
@@ -296,16 +296,16 @@ This projection model prevents a low-trust surface from accidentally receiving h
 
 The smallest useful architecture wedge is:
 
-- define this platform architecture in bmo-stack
+- define this platform architecture in buddy-brain
 - keep prismtek-buddy-core PR #2 focused on visual contracts and T-Rex style packs
-- use bmo-stack buddy_art validators as the operator-side validation/scoring/compiler foundation
+- use buddy-brain buddy_art validators as the operator-side validation/scoring/compiler foundation
 - defer prismtek-apps Buddy Studio implementation until core contracts are green and mergeable
 - keep Hermes-owned runtime/LiteRT/DAG work out of this PR
 
 ## Next visual pipeline PR sequence
 
 1. prismtek-buddy-core: make PR #2 green, remove temporary smoke workflow after Actions are healthy, and merge only after GitHub checks pass.
-2. bmo-stack: extend buddy_art validators to reject non-object frames, reject boolean canvas dimensions, add scoring objects, add compiler output, and add receipt coverage.
+2. buddy-brain: extend buddy_art validators to reject non-object frames, reject boolean canvas dimensions, add scoring objects, add compiler output, and add receipt coverage.
 3. prismtek-apps: implement issue #97 guided Buddy Studio after the core contracts are merged, with ASCII/pixel preview, quality score, one-tap repairs, and save-only-valid compiled assets.
 
 ## Non-goals
@@ -315,7 +315,7 @@ This document does not implement:
 - Build 47 runtime stability
 - LiteRT or MLCSwift integration
 - fork upgrades or donor assimilation
-- bmo-stack DAG foundation PR #293
+- buddy-brain DAG foundation PR #293
 - Buddy Studio UI in prismtek-apps
 - third-party generator integration
 - marketplace publishing UI

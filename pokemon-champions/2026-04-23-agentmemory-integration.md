@@ -5,7 +5,7 @@ This document outlines the first phase of adopting the **agentmemory** repositor
 ## Objectives
 
 1. **Hermes runtime on the Mac:** install and configure agentmemory as the persistent memory back –end for the local `hermes-agent` installation.
-2. **Runtime/operator truth in `bmo-stack`:** wire agentmemory into the existing runtime contracts so that Buddy and council actions can access and write durable memories.
+2. **Runtime/operator truth in `buddy-brain`:** wire agentmemory into the existing runtime contracts so that Buddy and council actions can access and write durable memories.
 3. **Buddy experience in `prismtek-apps`:** expose memory features in the product shell so that users can see and influence what Buddy remembers.
 
 ## Scope and deliverables
@@ -17,7 +17,7 @@ This document outlines the first phase of adopting the **agentmemory** repositor
 - Register agentmemory’s retrieval and write functions as Hermès tools/skills so that user queries can access their stored memories.
 - Provide an opt –in path to migrate existing memory files or notes into the agentmemory store.
 
-### `bmo-stack`
+### `buddy-brain`
 
 - Import `agentmemory` as a dependency for runtime modules that handle memory (e.g. council seat state, routines, and skill context).
 - Define an interface/contract layer so that council actions (via the MCP or runtime glue) can read and write memories through agentmemory.
@@ -26,7 +26,7 @@ This document outlines the first phase of adopting the **agentmemory** repositor
 
 ### `prismtek-apps`
 
-- Add API endpoints or GraphQL resolvers to invoke memory retrieval and storage via the runtime (`bmo-stack`) adapter.
+- Add API endpoints or GraphQL resolvers to invoke memory retrieval and storage via the runtime (`buddy-brain`) adapter.
 - Expose UI components that allow the user to view remembered facts (e.g. past preferences, project notes) and to clear or amend them.
 - Ensure that any product –facing memory surfaces honour user privacy and opt –out requirements (e.g. no implicit memory logging without user consent).
 - Keep Buddy personalization surfaces (appearance, performance, animation) separate from memory retrieval, but allow memory to inform default behaviors.
@@ -35,7 +35,7 @@ This document outlines the first phase of adopting the **agentmemory** repositor
 
 1. **Research integration points**. Review `agentmemory`’s API and examples to understand how to instantiate a memory store and perform CRUD operations.
 2. **Prototype locally** on the Mac by adding agentmemory to a clone of `hermes-agent` and writing a small tool that reads/writes data.
-3. **Draft contracts** for `bmo-stack` (e.g. TypeScript interfaces or JSON schemas) that describe how memory entries are passed between the runtime and the agent.
+3. **Draft contracts** for `buddy-brain` (e.g. TypeScript interfaces or JSON schemas) that describe how memory entries are passed between the runtime and the agent.
 4. **Add endpoints** in `prismtek-apps` to fetch and mutate memory via the runtime; wire them into existing Buddy services.
 5. **Iterate in small phases**, merging each minimal change and verifying that it does not regress existing behaviours.
 

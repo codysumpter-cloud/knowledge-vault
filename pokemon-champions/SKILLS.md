@@ -18,7 +18,7 @@ Use it first instead of crawling the repo.
 
 - `context/skills/donor-ingest.skill.md`
   - Trigger: importing ideas, docs, routes, runtime behavior, or policy from donor repos
-  - Use when work references `prismtek-site`, `prismtek-site-replica`, `omni-bmo`, or `PrismBot`, especially for donor-gap audits
+  - Use when work references `prismtek-site`, `prismtek-site-replica`, `omni-buddy`, or `PrismBot`, especially for donor-gap audits
 
 - `context/skills/site-migration.skill.md`
   - Trigger: prismtek.dev migration, page recreation, route inventory, asset parity

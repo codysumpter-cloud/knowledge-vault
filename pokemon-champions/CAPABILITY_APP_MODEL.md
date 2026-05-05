@@ -4,7 +4,7 @@ This document locks the ownership split for Buddy-operated skills and apps.
 
 ## Concise Architecture Summary
 
-BeMore-stack owns capability and intelligence. prismtek-apps owns product surfaces and release. Hermes remains donor/reference only. The current GitHub slug may still be `codysumpter-cloud/bmo-stack` until the repo can be safely renamed, but contracts should use `BeMore-stack` as the canonical product/runtime identity.
+BeMore-stack owns capability and intelligence. prismtek-apps owns product surfaces and release. Hermes remains donor/reference only. The current GitHub slug may still be `codysumpter-cloud/buddy-brain` until the repo can be safely renamed, but contracts should use `BeMore-stack` as the canonical product/runtime identity.
 
 Skills define bounded capability. Apps compose one or more skills into product UX. Buddy Bindings attach a Buddy persona, permissions scope, and resume behavior to a skill or app. The Runtime Registry is the only place the Buddy Runtime discovers executable capability. iBeMore reads app/skill metadata and invokes runtime methods; it does not fork per-app brains or embed hidden runtimes.
 

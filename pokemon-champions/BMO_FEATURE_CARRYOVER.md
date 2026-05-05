@@ -5,7 +5,7 @@ This file tracks the highest-value features BMO should preserve from the donor l
 ## Direct lineage
 
 - `PrismBot` contributed policy, memory, heartbeat, and response-quality patterns.
-- `omni-bmo` contributed runtime doctor, launch, validation, and council-audit patterns.
+- `omni-buddy` contributed runtime doctor, launch, validation, and council-audit patterns.
 
 ## Active private donors
 
@@ -26,7 +26,7 @@ This file tracks the highest-value features BMO should preserve from the donor l
 - response-quality guidance
   - `RESPONSE_GUIDE.md`
 
-### From omni-bmo
+### From omni-buddy
 
 - runtime validation discipline
   - `context/ops/RUNTIME_VALIDATION.md`
@@ -62,8 +62,8 @@ This file tracks the highest-value features BMO should preserve from the donor l
 ## Intentionally not imported
 
 - PrismBot app sprawl and multi-product monorepo structure
-- omni-bmo Raspberry Pi hardware defaults
-- omni-bmo wake-word, face, and enclosure assumptions as mandatory stack behavior
+- omni-buddy Raspberry Pi hardware defaults
+- omni-buddy wake-word, face, and enclosure assumptions as mandatory stack behavior
 - prismtek.dev_mega-app Express localhost assumptions as live deploy truth
 - BMO-app Firebase storage layout as canonical stack persistence
 

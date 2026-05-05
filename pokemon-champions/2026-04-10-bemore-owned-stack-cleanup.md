@@ -1,10 +1,10 @@
 ## Problem
 
-BeMore is moving from OpenClaw-centered product surfaces to a BeMore-owned Mac and iOS stack, but bmo-stack still carries transitional iOS validation and several overlapping PRs. The repo needed one coherent Build 18 path that preserves iOS capability, adds BeMore Mac pairing/power-mode awareness, lands the Buddy library foundation, and resolves stale docs/runtime overlap without moving secrets or TestFlight ownership prematurely.
+BeMore is moving from OpenClaw-centered product surfaces to a BeMore-owned Mac and iOS stack, but buddy-brain still carries transitional iOS validation and several overlapping PRs. The repo needed one coherent Build 18 path that preserves iOS capability, adds BeMore Mac pairing/power-mode awareness, lands the Buddy library foundation, and resolves stale docs/runtime overlap without moving secrets or TestFlight ownership prematurely.
 
 ## Smallest useful wedge
 
-Land the smallest bmo-stack-owned slice that keeps this repo in its correct role:
+Land the smallest buddy-brain-owned slice that keeps this repo in its correct role:
 - add BeMore Mac runtime pairing and inspection surfaces to the iOS app,
 - keep the app standalone when no Mac runtime is available,
 - preserve Build 18 as the current iOS validation/build number,
@@ -12,13 +12,13 @@ Land the smallest bmo-stack-owned slice that keeps this repo in its correct role
 - carry forward the iOS build ownership migration doc as transitional policy,
 - carry forward the deployed Worker rename,
 - explicitly leave product implementation and portable product automation in prismtek-apps,
-- supersede the stale overlapping bmo-stack PRs after one consolidation PR lands.
+- supersede the stale overlapping buddy-brain PRs after one consolidation PR lands.
 
 ## Assumptions
 
-- `master` is the lead branch for bmo-stack.
-- bmo-stack remains the transitional iOS validate/TestFlight owner until the real app/release path is proven in prismtek-apps.
-- BeMore Mac Build 1 implementation belongs in prismtek-apps, while bmo-stack should only understand the paired runtime boundary from the iOS side.
+- `master` is the lead branch for buddy-brain.
+- buddy-brain remains the transitional iOS validate/TestFlight owner until the real app/release path is proven in prismtek-apps.
+- BeMore Mac Build 1 implementation belongs in prismtek-apps, while buddy-brain should only understand the paired runtime boundary from the iOS side.
 - Existing OpenClaw-named file paths can remain as internal inherited mechanics during this slice, but user-facing copy should continue moving toward BeMore.
 
 ## Risks
@@ -39,4 +39,4 @@ Land the smallest bmo-stack-owned slice that keeps this repo in its correct role
 
 - Revert the consolidation PR if Build 18 pairing or Buddy runtime changes regress the app.
 - If only the stale PR consolidation is problematic, revert the merge commit and reopen or rebase the superseded PR branch that contains the needed subset.
-- If TestFlight remains blocked by external signing or account constraints, keep bmo-stack transitional ownership and do not move release automation until a follow-up proves the re-home.
+- If TestFlight remains blocked by external signing or account constraints, keep buddy-brain transitional ownership and do not move release automation until a follow-up proves the re-home.

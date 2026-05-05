@@ -9,7 +9,7 @@ carried across repos.
 ## Current tracked components
 
 - `vendor/nemoclaw` — source: `codysumpter-cloud/nemoclaw` — license: Apache-2.0 — role: worker sandbox framework
-- `codysumpter-cloud/omni-bmo` — license: MIT — role: embodied runtime feature source
+- `codysumpter-cloud/omni-buddy` — license: MIT — role: embodied runtime feature source
 - `codysumpter-cloud/PrismBot` — license: AGPL-3.0 — role: app and operator surface source
 - `codysumpter-cloud/prismtek-site` — Apache-2.0 — role: public-web and site-backed API source
 - `codysumpter-cloud/Prismtek.dev` — no top-level license file was found during the initial audit

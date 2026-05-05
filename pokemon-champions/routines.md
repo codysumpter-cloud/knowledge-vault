@@ -28,7 +28,7 @@ If this file or `docs/BMO_ROUTINES.md` drifts from it, fix the contract before t
 
 ## Donor-aware reminder
 
-Before importing behavior from `PrismBot` or `omni-bmo`, read:
+Before importing behavior from `PrismBot` or `omni-buddy`, read:
 
 - `context/skills/donor-ingest.skill.md`
 - `context/donors/BMO_FEATURE_CARRYOVER.md`

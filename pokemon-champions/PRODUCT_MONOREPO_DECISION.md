@@ -16,7 +16,7 @@ This document exists because repo ambiguity is now a larger risk than product am
 
 Without a decision, the ecosystem keeps drifting into one of the worst possible states:
 - `openclaw` is too product-shaped
-- `bmo-stack` is too implementation-shaped
+- `buddy-brain` is too implementation-shaped
 - `prismtek-site` risks owning app logic by accident
 - `prismtek.dev_mega-app` risks becoming de facto canonical by momentum without actually being declared canonical
 
@@ -26,7 +26,7 @@ That creates split-brain planning and implementation.
 
 Keep this spine:
 - `openclaw` = engine
-- `bmo-stack` = brain / policy / council / Buddy identity
+- `buddy-brain` = brain / policy / council / Buddy identity
 - `prismtek-site` = public web + site-backed surfaces
 - product monorepo = shipped app family implementation
 
@@ -48,7 +48,7 @@ If promoted, it should own:
 
 It should not own:
 - runtime substrate already owned by `openclaw`
-- policy / identity / council contracts already owned by `bmo-stack`
+- policy / identity / council contracts already owned by `buddy-brain`
 - pure `prismtek.dev` site ownership already owned by `prismtek-site`
 
 ### Promotion criteria
@@ -57,14 +57,14 @@ Promote only if all are true:
 - [ ] repo structure is coherent enough to converge future product work there
 - [ ] README can clearly state what it owns and does not own
 - [ ] it does not duplicate `openclaw` runtime substrate ownership
-- [ ] it does not duplicate `bmo-stack` policy ownership
+- [ ] it does not duplicate `buddy-brain` policy ownership
 - [ ] it can become the default implementation target for Build 18+ app-family work
 
 ### Consequences of promotion
 - future BeMore implementation converges there
 - `BMO-app` and similar transitional repos get folded or frozen
 - implementation roadmap moves there
-- `bmo-stack` remains source of truth for policy / Buddy philosophy / council / strategy
+- `buddy-brain` remains source of truth for policy / Buddy philosophy / council / strategy
 
 ## Demotion option
 
@@ -110,7 +110,7 @@ Reason:
 - [ ] add canonical README ownership statement
 - [ ] move implementation roadmap there
 - [ ] mark `BMO-app` and other transitional app repos as satellite or archive
-- [ ] link back to `bmo-stack` for product-brain docs
+- [ ] link back to `buddy-brain` for product-brain docs
 - [ ] link to `openclaw` for runtime substrate
 - [ ] link to `prismtek-site` for public-web ownership
 
@@ -126,7 +126,7 @@ Reason:
 
 If a future feature is:
 - runtime substrate → `openclaw`
-- Buddy philosophy / council / identity / operating policy → `bmo-stack`
+- Buddy philosophy / council / identity / operating policy → `buddy-brain`
 - public website / public dashboards / site APIs → `prismtek-site`
 - shipped app-family implementation → product monorepo
 

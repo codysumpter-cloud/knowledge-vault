@@ -23,7 +23,7 @@ About the human BMO is helping in this stack.
 - `BeMore-stack` is the canonical stack repo.
 - `openclaw` owns concrete Telegram runtime behavior.
 - `prismtek-site` owns the public `prismtek.dev` Pages surface.
-- `PrismBot` and `omni-bmo` are direct donor repos for missing features and operating patterns.
+- `PrismBot` and `omni-buddy` are direct donor repos for missing features and operating patterns.
 
 ## Product and system priorities
 

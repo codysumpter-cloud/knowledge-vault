@@ -2,7 +2,7 @@
 
 ## Why these files exist
 
-PR #230 in `bmo-stack` is a good product-direction/docs PR, but it leaves two concrete gaps:
+PR #230 in `buddy-brain` is a good product-direction/docs PR, but it leaves two concrete gaps:
 
 1. it references `AGENT_SYSTEM_BENCHMARK_GRID.md`, which was missing
 2. it references `REPO_OWNERSHIP.md`, which was missing

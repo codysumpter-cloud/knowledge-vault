@@ -9,7 +9,7 @@ Skip it in shared or group contexts.
 - `BeMore-stack` is the canonical repo for stack policy, automation, routines, skills, and operator-facing glue.
 - `openclaw` owns the concrete Telegram runtime and delivery behavior. Do not claim Telegram behavior is fixed from `BeMore-stack` alone when the owner path lives in `openclaw`.
 - `prismtek-site` owns the public Cloudflare Pages surface for `prismtek.dev`. Do not claim public web chat is live from `BeMore-stack` alone.
-- `PrismBot` is the policy and product donor. `omni-bmo` is the runtime and ops donor. Import patterns and guardrails, not repo sprawl or hardware-specific defaults.
+- `PrismBot` is the policy and product donor. `omni-buddy` is the runtime and ops donor. Import patterns and guardrails, not repo sprawl or hardware-specific defaults.
 - The cold-start contract begins at `AGENTS.md`. `AGENTS.md`, `context/identity/AGENTS.md`, and `context/RUNBOOK.md` must agree on startup order or the environment is drifting.
 - `context/skills/SKILLS.md` is the human-first skill entrypoint. `skills/index.json` is the machine-readable registry for repo-local skill triggers and actions.
 - Mission Control, status probes, and operator dashboards must surface real provenance. Never blur fixture data, stale cache, and live system state.

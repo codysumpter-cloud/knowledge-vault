@@ -1,6 +1,6 @@
 # BeMore stack remaining work checklist
 
-This document tracks the remaining canonical runtime / capability / identity work still needed in `bmo-stack`.
+This document tracks the remaining canonical runtime / capability / identity work still needed in `buddy-brain`.
 
 ## P0
 

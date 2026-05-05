@@ -9,7 +9,7 @@ This file is meant to be the concrete ownership source referenced by planning do
 ## Ownership spine
 
 - `openclaw` = runtime engine / protocol substrate / nodes / tools / control plane
-- `bmo-stack` = brain / policy / council / Buddy identity / planning / integration glue
+- `buddy-brain` = brain / policy / council / Buddy identity / planning / integration glue
 - `prismtek-site` = public web / `prismtek.dev` / site-backed APIs / arcade web surfaces
 - `prismtek.dev_mega-app` = pending decision: canonical product monorepo or satellite/archive
 
@@ -36,7 +36,7 @@ This file is meant to be the concrete ownership source referenced by planning do
 - public `prismtek.dev` site
 - Buddy/council policy as the canonical source
 
-### `bmo-stack`
+### `buddy-brain`
 **Class:** Canonical  
 **Owns:**
 - operator policy
@@ -75,7 +75,7 @@ If promoted, it should own:
 - shared product packages
 - Buddy UI and Buddy Workshop UI
 - shared design system
-- app-family packages that are not owned by `openclaw`, `bmo-stack`, or `prismtek-site`
+- app-family packages that are not owned by `openclaw`, `buddy-brain`, or `prismtek-site`
 
 If demoted:
 - useful code/docs should be extracted
@@ -92,7 +92,7 @@ These should not remain source-of-truth competitors:
 - `Prismbot-Public`
 - `WixPrismBot`
 - `prismbot.wix`
-- `omni-bmo`
+- `omni-buddy`
 - `claw-code`
 
 Default action for these is:
@@ -124,7 +124,7 @@ When a new feature or doc is added, ask:
 Put it in `openclaw`.
 
 ### Buddy philosophy / council / identity / policy / product guardrails?
-Put it in `bmo-stack`.
+Put it in `buddy-brain`.
 
 ### Public site / web APIs / arcade web surfaces?
 Put it in `prismtek-site`.

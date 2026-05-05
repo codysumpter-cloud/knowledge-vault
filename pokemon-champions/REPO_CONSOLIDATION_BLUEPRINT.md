@@ -38,7 +38,7 @@ Source of truth for:
 - PrismBot core / Omni API surfaces
 - memory / citation / operator UX features
 
-### `omni-bmo`
+### `omni-buddy`
 Embodied / Pi-oriented feature source.
 
 Source of truth for:

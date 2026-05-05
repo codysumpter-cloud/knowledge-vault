@@ -73,4 +73,4 @@ Profiles currently set:
 
 This is intentionally small and additive.
 
-It is a BMO-native operator surface, not a direct copy of omni-bmo profile logic.
+It is a BMO-native operator surface, not a direct copy of omni-buddy profile logic.

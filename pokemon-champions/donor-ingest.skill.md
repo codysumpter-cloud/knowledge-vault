@@ -7,10 +7,10 @@ Import useful patterns from donor repos without creating source-of-truth drift.
 ## Canonical donor roles
 
 - `PrismBot` = policy and product donor
-- `omni-bmo` = runtime and ops donor
+- `omni-buddy` = runtime and ops donor
 - `prismtek-site` = content and public-web donor
 
-`PrismBot` and `omni-bmo` are the direct lineage repos for `BeMore-stack`.
+`PrismBot` and `omni-buddy` are the direct lineage repos for `BeMore-stack`.
 
 ## Procedure
 
@@ -34,7 +34,7 @@ From `PrismBot`, compare:
 - response quality rules
 - operator-visible product conventions
 
-From `omni-bmo`, compare:
+From `omni-buddy`, compare:
 
 - runtime doctor and launcher patterns
 - validation matrix discipline
@@ -45,5 +45,5 @@ From `omni-bmo`, compare:
 
 - Do not import runtime architecture from `prismtek-site`.
 - Do not import app sprawl from `PrismBot`.
-- Do not import hardware-specific Pi assumptions from `omni-bmo` as stack-wide defaults.
+- Do not import hardware-specific Pi assumptions from `omni-buddy` as stack-wide defaults.
 - Every donor import should leave a clear trail in docs, validation, or commit messages.

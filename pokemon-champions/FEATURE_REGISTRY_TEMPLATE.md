@@ -10,10 +10,10 @@ Use this registry to track every feature that should land in `BeMore-stack`.
 | Desktop client | `PrismBot` | `apps/prismbot-desktop` | AGPL-3.0 | `apps/desktop` | later import | `desktop-local` | planned | client after core contracts stabilize |
 | Mobile client | `PrismBot` | `apps/prismbot-mobile` | AGPL-3.0 | `apps/mobile` | later import | `public-web` | planned | lower priority than mission control |
 | Website | `prismtek-site` or `Prismtek.dev` | site content | unlicensed currently | `apps/website` | internal import after license added | `public-web` | blocked | add explicit license first |
-| Wake word runtime | `omni-bmo` | wakeword / runtime scripts | MIT | `services/wakeword` | modular import | `pi-local`, `pi-hailo` | planned | keep hardware-specific code profiled |
-| Speech-to-text | `omni-bmo` | STT flow | MIT | `services/speech-stt` | modular import | `pi-local`, `pi-hailo`, `desktop-local` | planned | define provider contract |
-| Text-to-speech | `omni-bmo` | TTS flow | MIT | `services/speech-tts` | modular import | `pi-local`, `pi-hailo`, `desktop-local` | planned | define voice asset layout |
-| Vision hooks | `omni-bmo` and `be-more-hailo` | camera / vision code | MIT | `services/vision` | modular import | `pi-local`, `pi-hailo` | planned | separate local vs Hailo backends |
+| Wake word runtime | `omni-buddy` | wakeword / runtime scripts | MIT | `services/wakeword` | modular import | `pi-local`, `pi-hailo` | planned | keep hardware-specific code profiled |
+| Speech-to-text | `omni-buddy` | STT flow | MIT | `services/speech-stt` | modular import | `pi-local`, `pi-hailo`, `desktop-local` | planned | define provider contract |
+| Text-to-speech | `omni-buddy` | TTS flow | MIT | `services/speech-tts` | modular import | `pi-local`, `pi-hailo`, `desktop-local` | planned | define voice asset layout |
+| Vision hooks | `omni-buddy` and `be-more-hailo` | camera / vision code | MIT | `services/vision` | modular import | `pi-local`, `pi-hailo` | planned | separate local vs Hailo backends |
 | Hailo profile | `be-more-hailo` | core, web UI, setup | MIT | `profiles/pi-hailo` | fork + documented adaptation | `pi-hailo` | planned | preserve attribution and upstream link |
 | Timers / media / game loops | `be-more-hailo` | runtime features | MIT | `services/timers-media` | modular import | `pi-hailo`, `pi-local` | planned | implement behind shared contracts |
 | Council runtime | `BeMore-stack` | `context/council` | no top-level repo license yet | `packages/council-runtime` | native | all | in progress | add explicit platform license first |

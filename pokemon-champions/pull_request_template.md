@@ -15,7 +15,7 @@ Describe the smallest safe change that moves the repo forward without overreachi
 ## Verification plan
 - [ ] Local verification completed
 - [ ] Required GitHub checks green before merge
-- [ ] Boundary reviewed (`bmo-stack` vs `prismtek-apps` vs `omni-bmo`)
+- [ ] Boundary reviewed (`buddy-brain` vs `prismtek-apps` vs `omni-buddy`)
 
 ## Rollback plan
 Describe how to revert or disable this change safely.

@@ -3,8 +3,8 @@ title: Omni-BMO Sync Protocol
 created: 2026-05-05
 updated: 2026-05-05
 type: concept
-tags: [omni-bmo, transport, synchronization, mesh]
-sources: [omni-bmo/docs/TRANSPORT_CONTRACT.md]
+tags: [omni-buddy, transport, synchronization, mesh]
+sources: [omni-buddy/docs/TRANSPORT_CONTRACT.md]
 confidence: high
 ---
 

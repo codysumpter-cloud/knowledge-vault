@@ -16,7 +16,7 @@ Run one coherent BMO setup on a MacBook without pretending the old donor repos a
 ## What is archived or donor-only
 
 - `PrismBot` is archived source material.
-- `omni-bmo` is a donor repo for embodied local runtime features.
+- `omni-buddy` is a donor repo for embodied local runtime features.
 
 ## Recommended layout
 
@@ -24,7 +24,7 @@ Run one coherent BMO setup on a MacBook without pretending the old donor repos a
 ~/code/
   BeMore-stack/
   openclaw/
-  omni-bmo/        # optional donor/runtime bridge target
+  omni-buddy/        # optional donor/runtime bridge target
   PrismBot/        # optional archived reference copy
 ```
 
@@ -82,7 +82,7 @@ make recover-bmo
 - Keep new operator logic BMO-first in `BeMore-stack`.
 - Keep concrete Telegram/runtime delivery fixes in `openclaw`, then pull them onto the MacBook and restart the gateway.
 - Use PrismBot docs/scripts as migration references only.
-- Use `omni-bmo` helpers only through BMO bridge scripts unless there is a good reason not to.
+- Use `omni-buddy` helpers only through BMO bridge scripts unless there is a good reason not to.
 
 ## Verify the live runtime path
 

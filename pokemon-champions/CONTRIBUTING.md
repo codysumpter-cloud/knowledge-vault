@@ -1,10 +1,10 @@
 # Contributing to BMO Stack
 
-Thanks for contributing to `bmo-stack`.
+Thanks for contributing to `buddy-brain`.
 
 ## Scope
 
-This repository owns operator workflows, contracts, runbooks, donor inventory, and integration glue. Product UI belongs in `prismtek-apps`. Device/runtime behavior belongs in `omni-bmo`.
+This repository owns operator workflows, contracts, runbooks, donor inventory, and integration glue. Product UI belongs in `prismtek-apps`. Device/runtime behavior belongs in `omni-buddy`.
 
 ## Working rules
 
@@ -57,6 +57,6 @@ If you touch docs, manifests, or GitHub automation, also verify the changed file
 
 When in doubt:
 
-- `bmo-stack` = operator contracts, policy, runbooks, automation, donor/governor docs
+- `buddy-brain` = operator contracts, policy, runbooks, automation, donor/governor docs
 - `prismtek-apps` = shipped Buddy product UX
-- `omni-bmo` = runtime/device execution and pairing state
+- `omni-buddy` = runtime/device execution and pairing state

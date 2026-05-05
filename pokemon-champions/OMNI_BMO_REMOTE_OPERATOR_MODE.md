@@ -70,6 +70,6 @@ Operator surfaces should be able to report:
 
 ## Downstream boundary
 
-- `omni-bmo` owns the implementation and field behavior
-- `bmo-stack` owns the mirrored operator contract and runbook
+- `omni-buddy` owns the implementation and field behavior
+- `buddy-brain` owns the mirrored operator contract and runbook
 - `prismtek-apps` should only present product-safe pairing and reachability cues

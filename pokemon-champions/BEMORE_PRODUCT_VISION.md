@@ -2,7 +2,7 @@
 
 ## Repo posture first
 
-`bmo-stack` is still the operator, policy, planning, and integration repository for BMO.
+`buddy-brain` is still the operator, policy, planning, and integration repository for BMO.
 It does **not** claim to be the sole live owner of every BeMore surface.
 
 This document exists to do two things safely:
@@ -10,7 +10,7 @@ This document exists to do two things safely:
 1. capture the intended product direction for BeMore and related OpenClaw shell surfaces
 2. keep that direction grounded in the ownership boundaries already defined in `README.md`, `AGENTS.md`, and the runtime docs
 
-Treat this as a product-direction reference and control document, not as a claim that `bmo-stack` alone implements the full product.
+Treat this as a product-direction reference and control document, not as a claim that `buddy-brain` alone implements the full product.
 
 ## One-line vision
 
@@ -207,7 +207,7 @@ Paid:
 
 ## What this repo should own in that story
 
-`bmo-stack` should primarily own:
+`buddy-brain` should primarily own:
 - product boundary docs
 - control docs
 - planning artifacts

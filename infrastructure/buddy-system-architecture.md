@@ -4,7 +4,7 @@ created: 2026-05-05
 updated: 2026-05-05
 type: concept
 tags: [buddy, architecture, runtime, agent]
-sources: [bmo-stack/docs/BUDDY_SYSTEM.md, bmo-stack/contracts/buddy_runtime.md]
+sources: [buddy-brain/docs/BUDDY_SYSTEM.md, buddy-brain/contracts/buddy_runtime.md]
 confidence: high
 ---
 
@@ -31,5 +31,5 @@ The system operates across three distinct layers of truth:
 - **Safe Defaults:** If a request expires, the default decision for high-risk actions is `reject`.
 - **State Ownership:** The Runtime owns the execution state; the Workbench owns the supervision state.
 
-[[omni-bmo-sync-protocol]]
+[[omni-buddy-sync-protocol]]
 [[prismtek-product-map]]

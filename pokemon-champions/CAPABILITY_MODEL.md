@@ -26,7 +26,7 @@ A persisted instance record created after installation.
 
 ## Ownership split
 
-### `bmo-stack`
+### `buddy-brain`
 
 Owns:
 

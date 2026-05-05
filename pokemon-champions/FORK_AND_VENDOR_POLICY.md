@@ -22,7 +22,7 @@ Rules:
 - keep local changes understandable
 
 ### Internal source repositories
-Examples include `PrismBot`, `omni-bmo`, `prismtek-site`, and `Prismtek.dev`.
+Examples include `PrismBot`, `omni-buddy`, `prismtek-site`, and `Prismtek.dev`.
 
 Rules:
 - migrate by module, not by dumping whole trees

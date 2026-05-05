@@ -35,4 +35,4 @@ Record:
 
 - Do not claim stability from one happy-path run.
 - Prefer a written validation note over an implicit "seems fine".
-- When borrowing validation ideas from `omni-bmo`, strip out device-specific assumptions unless explicitly relevant.
+- When borrowing validation ideas from `omni-buddy`, strip out device-specific assumptions unless explicitly relevant.
