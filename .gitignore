@@ -1,0 +1,6 @@
+.DS_Store
+.obsidian/workspace*.json
+.trash/
+00-Private/Credentials/*.md
+00-Private/**/*.key
+00-Private/**/*.json
