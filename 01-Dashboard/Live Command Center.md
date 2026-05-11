@@ -13,6 +13,7 @@ Open Command Palette and run:
 ![[01-Dashboard/Daily/{{date}}]]
 
 ## Working Areas
+- [[01-Dashboard/Mobile Command Center|Mobile Command Center]]
 - [[00-Inbox/Inbox|Inbox]]
 - [[01-Dashboard/Metrics/Metrics Index|Metrics + Trends]]
 - [[01-Dashboard/Activity Log/Activity Index|Activity Log]]

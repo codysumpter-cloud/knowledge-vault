@@ -10,8 +10,10 @@ module.exports = class BMOOpsDashboard extends Plugin {
   async onload() {
     await this.ensureFolders();
     this.addCommand({ id: 'bmo-open-dashboard', name: 'Open Live Command Center', callback: () => this.openDashboard() });
-    this.addCommand({ id: 'bmo-today', name: '/today — Start day and build focus note', callback: () => this.startDay() });
-    this.addCommand({ id: 'bmo-close-day', name: '/close-day — Close day with metrics/reflection', callback: () => this.closeDay() });
+    this.addCommand({ id: 'bmo-today', name: 'Today - Start day and build focus note', callback: () => this.startDay() });
+    this.addCommand({ id: 'bmo-today-slash', name: '/today - Start day and build focus note', callback: () => this.startDay() });
+    this.addCommand({ id: 'bmo-close-day', name: 'Close Day - metrics and reflection', callback: () => this.closeDay() });
+    this.addCommand({ id: 'bmo-close-day-slash', name: '/close-day - metrics and reflection', callback: () => this.closeDay() });
     this.addCommand({ id: 'bmo-quick-capture', name: 'Quick capture to inbox', callback: () => this.quickCapture() });
     this.addCommand({ id: 'bmo-log-activity', name: 'Log activity', callback: () => this.logActivity() });
     this.addRibbonIcon('layout-dashboard', 'BMO Command Center', () => this.openDashboard());
