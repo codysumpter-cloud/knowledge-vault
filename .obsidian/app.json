@@ -1,11 +1,14 @@
 {
   "alwaysUpdateLinks": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "00-Inbox",
+  "newFileFolderPath": "00-Inbox/Captures",
   "attachmentFolderPath": "07-Attachments",
   "showLineNumber": true,
   "readableLineLength": false,
   "strictLineBreaks": false,
   "spellcheck": true,
-  "promptDelete": true
+  "promptDelete": true,
+  "userIgnoreFilters": [
+    "00-Private/Credentials/"
+  ]
 }

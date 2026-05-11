@@ -3,6 +3,7 @@
 > Central Obsidian/iCloud vault for Prismtek, BMO/Buddy Brain, Sovereign Cloud, money systems, games, and operating receipts.
 
 ## Fast Links
+- [[01-Dashboard/Live Command Center|Live Command Center]]
 - [[01-Dashboard/Operator Dashboard|Operator Dashboard]]
 - [[03-Infrastructure/Sovereign Cloud|Sovereign Cloud]]
 - [[04-Runbooks/VPS Agent Access|VPS Agent Access]]
