@@ -1,0 +1,37 @@
+{
+  "content_growth_social_ops": {
+    "default_mode": "draft-only",
+    "execution_gate": "approval_required",
+    "adapter_required": true,
+    "blocked_without_approval": [
+      "post",
+      "schedule",
+      "reply",
+      "dm",
+      "delete",
+      "change_account_settings"
+    ]
+  },
+  "sportsbook_betting_advisor": {
+    "default_mode": "analysis-only",
+    "manual_only_by_default": true,
+    "blocked": [
+      "place_bet",
+      "deposit",
+      "withdraw",
+      "transfer",
+      "guarantee_profit"
+    ]
+  },
+  "polymarket_trading_advisor": {
+    "default_mode": "analysis-only",
+    "manual_only_by_default": true,
+    "blocked": [
+      "place_trade",
+      "deposit",
+      "withdraw",
+      "transfer",
+      "guarantee_profit"
+    ]
+  }
+}

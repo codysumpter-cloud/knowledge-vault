@@ -1,0 +1,66 @@
+{
+  "id": "content-growth-social-ops",
+  "name": "Content Growth Social Ops",
+  "version": "1.0.0",
+  "source": "imported/hermes",
+  "canonical_memory_source": "KnowledgeVault",
+  "description": "Helps Hermes and Buddy create, repurpose, schedule, and promote content across YouTube, X, and Twitch with approval gates.",
+  "platforms": [
+    "web",
+    "repo-only",
+    "youtube",
+    "x",
+    "twitch"
+  ],
+  "risk_class": "external-action",
+  "default_mode": "draft-only",
+  "readable": true,
+  "auto_executable": false,
+  "requires_prismtek_approval": true,
+  "adapters": [
+    "social",
+    "genviral",
+    "memory"
+  ],
+  "allowed_actions": [
+    "analyze content",
+    "generate hooks",
+    "draft posts",
+    "draft YouTube Shorts metadata",
+    "draft X posts and threads",
+    "draft Twitch stream promos",
+    "build promotion calendars",
+    "recommend content experiments",
+    "prepare posting preview",
+    "log posted assets after approved action"
+  ],
+  "blocked_without_approval": [
+    "posting",
+    "commenting",
+    "replying",
+    "DMing",
+    "deleting",
+    "changing account settings",
+    "connecting/disconnecting accounts",
+    "spending money",
+    "using credentials directly"
+  ],
+  "hard_blocks": [
+    "fake engagement",
+    "bot farms",
+    "spam",
+    "impersonation",
+    "harassment",
+    "platform limit evasion",
+    "guaranteed virality claims"
+  ],
+  "tags": [
+    "content",
+    "growth",
+    "youtube",
+    "x",
+    "twitch",
+    "hermes",
+    "buddy"
+  ]
+}

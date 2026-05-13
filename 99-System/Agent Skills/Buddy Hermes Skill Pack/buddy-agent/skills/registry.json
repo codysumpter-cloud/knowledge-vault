@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-05-13",
+  "skills": [
+    {
+      "id": "content-growth-social-ops",
+      "name": "Content Growth Social Ops",
+      "path": "skills/imported/hermes/content-growth-social-ops/SKILL.md",
+      "source": "imported/hermes",
+      "risk_class": "external-action",
+      "default_mode": "draft-only",
+      "platforms": [
+        "web",
+        "repo-only",
+        "youtube",
+        "x",
+        "twitch"
+      ],
+      "adapters": [
+        "social",
+        "genviral",
+        "memory"
+      ],
+      "readable": true,
+      "auto_executable": false,
+      "requires_prismtek_approval": true,
+      "status": "reviewed-buddy-compatible-skill"
+    },
+    {
+      "id": "sportsbook-betting-advisor",
+      "name": "Sportsbook Betting Advisor",
+      "path": "skills/imported/hermes/sportsbook-betting-advisor/SKILL.md",
+      "source": "imported/hermes",
+      "risk_class": "money",
+      "default_mode": "analysis-only",
+      "platforms": [
+        "web",
+        "repo-only"
+      ],
+      "adapters": [
+        "market",
+        "memory"
+      ],
+      "readable": true,
+      "auto_executable": false,
+      "requires_prismtek_approval": true,
+      "manual_only_by_default": true,
+      "status": "reviewed-buddy-compatible-skill"
+    },
+    {
+      "id": "polymarket-trading-advisor",
+      "name": "Polymarket Trading Advisor",
+      "path": "skills/imported/hermes/polymarket-trading-advisor/SKILL.md",
+      "source": "imported/hermes",
+      "risk_class": "money",
+      "default_mode": "analysis-only",
+      "platforms": [
+        "web",
+        "repo-only"
+      ],
+      "adapters": [
+        "market",
+        "memory"
+      ],
+      "readable": true,
+      "auto_executable": false,
+      "requires_prismtek_approval": true,
+      "manual_only_by_default": true,
+      "status": "reviewed-buddy-compatible-skill"
+    }
+  ]
+}

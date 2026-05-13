@@ -1,0 +1,10 @@
+{
+  "name": "buddy-hermes-skill-pack",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate-skills.mjs ./buddy-agent/skills",
+    "generate-registry": "node tools/generate-registry-from-frontmatter.mjs ./buddy-agent/skills/imported ./buddy-agent/skills/registry.generated.json"
+  }
+}

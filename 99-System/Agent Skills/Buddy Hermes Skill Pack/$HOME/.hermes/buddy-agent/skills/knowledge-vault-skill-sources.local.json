@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "local_override": true,
+  "sources": [
+    {
+      "id": "knowledge-vault-agent-skills-local",
+      "label": "Local KnowledgeVault Agent Skills",
+      "path": "/private/tmp/buddy-hermes-skill-pack-install/buddy-hermes-skill-pack/$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault/KnowledgeVault/99-System/Agent Skills",
+      "readable": true,
+      "auto_import": false,
+      "auto_execute": false
+    }
+  ]
+}
