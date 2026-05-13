@@ -10,13 +10,13 @@ updated: 2026-05-11T14:55:00
 ## Current Focus
 1. **iOS Build 53** — not complete until visible in TestFlight/App Store Connect. Current blocker moved from compile failure to bundled-model archive verification; fix `b2900f3` pushed and rerun started.
 2. **macOS Build 6** — archive failed before upload due invalid Apple Development certificate + Apple cert limit.
-3. **Obsidian OS** — installed BMO Command Center plugin with commands: `BMO: /today`, `BMO: /close-day`, `BMO: Open Command Center`, `BMO: Quick capture to inbox`.
+3. **Obsidian OS** — installed BMO Command Center plugin with commands: `/today`, `/close-day`, `Open Command Center`, `Quick capture to inbox`.
 
 ## Daily Control
-- Today's note: [[2026-05-11 1]]
+- Today's note: [[2026-05-11]]
 - Mobile fallback: [[Mobile Command Center]]
 - Inbox: [[Inbox]]
-- Activity: [[2026-05-11 1]]
+- Activity: [[2026-05-11]]
 
 ## Release Receipts
 - [[Build 53 TestFlight Failure Receipt]]
@@ -26,11 +26,3 @@ updated: 2026-05-11T14:55:00
 - [[Awesome Hermes Agent Absorption Audit]]
 - [[Knowledge Vault Operating System]]
 - Resource ingest: `90 - Ingest/awesome-hermes-agent-resources.json`
-Windows ollama 
-
-Base url  http://192.168.7.170:11434
-Provider ollama-launch
-Default: gemma4:latest
-api_key: ollama 
-
-IPv4 172.29.16.1
