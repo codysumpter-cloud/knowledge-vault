@@ -1,0 +1,42 @@
+{
+  "canonical_source_root": "KnowledgeVault/99-System/Agent Skills/native",
+  "sync_mode": "read-first-review-before-promotion",
+  "skills": [
+    {
+      "name": "content-growth-social-ops",
+      "knowledge_vault_path": "KnowledgeVault/99-System/Agent Skills/native/content-growth-social-ops/SOURCE_NOTES.md"
+    },
+    {
+      "name": "sportsbook-betting-advisor",
+      "knowledge_vault_path": "KnowledgeVault/99-System/Agent Skills/native/sportsbook-betting-advisor/SOURCE_NOTES.md"
+    },
+    {
+      "name": "polymarket-trading-advisor",
+      "knowledge_vault_path": "KnowledgeVault/99-System/Agent Skills/native/polymarket-trading-advisor/SOURCE_NOTES.md"
+    },
+    {
+      "name": "moneyprinter-content-factory",
+      "knowledge_vault_path": "KnowledgeVault/99-System/Agent Skills/native/moneyprinter-content-factory/SOURCE_NOTES.md"
+    },
+    {
+      "name": "bettingai-model-advisor",
+      "knowledge_vault_path": "KnowledgeVault/99-System/Agent Skills/native/bettingai-model-advisor/SOURCE_NOTES.md"
+    },
+    {
+      "name": "hermes-x-insights-analyst",
+      "knowledge_vault_path": "KnowledgeVault/99-System/Agent Skills/native/hermes-x-insights-analyst/SOURCE_NOTES.md"
+    },
+    {
+      "name": "hermes-bookmark-research-digest",
+      "knowledge_vault_path": "KnowledgeVault/99-System/Agent Skills/native/hermes-bookmark-research-digest/SOURCE_NOTES.md"
+    },
+    {
+      "name": "hermes-reflect-memory-analyst",
+      "knowledge_vault_path": "KnowledgeVault/99-System/Agent Skills/native/hermes-reflect-memory-analyst/SOURCE_NOTES.md"
+    },
+    {
+      "name": "hermes-precall-context-brief",
+      "knowledge_vault_path": "KnowledgeVault/99-System/Agent Skills/native/hermes-precall-context-brief/SOURCE_NOTES.md"
+    }
+  ]
+}

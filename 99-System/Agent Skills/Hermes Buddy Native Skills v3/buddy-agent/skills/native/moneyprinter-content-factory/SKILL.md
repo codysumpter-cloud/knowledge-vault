@@ -1,65 +1,65 @@
 ---
-name: content-growth-social-ops
-description: Use when planning, drafting, repurposing, and promoting content across YouTube, X, and Twitch while keeping posting, DMs, replies, deletions, and account changes approval-gated.
+name: moneyprinter-content-factory
+description: Use when adapting MoneyPrinter-style modular content automation into safe draft-first workflows for Shorts, X posts, affiliate content, and outreach review.
 version: 1.0.0
 author: Prismtek / Buddy-Hermes Skill Bridge
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [social-media, youtube, x, twitch, content-growth, approval-gated]
-    related_skills: [youtube-content, xurl, moneyprinter-content-factory, hermes-x-insights-analyst]
+    tags: [content-factory, youtube-shorts, x, affiliate, outreach, approval-gated]
+    related_skills: [content-growth-social-ops, youtube-content, xurl]
   buddy:
     risk_class: external-action
     auto_executable: false
     requires_explicit_approval: true
 ---
-# Content Growth Social Ops
+# MoneyPrinter Content Factory
 
 ## Overview
 
-This skill turns approved source material into a safe cross-platform content engine for YouTube, X, and Twitch. It teaches Hermes or Buddy to select a content angle, create platform-native drafts, prepare metadata, build a promotion calendar, and report what still needs human approval.
+This skill converts the useful architecture pattern from MoneyPrinter-style systems into a native Hermes/Buddy workflow: modular content planning, reusable scripts/adapters, schedulable drafts, and human approval gates.
 
-It is intentionally not an autoposter. Publishing, account changes, replies, DMs, deletions, paid boosts, and credential handling must stay behind explicit Prismtek approval and the Buddy adapter policy.
+Use it as an idea-to-campaign factory. It should generate content packages and operator checklists, not autonomously run monetization scripts, scrape leads, or spam people.
 
 ## When to Use
 
-- The user asks for a viral content plan, social growth loop, Shorts strategy, X thread, Twitch promo plan, or cross-platform repurposing workflow.
-- The user provides a video, transcript, stream topic, product update, repo milestone, launch note, or market insight and wants platform-native content.
-- Hermes needs to prepare a posting checklist, metadata, titles, thumbnails, descriptions, clips, or promo copy for human review.
-- Don't use for account login, credential collection, unsolicited outreach, automated engagement farming, spam, fake testimonials, or guaranteed virality claims.
+- The user wants an automated-feeling content pipeline while keeping account actions approval-gated.
+- The user wants to produce YouTube Shorts concepts, X promo drafts, affiliate content, or outreach copy from a product/topic.
+- Hermes needs to turn one source asset into many drafts with metadata and a review queue.
+- Do not use to scrape businesses for unsolicited email, post automatically, generate deceptive affiliate claims, or bypass platform restrictions.
 
 ## Source Adaptation Notes
 
-Prismtek KnowledgeVault/Buddy bridge request plus Genviral/Hermes YouTube workflow patterns.
+FujiwaraChoki/MoneyPrinterV2 repo: modular automation for Twitter bot, YouTube Shorts, affiliate marketing, and cold outreach; adapted without copying AGPL runtime code.
 
 The source is treated as design inspiration and workflow context. Do not copy upstream runtime code into Hermes or Buddy unless Prismtek explicitly reviews the license, dependency tree, secrets handling, and adapter permissions.
 
 ## Inputs
 
-- source content or topic
-- target audience
-- platforms: YouTube/X/Twitch
-- brand voice
-- constraints and links
-- posting window if known
+- campaign objective
+- offer/product/topic
+- approved claims and proof
+- platforms
+- affiliate/compliance constraints
+- asset folder or source notes
 
 ## Outputs
 
-- content angle matrix
-- YouTube title/description/tags/chapters/shorts ideas
-- X posts or threads
-- Twitch stream title/promo schedule
-- approval checklist
-- risk notes
+- campaign brief
+- content batches
+- metadata drafts
+- outreach drafts marked review-only
+- asset checklist
+- schedule proposal
 
 ## Workflow
 
-1. **Intake** — Identify the source asset, audience, objective, conversion goal, and platforms. If missing, make conservative assumptions and label them.
-2. **Extract hooks** — Find the strongest novelty, conflict, utility, identity, and proof points. Reject clickbait that the source cannot support.
-3. **Platform transform** — Write native drafts: YouTube metadata and Shorts hooks, X posts/threads, and Twitch stream promo with schedule.
-4. **Safety pass** — Remove unsupported claims, private info, spam patterns, manipulation, misleading urgency, and platform ToS-risky behavior.
-5. **Approval package** — Return previews plus a clear list of actions that require Prismtek approval before any adapter can execute.
+1. **Campaign brief** — Define audience, offer, proof, CTA, allowed claims, banned claims, and approval owner.
+2. **Content modules** — Create reusable modules: hook bank, proof snippets, CTA variants, visual beats, objection handlers.
+3. **Draft batch** — Generate Shorts scripts, X posts, affiliate copy, and optional outreach copy as drafts only.
+4. **Compliance screen** — Check claims, disclosure, spam risk, privacy, platform rules, and user approval requirements.
+5. **Adapter handoff** — Return structured JSON/YAML for Buddy adapters to preview; do not execute account actions inside the skill.
 
 ## Buddy Adapter Boundary
 

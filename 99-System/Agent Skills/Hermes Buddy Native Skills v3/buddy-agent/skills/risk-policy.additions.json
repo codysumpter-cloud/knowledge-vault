@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "default_auto_executable": false,
+  "risk_classes": {
+    "read-only": {
+      "auto_executable": false,
+      "requires_approval_for": [
+        "write",
+        "external-action",
+        "money-action"
+      ]
+    },
+    "external-action": {
+      "auto_executable": false,
+      "requires_approval_for": [
+        "all-external-actions",
+        "authenticated-browser",
+        "posting",
+        "messaging",
+        "repo-write"
+      ]
+    },
+    "money": {
+      "auto_executable": false,
+      "requires_approval_for": [
+        "all"
+      ],
+      "blocked_actions": [
+        "auto-bet",
+        "auto-trade",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "custody-assets"
+      ]
+    }
+  },
+  "global_blocked_without_approval": [
+    "credentials",
+    "cookies",
+    "private keys",
+    "recovery phrases",
+    "location sharing",
+    "message sending",
+    "memory deletion",
+    "repo mutation",
+    "money movement"
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "skills": [
+    {
+      "name": "content-growth-social-ops",
+      "category": "social-media",
+      "path": "skills/native/content-growth-social-ops/SKILL.md",
+      "hermes_repo_path": "skills/social-media/content-growth-social-ops/SKILL.md",
+      "risk_class": "external-action",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "auto_executable": false,
+      "requires_explicit_approval": true,
+      "approved_actions": [
+        "read",
+        "analyze",
+        "draft",
+        "summarize",
+        "plan",
+        "prepare approval preview"
+      ],
+      "blocked_without_approval": [
+        "post",
+        "reply",
+        "dm",
+        "delete",
+        "trade",
+        "bet",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "repo-mutation",
+        "memory-delete",
+        "bulk-outreach",
+        "authenticated-browser-action"
+      ]
+    },
+    {
+      "name": "sportsbook-betting-advisor",
+      "category": "research",
+      "path": "skills/native/sportsbook-betting-advisor/SKILL.md",
+      "hermes_repo_path": "skills/research/sportsbook-betting-advisor/SKILL.md",
+      "risk_class": "money",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "auto_executable": false,
+      "requires_explicit_approval": true,
+      "approved_actions": [
+        "read",
+        "analyze",
+        "draft",
+        "summarize",
+        "plan",
+        "prepare approval preview"
+      ],
+      "blocked_without_approval": [
+        "post",
+        "reply",
+        "dm",
+        "delete",
+        "trade",
+        "bet",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "repo-mutation",
+        "memory-delete",
+        "bulk-outreach",
+        "authenticated-browser-action"
+      ]
+    },
+    {
+      "name": "polymarket-trading-advisor",
+      "category": "research",
+      "path": "skills/native/polymarket-trading-advisor/SKILL.md",
+      "hermes_repo_path": "skills/research/polymarket-trading-advisor/SKILL.md",
+      "risk_class": "money",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "auto_executable": false,
+      "requires_explicit_approval": true,
+      "approved_actions": [
+        "read",
+        "analyze",
+        "draft",
+        "summarize",
+        "plan",
+        "prepare approval preview"
+      ],
+      "blocked_without_approval": [
+        "post",
+        "reply",
+        "dm",
+        "delete",
+        "trade",
+        "bet",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "repo-mutation",
+        "memory-delete",
+        "bulk-outreach",
+        "authenticated-browser-action"
+      ]
+    },
+    {
+      "name": "moneyprinter-content-factory",
+      "category": "social-media",
+      "path": "skills/native/moneyprinter-content-factory/SKILL.md",
+      "hermes_repo_path": "skills/social-media/moneyprinter-content-factory/SKILL.md",
+      "risk_class": "external-action",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "auto_executable": false,
+      "requires_explicit_approval": true,
+      "approved_actions": [
+        "read",
+        "analyze",
+        "draft",
+        "summarize",
+        "plan",
+        "prepare approval preview"
+      ],
+      "blocked_without_approval": [
+        "post",
+        "reply",
+        "dm",
+        "delete",
+        "trade",
+        "bet",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "repo-mutation",
+        "memory-delete",
+        "bulk-outreach",
+        "authenticated-browser-action"
+      ]
+    },
+    {
+      "name": "bettingai-model-advisor",
+      "category": "research",
+      "path": "skills/native/bettingai-model-advisor/SKILL.md",
+      "hermes_repo_path": "skills/research/bettingai-model-advisor/SKILL.md",
+      "risk_class": "money",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "auto_executable": false,
+      "requires_explicit_approval": true,
+      "approved_actions": [
+        "read",
+        "analyze",
+        "draft",
+        "summarize",
+        "plan",
+        "prepare approval preview"
+      ],
+      "blocked_without_approval": [
+        "post",
+        "reply",
+        "dm",
+        "delete",
+        "trade",
+        "bet",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "repo-mutation",
+        "memory-delete",
+        "bulk-outreach",
+        "authenticated-browser-action"
+      ]
+    },
+    {
+      "name": "hermes-x-insights-analyst",
+      "category": "social-media",
+      "path": "skills/native/hermes-x-insights-analyst/SKILL.md",
+      "hermes_repo_path": "skills/social-media/hermes-x-insights-analyst/SKILL.md",
+      "risk_class": "read-only",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "auto_executable": false,
+      "requires_explicit_approval": true,
+      "approved_actions": [
+        "read",
+        "analyze",
+        "draft",
+        "summarize",
+        "plan",
+        "prepare approval preview"
+      ],
+      "blocked_without_approval": [
+        "post",
+        "reply",
+        "dm",
+        "delete",
+        "trade",
+        "bet",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "repo-mutation",
+        "memory-delete",
+        "bulk-outreach",
+        "authenticated-browser-action"
+      ]
+    },
+    {
+      "name": "hermes-bookmark-research-digest",
+      "category": "research",
+      "path": "skills/native/hermes-bookmark-research-digest/SKILL.md",
+      "hermes_repo_path": "skills/research/hermes-bookmark-research-digest/SKILL.md",
+      "risk_class": "external-action",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "auto_executable": false,
+      "requires_explicit_approval": true,
+      "approved_actions": [
+        "read",
+        "analyze",
+        "draft",
+        "summarize",
+        "plan",
+        "prepare approval preview"
+      ],
+      "blocked_without_approval": [
+        "post",
+        "reply",
+        "dm",
+        "delete",
+        "trade",
+        "bet",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "repo-mutation",
+        "memory-delete",
+        "bulk-outreach",
+        "authenticated-browser-action"
+      ]
+    },
+    {
+      "name": "hermes-reflect-memory-analyst",
+      "category": "productivity",
+      "path": "skills/native/hermes-reflect-memory-analyst/SKILL.md",
+      "hermes_repo_path": "skills/productivity/hermes-reflect-memory-analyst/SKILL.md",
+      "risk_class": "read-only",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "auto_executable": false,
+      "requires_explicit_approval": true,
+      "approved_actions": [
+        "read",
+        "analyze",
+        "draft",
+        "summarize",
+        "plan",
+        "prepare approval preview"
+      ],
+      "blocked_without_approval": [
+        "post",
+        "reply",
+        "dm",
+        "delete",
+        "trade",
+        "bet",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "repo-mutation",
+        "memory-delete",
+        "bulk-outreach",
+        "authenticated-browser-action"
+      ]
+    },
+    {
+      "name": "hermes-precall-context-brief",
+      "category": "productivity",
+      "path": "skills/native/hermes-precall-context-brief/SKILL.md",
+      "hermes_repo_path": "skills/productivity/hermes-precall-context-brief/SKILL.md",
+      "risk_class": "read-only",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "auto_executable": false,
+      "requires_explicit_approval": true,
+      "approved_actions": [
+        "read",
+        "analyze",
+        "draft",
+        "summarize",
+        "plan",
+        "prepare approval preview"
+      ],
+      "blocked_without_approval": [
+        "post",
+        "reply",
+        "dm",
+        "delete",
+        "trade",
+        "bet",
+        "deposit",
+        "withdraw",
+        "wallet-sign",
+        "repo-mutation",
+        "memory-delete",
+        "bulk-outreach",
+        "authenticated-browser-action"
+      ]
+    }
+  ]
+}
