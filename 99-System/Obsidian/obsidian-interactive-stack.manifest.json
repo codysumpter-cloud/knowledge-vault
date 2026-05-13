@@ -209,6 +209,10 @@
         "metadata-menu"
       ],
       "note": "Historical DB Folder plugin/repo is archived; do not auto-install unless Prismtek explicitly accepts archived plugin risk."
+    },
+    {
+      "id": "obsidian-projects",
+      "reason": "Exact registry ID unavailable during install; use Make.md, Metadata Menu, Advanced Canvas, dashboards, Kanban, and Tasks instead."
     }
   ]
 }

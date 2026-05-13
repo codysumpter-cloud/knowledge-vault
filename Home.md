@@ -20,4 +20,4 @@
 ## Rules
 - Receipts beat claims. Link deployment outputs, paths, URLs, and commands.
 - Keep secrets in `00-Private/Credentials/`; do not push them to Git.
-- Synthesize durable truths here; avoid dumping temporary logs.
+- Synthesize durable truths here; avoid dumping temporary logs

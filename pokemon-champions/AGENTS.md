@@ -71,3 +71,14 @@ Legacy `MEMORY.md` references still appear in donor repos and older host context
 should use `memory.md`.
 
 Repo layout: see `README.md`, Architecture.
+
+---
+
+## 2026-05-13 current agent direction
+
+OpenClaw is retired for current work. Hermes-agent is the current main working agent system. Buddy-agent is being prepared to become the primary and eventually only agent repository. KnowledgeVault / Obsidian remains the source of truth for project memory and handoffs.
+
+Relay preference: PrismBot / Discord-safe outputs should be <=1,500 characters, no code fences, no markdown tables, no emoji, no backticks, minimal line breaks, and compressed relay-safe wording.
+
+See [[99-System/Memory/2026-05-13-prismtek-agent-direction-and-memory-import]] for the full saved/inferred memory import.
+
