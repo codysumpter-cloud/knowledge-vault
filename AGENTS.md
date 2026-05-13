@@ -9,6 +9,25 @@ This vault is the project-memory source of truth for Prismtek's work.
 - Private repo metadata must not be committed to a public vault.
 - Local-only security material and workspace state must stay out of version control.
 
+## Current agent direction
+
+- OpenClaw is retired for current work. Do not use it as an active runtime, default toolchain, or product target.
+- Hermes-agent is the current main working agent system.
+- Buddy-agent is the intended primary and eventually only agent repository. New durable agent work should converge there.
+- Buddy-brain remains continuity and memory context until Buddy-agent fully owns that role.
+
+## Prismtek operating preferences
+
+- Discord relay outputs should be compact: 1500 characters or less, no code fences, no markdown tables, no emoji, minimal line breaks, and relay-safe wording.
+- Prefer the smallest working step first, prove it, then continue.
+- Inspect the system when unsure instead of guessing.
+- Keep self-upgrades frozen until usefulness is proven.
+- Preserve recovery branches and backups during risky repository work.
+
+## Startup memory contract
+
+Agents should read SOUL.md, USER.md, AGENTS.md, daily notes, SYSTEMMAP.md, RUNBOOK.md, BACKLOG.md, and file listings before trusting automation claims when those files exist.
+
 ## Agent: Vault Steward
 
 The Vault Steward maintains repo project folders, indexes, registries, and daily logs.
