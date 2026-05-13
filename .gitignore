@@ -1,6 +1,31 @@
 .DS_Store
-.obsidian/workspace*.json
+__MACOSX/
 .trash/
-00-Private/Credentials/*.md
-00-Private/**/*.key
-00-Private/**/*.json
+
+# Obsidian local workspace state
+.obsidian/workspace*.json
+.obsidian/workspaces.json
+.obsidian/plugins/obsidian-git/obsidian_askpass.sh
+
+# Private vault material: never publish private notes, tokens, certificates, logs, or local state
+00-Private/**
+!00-Private/
+!00-Private/README.md
+
+# Credentials / signing / private key material
+*.certSigningRequest
+*.cer
+*.p12
+*.pem
+*.key
+*.mobileprovision
+**/*secret*
+**/*token*
+**/.env
+**/.env.*
+
+# Sensitive generated logs
+Archive_Hermes_Logs_*.md
+
+# Accidental nested vaults / local mirrors
+Obsidian Vault/
