@@ -104,3 +104,23 @@ Agents should read SOUL.md, USER.md, AGENTS.md, memory.md / MEMORY.md, daily not
 78. [inferred](2026-04-24) I am designing BeMore/Buddy as a product family with distinct user archetypes and lifecycle systems.
 79. [inferred](2026-04-24) I value maintainable schemas, canonical object models, and structured long-term architecture.
 80. [inferred](2026-05-09) I care about transparency in what the assistant stores, remembers, and infers about me.
+## caveman repo added
+
+- Added `codysumpter-cloud/caveman` as a public forked repo in the vault project map.
+- Created its project folder under `30 - Projects/GitHub/codysumpter-cloud/caveman/`.
+
+## Hermes Mac handoff — 2026-05-13
+
+Created a Mac-safe Hermes handoff and performance policy. Hermes should use low-priority, once-daily, non-overlapping metadata maintenance only; no watchers, all-repo clones, heavy indexing, Docker/npm/Xcode builds, model downloads, or OpenClaw work by default.
+
+## Obsidian interactive stack request
+
+Prismtek clarified that the vault should include the graphing/plugins/features from the reference Obsidian videos, if not more.
+
+Durable setup decision:
+
+- Add a full interactive plugin stack manifest.
+- Include visual/project/dashboard plugins such as Advanced Canvas, Juggl, Breadcrumbs, Style Settings, Metadata Menu, Homepage, Commander, Iconize, Buttons, Charts, Tracker, Projects, DB Folder, Waypoint, Excalibrain, Make.md, and BRAT.
+- Keep desktop-only agentic/API plugins in the desktop-full profile, not the iPhone-safe profile.
+- Hermes must finish local setup; merely reading the handoff is not enough.
+- Any Mac-side installer must be one-shot, low-priority, non-overlapping, and must skip on battery/high load/thermal pressure.
