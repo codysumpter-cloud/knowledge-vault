@@ -1,0 +1,26 @@
+{
+  "daily": {
+    "enabled": true,
+    "folder": "01-Dashboard/Daily",
+    "template": "90-Templates/Daily Command Note.md",
+    "format": "YYYY-MM-DD"
+  },
+  "weekly": {
+    "enabled": true,
+    "folder": "01-Dashboard/Weekly",
+    "template": "90-Templates/Weekly Review.md",
+    "format": "gggg-[W]ww"
+  },
+  "monthly": {
+    "enabled": true,
+    "folder": "01-Dashboard/Monthly",
+    "template": "90-Templates/Monthly Review.md",
+    "format": "YYYY-MM"
+  },
+  "quarterly": {
+    "enabled": false
+  },
+  "yearly": {
+    "enabled": false
+  }
+}

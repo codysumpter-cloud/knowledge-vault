@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"dashboard","type":"file","file":"01-Dashboard/Interactive Vault Control Center.md","x":-320,"y":-120,"width":360,"height":260},
+		{"id":"projects","type":"file","file":"30 - Projects/GitHub/GitHub Projects Index.md","x":120,"y":-120,"width":360,"height":260},
+		{"id":"hermes","type":"file","file":"99-System/Handoffs/2026-05-13-Hermes-Obsidian-Interactive-Stack.md","x":-320,"y":220,"width":360,"height":260},
+		{"id":"plugins","type":"file","file":"99-System/Obsidian/INTERACTIVE_PLUGIN_STACK.md","x":120,"y":220,"width":360,"height":260}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"dashboard","fromSide":"right","toNode":"projects","toSide":"left"},
+		{"id":"e2","fromNode":"dashboard","fromSide":"bottom","toNode":"hermes","toSide":"top"},
+		{"id":"e3","fromNode":"projects","fromSide":"bottom","toNode":"plugins","toSide":"top"},
+		{"id":"e4","fromNode":"hermes","fromSide":"right","toNode":"plugins","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

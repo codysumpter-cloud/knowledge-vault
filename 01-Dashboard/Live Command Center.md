@@ -1,25 +1,40 @@
-# Live Command Center
+---
+type: command-center
+status: active
+updated: 2026-05-11
+---
+# 🏛️ Live Command Center
 
-> Obsidian is the operating system: capture, reporting, intelligence, and execution in one place.
+> **BMO OS**: Capture → Focus → Execute → Receipts → Metrics Intelligence.
 
-## Daily Commands
-Open Command Palette and run:
-- **BMO Ops Dashboard: /today — Start day and build focus note**
-- **BMO Ops Dashboard: /close-day — Close day with metrics/reflection**
-- **BMO Ops Dashboard: Quick capture to inbox**
-- **BMO Ops Dashboard: Log activity**
+## ⚡ Quick Navigation
+| 🛰️ [Operator Dashboard](01-Dashboard/Operator Dashboard) | 📈 [Metrics Index](01-Dashboard/Metrics/Metrics Index) | 📂 [Project Index](02-Projects/Project Index) | 📜 [Activity Log](01-Dashboard/Activity Log/Activity Index) |
+| :--- | :--- | :--- | :--- |
+| 📥 [[Inbox]] | 🗓️ [[2026-05-11|Today's Note]] | 📱 [[Mobile Command Center]] | ⚙️ [[99-System/Operating System Design|OS Design]] |
 
-## Current Focus
-![[01-Dashboard/Daily/{{date}}]]
+---
 
-## Working Areas
-- [[01-Dashboard/Mobile Command Center|Mobile Command Center]]
-- [[00-Inbox/Inbox|Inbox]]
-- [[01-Dashboard/Metrics/Metrics Index|Metrics + Trends]]
-- [[01-Dashboard/Activity Log/Activity Index|Activity Log]]
-- [[02-Projects/Project Index|Projects]]
-- [[04-Runbooks/Agent Workflows/BMO Daily Ops|Daily Agent Workflow]]
-- [[99-System/Operating System Design|Operating System Design]]
+## 🎯 Active Focus
+**Current Priority**: [[2026-05-11|Today's Top 3]]
+- 🚨 **iOS Build 53**: Awaiting TestFlight/App Store Connect visibility. (Blocker: Bundled-model archive verification)
+- ⚠️ **macOS Build 6**: Fixing Apple Development cert limit/invalid cert.
+- 🛠️ **Obsidian OS**: Finalizing interactive dashboard connectivity.
 
-## Principle
-If information is captured but not used for decisions, it is a graveyard. Every capture needs a next action, metric, link, or archive path.
+---
+
+## ⚡ Quick Actions
+- **Start Day**: `/today` $\rightarrow$ [[2026-05-11]]
+- **Log Work**: `/log` $\rightarrow$ [[01-Dashboard/Activity Log/Activity Index]]
+- **Close Day**: `/close-day` $\rightarrow$ Metrics & Reflection
+- **Quick Capture**: `/capture` $\rightarrow$ [[Inbox]]
+
+---
+
+## 🚀 System Status
+- **Agent State**: `Gemma-4-31B-Cloud` | `Active`
+- **VPS Node**: `187.77.223.224` | `Online`
+- **Build Pipeline**: `iOS: Running` | `macOS: Blocked`
+- **Knowledge Vault**: `Synced`
+
+---
+[[00 - Command Center/BMO Operational Dashboard|⬅️ Return to Ops Dashboard]]

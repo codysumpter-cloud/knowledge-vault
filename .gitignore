@@ -2,15 +2,32 @@
 __MACOSX/
 .trash/
 
+# Archives / package artifacts
+*.zip
+
 # Obsidian local workspace state
-.obsidian/workspace*.json
+.obsidian/workspace.json
 .obsidian/workspaces.json
 .obsidian/plugins/obsidian-git/obsidian_askpass.sh
 
-# Private vault material: never publish private notes, tokens, certificates, logs, or local state
+# Plugin local/runtime state
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/cache/
+.obsidian/plugins/*/.cache/
+.makemd/
+.space/
+
+# Private vault material: never publish private notes, certificates, logs, or local state
 00-Private/**
 !00-Private/
 !00-Private/README.md
+
+# Security / local-only system material
+99-System/Security/**
+99-System/Logs/**
+99-System/Backups/**
+99-System/Prompts/**
+99-System/Templates/**
 
 # Credentials / signing / private key material
 *.certSigningRequest
@@ -19,10 +36,10 @@ __MACOSX/
 *.pem
 *.key
 *.mobileprovision
-**/*secret*
-**/*token*
+**/secret*
+**/token*
 **/.env
-**/.env.*
+*/.env.*
 
 # Sensitive generated logs
 Archive_Hermes_Logs_*.md

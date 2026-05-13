@@ -1,0 +1,214 @@
+{
+  "version": "2026-05-13",
+  "intent": "Install a superset of the interactive Obsidian features shown in the reference videos: graph workspaces, advanced canvas, dashboards, templates, tasks, project memory, and optional agentic AI.",
+  "active_profile": "interactive-safe",
+  "profiles": {
+    "interactive-safe": {
+      "description": "Default vault profile. Enables visual/project/dashboard plugins but avoids desktop-only agent/API plugins.",
+      "enabled_plugins_file": ".obsidian/plugin-profiles/interactive-safe.community-plugins.json"
+    },
+    "desktop-full": {
+      "description": "Desktop-only. Enables the full visual + agentic stack after manual review and successful installation.",
+      "enabled_plugins_file": ".obsidian/plugin-profiles/desktop-full.community-plugins.json"
+    },
+    "mobile-safe": {
+      "description": "iPhone/iPad fallback. Avoids Git, desktop-only APIs, and heavy AI/indexing plugins.",
+      "enabled_plugins_file": ".obsidian/plugin-profiles/mobile-safe.community-plugins.json"
+    }
+  },
+  "existing_installed_plugins": [
+    "bmo-command-center",
+    "bmo-ops-dashboard",
+    "calendar",
+    "copilot",
+    "dataview",
+    "meld-encrypt",
+    "obsidian-excalidraw-plugin",
+    "obsidian-git",
+    "obsidian-kanban",
+    "obsidian-linter",
+    "obsidian-local-rest-api",
+    "obsidian-tasks-plugin",
+    "omnisearch",
+    "periodic-notes",
+    "quickadd",
+    "smart-composer",
+    "smart-connections",
+    "table-editor-obsidian",
+    "templater-obsidian"
+  ],
+  "already_present_or_enabled": [
+    "bmo-ops-dashboard",
+    "bmo-command-center",
+    "dataview",
+    "templater-obsidian",
+    "obsidian-tasks-plugin",
+    "quickadd",
+    "calendar",
+    "periodic-notes",
+    "table-editor-obsidian",
+    "omnisearch",
+    "obsidian-kanban",
+    "obsidian-excalidraw-plugin",
+    "obsidian-git",
+    "obsidian-linter",
+    "meld-encrypt"
+  ],
+  "install_targets": [
+    {
+      "id": "advanced-canvas",
+      "tier": "visual",
+      "default_profile": "interactive-safe",
+      "reason": "Advanced Canvas: flowcharts, presentations, canvas metadata, collapsible groups."
+    },
+    {
+      "id": "juggl",
+      "tier": "graph",
+      "default_profile": "interactive-safe",
+      "reason": "Advanced interactive graph workspace; mobile-capable per plugin docs but may be slower on large vaults."
+    },
+    {
+      "id": "breadcrumbs",
+      "tier": "graph",
+      "default_profile": "interactive-safe",
+      "reason": "Hierarchy and typed relationship layer; integrates with Juggl."
+    },
+    {
+      "id": "obsidian-style-settings",
+      "tier": "ux",
+      "default_profile": "interactive-safe",
+      "reason": "Theme/plugin visual settings."
+    },
+    {
+      "id": "metadata-menu",
+      "tier": "properties",
+      "default_profile": "interactive-safe",
+      "reason": "Project metadata/property editing layer."
+    },
+    {
+      "id": "homepage",
+      "tier": "ux",
+      "default_profile": "interactive-safe",
+      "reason": "Open to the dashboard/control center."
+    },
+    {
+      "id": "cmdr",
+      "tier": "ux",
+      "default_profile": "interactive-safe",
+      "reason": "Ribbon/command customization for iPhone and desktop workflows."
+    },
+    {
+      "id": "obsidian-icon-folder",
+      "tier": "ux",
+      "default_profile": "interactive-safe",
+      "reason": "Folder/file icons for project cockpit navigation."
+    },
+    {
+      "id": "buttons",
+      "tier": "ux",
+      "default_profile": "interactive-safe",
+      "reason": "Clickable note commands for dashboards and workflows."
+    },
+    {
+      "id": "obsidian-charts",
+      "tier": "visualization",
+      "default_profile": "interactive-safe",
+      "reason": "Chart rendering inside notes."
+    },
+    {
+      "id": "obsidian-tracker",
+      "tier": "visualization",
+      "default_profile": "interactive-safe",
+      "reason": "Habit/status trend views from daily notes."
+    },
+    {
+      "id": "obsidian-projects",
+      "tier": "projects",
+      "default_profile": "interactive-safe",
+      "reason": "Project database/views."
+    },
+    {
+      "id": "waypoint",
+      "tier": "moc",
+      "default_profile": "interactive-safe",
+      "reason": "Folder indexes/MOCs."
+    },
+    {
+      "id": "excalibrain",
+      "tier": "graph",
+      "default_profile": "interactive-safe",
+      "reason": "Graph-style semantic concept maps for Excalidraw/Obsidian."
+    },
+    {
+      "id": "make-md",
+      "tier": "ux",
+      "default_profile": "interactive-safe",
+      "reason": "Enhanced spaces, navigation, and file experience."
+    },
+    {
+      "id": "obsidian42-brat",
+      "tier": "installer",
+      "default_profile": "desktop-full",
+      "reason": "Manual beta plugin install path for plugins not in the community registry."
+    },
+    {
+      "id": "claudxian",
+      "tier": "agentic-desktop",
+      "default_profile": "desktop-full",
+      "repo": "cadeeper/claudxian",
+      "reason": "Desktop-only Codex/Claude-style agent inside Obsidian. Do not enable on iPhone."
+    },
+    {
+      "id": "copilot",
+      "tier": "ai",
+      "default_profile": "desktop-full",
+      "reason": "Already present; AI chat/search. Keep disabled until model settings are configured."
+    },
+    {
+      "id": "smart-connections",
+      "tier": "ai-indexing",
+      "default_profile": "desktop-full",
+      "reason": "Already present; vault embeddings/indexing. Enable only on desktop when ready."
+    },
+    {
+      "id": "smart-composer",
+      "tier": "ai",
+      "default_profile": "desktop-full",
+      "reason": "Already present; AI composition. Enable only on desktop when ready.",
+      "status": "skipped",
+      "skip_reason": "GitHub push protection flags bundled plugin OAuth credentials; do not track packaged main.js. Install manually from Obsidian community store if accepted."
+    },
+    {
+      "id": "obsidian-local-rest-api",
+      "tier": "desktop-api",
+      "default_profile": "desktop-full",
+      "reason": "Already present; desktop-only local API bridge. Do not enable on iPhone."
+    }
+  ],
+  "mac_performance_policy": {
+    "no_watchers_by_default": true,
+    "no_heavy_indexing_without_explicit_enablement": true,
+    "installer_downloads_release_assets_only": true,
+    "skip_on_battery": true,
+    "skip_on_high_load": true,
+    "run_nice_19": true,
+    "no_npm_install": true,
+    "no_docker": true,
+    "no_xcode": true,
+    "no_local_model_downloads": true
+  },
+  "skipped_targets": [
+    {
+      "id": "dbfolder",
+      "tier": "projects",
+      "default_profile": "interactive-safe",
+      "reason": "Database-style folders/views.",
+      "status": "skipped_by_policy",
+      "replacement_layer": [
+        "make-md",
+        "metadata-menu"
+      ],
+      "note": "Historical DB Folder plugin/repo is archived; do not auto-install unless Prismtek explicitly accepts archived plugin risk."
+    }
+  ]
+}

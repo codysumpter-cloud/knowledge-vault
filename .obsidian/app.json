@@ -1,14 +1,10 @@
 {
+  "legacyEditor": false,
+  "livePreview": true,
+  "showInlineTitle": true,
+  "attachmentFolderPath": "99-System/Attachments",
   "alwaysUpdateLinks": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "00-Inbox/Captures",
-  "attachmentFolderPath": "07-Attachments",
-  "showLineNumber": true,
-  "readableLineLength": false,
-  "strictLineBreaks": false,
-  "spellcheck": true,
-  "promptDelete": true,
-  "userIgnoreFilters": [
-    "00-Private/Credentials/"
-  ]
+  "newFileFolderPath": "00-Inbox",
+  "promptDelete": false
 }

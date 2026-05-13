@@ -1,5 +1,5 @@
 {
   "folder": "01-Dashboard/Daily",
-  "template": "06-Templates/Daily Note.md",
+  "template": "90-Templates/Daily Command Note.md",
   "format": "YYYY-MM-DD"
 }

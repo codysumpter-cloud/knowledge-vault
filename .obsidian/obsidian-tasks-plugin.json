@@ -1,0 +1,7 @@
+{
+  "globalFilter": "",
+  "removeGlobalFilter": false,
+  "setDoneDate": true,
+  "doneDateFormat": "YYYY-MM-DD",
+  "autoSuggestInEditor": true
+}

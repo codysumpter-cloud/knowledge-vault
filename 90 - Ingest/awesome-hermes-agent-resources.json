@@ -1,0 +1,2315 @@
+[
+  {
+    "name": "Awesome",
+    "url": "https://awesome.re/badge.svg",
+    "section": "Awesome Hermes Agent",
+    "line_no": 9,
+    "line": "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Hermes Agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "section": "Awesome Hermes Agent",
+    "line_no": 11,
+    "line": "> A curated list of skills, tools, integrations, and resources for enhancing your [Hermes Agent](https://github.com/NousResearch/hermes-agent) workflow \u2014 the self-improving AI agent built by [Nous Research](https://nousresearch.com).",
+    "bucket": "Hermes core/docs",
+    "status": "absorbed-as-skill/tool"
+  },
+  {
+    "name": "Nous Research",
+    "url": "https://nousresearch.com",
+    "section": "Awesome Hermes Agent",
+    "line_no": 11,
+    "line": "> A curated list of skills, tools, integrations, and resources for enhancing your [Hermes Agent](https://github.com/NousResearch/hermes-agent) workflow \u2014 the self-improving AI agent built by [Nous Research](https://nousresearch.com).",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "v0.10.0 (v2026.4.16)",
+    "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.16",
+    "section": "Awesome Hermes Agent",
+    "line_no": 18,
+    "line": "> - Hermes Agent: [v0.10.0 (v2026.4.16)](https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.16)",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "NousResearch/hermes-agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "section": "Awesome Hermes Agent",
+    "line_no": 19,
+    "line": "> - Core repo: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) (23k+ stars)",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Hermes releases",
+    "url": "https://github.com/NousResearch/hermes-agent/releases",
+    "section": "Awesome Hermes Agent",
+    "line_no": 20,
+    "line": "> - Latest release notes: [Hermes releases](https://github.com/NousResearch/hermes-agent/releases)",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Official Docs quickstart",
+    "url": "https://hermes-agent.nousresearch.com/docs/",
+    "section": "Awesome Hermes Agent > Where Do I Start?",
+    "line_no": 28,
+    "line": "1. **Get running** \u2014 Follow the [Official Docs quickstart](https://hermes-agent.nousresearch.com/docs/). It covers installation, CLI, configuration, and your first conversation.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "wondelai/skills",
+    "url": "https://github.com/wondelai/skills",
+    "section": "Awesome Hermes Agent > Where Do I Start?",
+    "line_no": 29,
+    "line": "2. **Add your first skills** \u2014 Install [wondelai/skills](https://github.com/wondelai/skills) (380+ stars, actively maintained) \u2014 a cross-platform skills library that works with Hermes and other agents. Or try [litprog-skill](https://github.com/tlehman/litprog-skill) (75+ stars) for literate programming across Claude Code, OpenCode, and Hermes.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "litprog-skill",
+    "url": "https://github.com/tlehman/litprog-skill",
+    "section": "Awesome Hermes Agent > Where Do I Start?",
+    "line_no": 29,
+    "line": "2. **Add your first skills** \u2014 Install [wondelai/skills](https://github.com/wondelai/skills) (380+ stars, actively maintained) \u2014 a cross-platform skills library that works with Hermes and other agents. Or try [litprog-skill](https://github.com/tlehman/litprog-skill) (75+ stars) for literate programming across Claude Code, OpenCode, and Hermes.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-workspace",
+    "url": "https://github.com/outsourc-e/hermes-workspace",
+    "section": "Awesome Hermes Agent > Where Do I Start?",
+    "line_no": 30,
+    "line": "3. **Get a GUI** \u2014 Set up [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) (500+ stars) for a Hermes-native workspace with chat, terminal, and skills manager. Or use [mission-control](https://github.com/builderz-labs/mission-control) (3.7k+ stars) for a broader agent orchestration dashboard with fleet management, task dispatch, and cost tracking.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "mission-control",
+    "url": "https://github.com/builderz-labs/mission-control",
+    "section": "Awesome Hermes Agent > Where Do I Start?",
+    "line_no": 30,
+    "line": "3. **Get a GUI** \u2014 Set up [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) (500+ stars) for a Hermes-native workspace with chat, terminal, and skills manager. Or use [mission-control](https://github.com/builderz-labs/mission-control) (3.7k+ stars) for a broader agent orchestration dashboard with fleet management, task dispatch, and cost tracking.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Hermes Agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 70,
+    "line": "- [Hermes Agent](https://github.com/NousResearch/hermes-agent) by [Nous Research](https://nousresearch.com) - The core project. Self-improving AI agent with a closed learning loop, multi-platform gateway (Telegram, Discord, Slack, WhatsApp, Signal, Feishu/Lark, WeCom), six terminal backends, cron scheduling, MCP integration, profiles (multi-instance), and fallback providers. 23k+ stars. Includes automatic migration from OpenClaw.",
+    "bucket": "Hermes core/docs",
+    "status": "absorbed-as-skill/tool"
+  },
+  {
+    "name": "Nous Research",
+    "url": "https://nousresearch.com",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 70,
+    "line": "- [Hermes Agent](https://github.com/NousResearch/hermes-agent) by [Nous Research](https://nousresearch.com) - The core project. Self-improving AI agent with a closed learning loop, multi-platform gateway (Telegram, Discord, Slack, WhatsApp, Signal, Feishu/Lark, WeCom), six terminal backends, cron scheduling, MCP integration, profiles (multi-instance), and fallback providers. 23k+ stars. Includes automatic migration from OpenClaw.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "autonovel",
+    "url": "https://github.com/NousResearch/autonovel",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 71,
+    "line": "- [autonovel](https://github.com/NousResearch/autonovel) by [Nous Research](https://nousresearch.com) - Autonomous novel-writing pipeline built on Hermes. Generates long-form manuscripts (100k+ words) end-to-end using the agent loop.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Nous Research",
+    "url": "https://nousresearch.com",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 71,
+    "line": "- [autonovel](https://github.com/NousResearch/autonovel) by [Nous Research](https://nousresearch.com) - Autonomous novel-writing pipeline built on Hermes. Generates long-form manuscripts (100k+ words) end-to-end using the agent loop.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "hermes-paperclip-adapter",
+    "url": "https://github.com/NousResearch/hermes-paperclip-adapter",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 72,
+    "line": "- [hermes-paperclip-adapter](https://github.com/NousResearch/hermes-paperclip-adapter) by [Nous Research](https://nousresearch.com) - Run Hermes as a managed employee in Paperclip companies. Connects the agent to Paperclip's task management and governance system.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Nous Research",
+    "url": "https://nousresearch.com",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 72,
+    "line": "- [hermes-paperclip-adapter](https://github.com/NousResearch/hermes-paperclip-adapter) by [Nous Research](https://nousresearch.com) - Run Hermes as a managed employee in Paperclip companies. Connects the agent to Paperclip's task management and governance system.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "hermes-agent-self-evolution",
+    "url": "https://github.com/NousResearch/hermes-agent-self-evolution",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 73,
+    "line": "- [hermes-agent-self-evolution](https://github.com/NousResearch/hermes-agent-self-evolution) by [Nous Research](https://nousresearch.com) - Evolutionary self-improvement using DSPy and GEPA (Genetic Evolution of Prompt Architectures). The research pipeline for optimizing Hermes's own prompts and behaviors.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Nous Research",
+    "url": "https://nousresearch.com",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 73,
+    "line": "- [hermes-agent-self-evolution](https://github.com/NousResearch/hermes-agent-self-evolution) by [Nous Research](https://nousresearch.com) - Evolutionary self-improvement using DSPy and GEPA (Genetic Evolution of Prompt Architectures). The research pipeline for optimizing Hermes's own prompts and behaviors.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Official Documentation",
+    "url": "https://hermes-agent.nousresearch.com/docs/",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 74,
+    "line": "- [Official Documentation](https://hermes-agent.nousresearch.com/docs/) - Comprehensive docs covering quickstart, CLI, configuration, messaging gateway, security, tools, skills, memory, MCP, cron, ACP, API server, and architecture.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Release Notes",
+    "url": "https://github.com/NousResearch/hermes-agent/releases",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 75,
+    "line": "- [Release Notes](https://github.com/NousResearch/hermes-agent/releases) - Official changelog with feature highlights, migration notes, and reliability fixes for each Hermes version.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "tinker-atropos",
+    "url": "https://github.com/NousResearch/tinker-atropos",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 76,
+    "line": "- [tinker-atropos](https://github.com/NousResearch/tinker-atropos) by [Nous Research](https://nousresearch.com) - Standalone Atropos integration with Thinking Machines Tinker API. RL training infrastructure for fine-tuning tool-calling models on real agent trajectories.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Nous Research",
+    "url": "https://nousresearch.com",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 76,
+    "line": "- [tinker-atropos](https://github.com/NousResearch/tinker-atropos) by [Nous Research](https://nousresearch.com) - Standalone Atropos integration with Thinking Machines Tinker API. RL training infrastructure for fine-tuning tool-calling models on real agent trajectories.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Skills Hub",
+    "url": "https://agentskills.io",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 77,
+    "line": "- [Skills Hub](https://agentskills.io) - The open standard for agent skills. Compatible across Hermes, Claude Code, Cursor, Codex, and other agents.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.gg/NousResearch",
+    "section": "Awesome Hermes Agent > Official Resources",
+    "line_no": 78,
+    "line": "- [Discord](https://discord.gg/NousResearch) - The Nous Research community. Bug reports, feature requests, and general discussion.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "hermes-plugins",
+    "url": "https://github.com/42-evey/hermes-plugins",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 88,
+    "line": "- **[beta]** [hermes-plugins](https://github.com/42-evey/hermes-plugins) by [42-evey](https://github.com/42-evey) - Goal management, inter-agent bridge, model selection, and cost control. Four plugins covering the most common operational needs. The inter-agent bridge is useful if you run multiple Hermes instances.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "42-evey",
+    "url": "https://github.com/42-evey",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 88,
+    "line": "- **[beta]** [hermes-plugins](https://github.com/42-evey/hermes-plugins) by [42-evey](https://github.com/42-evey) - Goal management, inter-agent bridge, model selection, and cost control. Four plugins covering the most common operational needs. The inter-agent bridge is useful if you run multiple Hermes instances.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-skill-factory",
+    "url": "https://github.com/Romanescu11/hermes-skill-factory",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 89,
+    "line": "- **[beta]** [hermes-skill-factory](https://github.com/Romanescu11/hermes-skill-factory) by [Romanescu11](https://github.com/Romanescu11) - Meta-skill that auto-generates reusable skills from your workflows. Point it at a task you repeat and it creates a skill for it.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Romanescu11",
+    "url": "https://github.com/Romanescu11",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 89,
+    "line": "- **[beta]** [hermes-skill-factory](https://github.com/Romanescu11/hermes-skill-factory) by [Romanescu11](https://github.com/Romanescu11) - Meta-skill that auto-generates reusable skills from your workflows. Point it at a task you repeat and it creates a skill for it.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "litprog-skill",
+    "url": "https://github.com/tlehman/litprog-skill",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 90,
+    "line": "- **[beta]** [litprog-skill](https://github.com/tlehman/litprog-skill) by [tlehman](https://github.com/tlehman) - Literate programming skill that works across Claude Code, OpenCode, and Hermes. Weaves code and prose into documented, executable notebooks.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "tlehman",
+    "url": "https://github.com/tlehman",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 90,
+    "line": "- **[beta]** [litprog-skill](https://github.com/tlehman/litprog-skill) by [tlehman](https://github.com/tlehman) - Literate programming skill that works across Claude Code, OpenCode, and Hermes. Weaves code and prose into documented, executable notebooks.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Wizards-of-the-Ghosts",
+    "url": "https://github.com/Hmbown/Wizards-of-the-Ghosts",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 91,
+    "line": "- **[experimental]** [Wizards-of-the-Ghosts](https://github.com/Hmbown/Wizards-of-the-Ghosts) by [Hmbown](https://github.com/Hmbown) - Fantasy spell-themed skill pack. Wraps real development operations (refactoring, linting, testing) in a tabletop RPG interface.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Hmbown",
+    "url": "https://github.com/Hmbown",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 91,
+    "line": "- **[experimental]** [Wizards-of-the-Ghosts](https://github.com/Hmbown/Wizards-of-the-Ghosts) by [Hmbown](https://github.com/Hmbown) - Fantasy spell-themed skill pack. Wraps real development operations (refactoring, linting, testing) in a tabletop RPG interface.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "super-hermes",
+    "url": "https://github.com/Cranot/super-hermes",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 92,
+    "line": "- **[experimental]** [super-hermes](https://github.com/Cranot/super-hermes) by [Cranot](https://github.com/Cranot) - Teaches Hermes to write its own analytical prompts. Adds a meta-reasoning layer where the agent generates better prompts for itself before executing tasks.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Cranot",
+    "url": "https://github.com/Cranot",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 92,
+    "line": "- **[experimental]** [super-hermes](https://github.com/Cranot/super-hermes) by [Cranot](https://github.com/Cranot) - Teaches Hermes to write its own analytical prompts. Adds a meta-reasoning layer where the agent generates better prompts for itself before executing tasks.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-life-os",
+    "url": "https://github.com/Lethe044/hermes-life-os",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 93,
+    "line": "- **[experimental]** [hermes-life-os](https://github.com/Lethe044/hermes-life-os) by [Lethe044](https://github.com/Lethe044) - Personal OS agent that detects daily patterns and learns your routines over time. Uses Hermes's memory system for lifestyle tracking, not just code.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Lethe044",
+    "url": "https://github.com/Lethe044",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 93,
+    "line": "- **[experimental]** [hermes-life-os](https://github.com/Lethe044/hermes-life-os) by [Lethe044](https://github.com/Lethe044) - Personal OS agent that detects daily patterns and learns your routines over time. Uses Hermes's memory system for lifestyle tracking, not just code.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "acca-tracker",
+    "url": "https://github.com/svenmedina07-ship-it/skills/tree/main/acca-tracker",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 94,
+    "line": "- **[beta]** [acca-tracker](https://github.com/svenmedina07-ship-it/skills/tree/main/acca-tracker) by [Banozz](https://github.com/svenmedina07-ship-it) - Track multi-sport accumulator betting slips (football, basketball, tennis) via live score monitoring. Auto-detects sport per leg, 30+ bet types, scripts/scores.sh helper with TheSportsDB + ESPN fallback (NBA, WNBA, NCAA). 15-minute cron reports with per-leg status and acca health.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Banozz",
+    "url": "https://github.com/svenmedina07-ship-it",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 94,
+    "line": "- **[beta]** [acca-tracker](https://github.com/svenmedina07-ship-it/skills/tree/main/acca-tracker) by [Banozz](https://github.com/svenmedina07-ship-it) - Track multi-sport accumulator betting slips (football, basketball, tennis) via live score monitoring. Auto-detects sport per leg, 30+ bet types, scripts/scores.sh helper with TheSportsDB + ESPN fallback (NBA, WNBA, NCAA). 15-minute cron reports with per-leg status and acca health.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-incident-commander",
+    "url": "https://github.com/Lethe044/hermes-incident-commander",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 95,
+    "line": "- **[beta]** [hermes-incident-commander](https://github.com/Lethe044/hermes-incident-commander) by [Lethe044](https://github.com/Lethe044) - Autonomous SRE agent for production incident detection and self-healing. Monitors services, diagnoses failures, and applies fixes. Works well with Hermes's cron scheduling.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Lethe044",
+    "url": "https://github.com/Lethe044",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 95,
+    "line": "- **[beta]** [hermes-incident-commander](https://github.com/Lethe044/hermes-incident-commander) by [Lethe044](https://github.com/Lethe044) - Autonomous SRE agent for production incident detection and self-healing. Monitors services, diagnoses failures, and applies fixes. Works well with Hermes's cron scheduling.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-dojo",
+    "url": "https://github.com/Yonkoo11/hermes-dojo",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 96,
+    "line": "- **[beta]** [hermes-dojo](https://github.com/Yonkoo11/hermes-dojo) by [Yonkoo11](https://github.com/Yonkoo11) - Self-improvement system that monitors agent performance, identifies weak skills, and iterates on them automatically.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Yonkoo11",
+    "url": "https://github.com/Yonkoo11",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 96,
+    "line": "- **[beta]** [hermes-dojo](https://github.com/Yonkoo11/hermes-dojo) by [Yonkoo11](https://github.com/Yonkoo11) - Self-improvement system that monitors agent performance, identifies weak skills, and iterates on them automatically.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-spotify-skill",
+    "url": "https://github.com/Alexeyisme/hermes-spotify-skill",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 97,
+    "line": "- **[beta]** [hermes-spotify-skill](https://github.com/Alexeyisme/hermes-spotify-skill) by [Alexeyisme](https://github.com/Alexeyisme) - Spotify playback control for headless Linux and Raspberry Pi 4/5. Search, play, pause, skip, set volume, transfer between Spotify Connect devices. No daemon \u2014 Hermes writes spotipy snippets and runs them via `execute_code`. Works with raspotify for Pi-as-speaker. Tested on Raspberry Pi OS Lite Bookworm 64-bit. The only Linux-native Spotify skill in the ecosystem.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Alexeyisme",
+    "url": "https://github.com/Alexeyisme",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 97,
+    "line": "- **[beta]** [hermes-spotify-skill](https://github.com/Alexeyisme/hermes-spotify-skill) by [Alexeyisme](https://github.com/Alexeyisme) - Spotify playback control for headless Linux and Raspberry Pi 4/5. Search, play, pause, skip, set volume, transfer between Spotify Connect devices. No daemon \u2014 Hermes writes spotipy snippets and runs them via `execute_code`. Works with raspotify for Pi-as-speaker. Tested on Raspberry Pi OS Lite Bookworm 64-bit. The only Linux-native Spotify skill in the ecosystem.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-skill-marketplace",
+    "url": "https://github.com/Lethe044/hermes-skill-marketplace",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 98,
+    "line": "- **[experimental]** [hermes-skill-marketplace](https://github.com/Lethe044/hermes-skill-marketplace) by [Lethe044](https://github.com/Lethe044) - Agent that writes, tests, and publishes new skills autonomously. Automates the skill creation and distribution lifecycle.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Lethe044",
+    "url": "https://github.com/Lethe044",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 98,
+    "line": "- **[experimental]** [hermes-skill-marketplace](https://github.com/Lethe044/hermes-skill-marketplace) by [Lethe044](https://github.com/Lethe044) - Agent that writes, tests, and publishes new skills autonomously. Automates the skill creation and distribution lifecycle.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "personal-api",
+    "url": "https://github.com/beiyuii/personal-api-skill",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 99,
+    "line": "- **[experimental]** [personal-api](https://github.com/beiyuii/personal-api-skill) by [beiyuii](https://github.com/beiyuii) - Turn your Obsidian vault into an identity layer any AI agent can read in under 30 seconds",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "beiyuii",
+    "url": "https://github.com/beiyuii",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Community Skills",
+    "line_no": 99,
+    "line": "- **[experimental]** [personal-api](https://github.com/beiyuii/personal-api-skill) by [beiyuii](https://github.com/beiyuii) - Turn your Obsidian vault into an identity layer any AI agent can read in under 30 seconds",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "agentskills.io",
+    "url": "https://agentskills.io",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 104,
+    "line": "> Skills built on the [agentskills.io](https://agentskills.io) open standard \u2014 compatible across Hermes and other agent platforms.",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "wondelai/skills",
+    "url": "https://github.com/wondelai/skills",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 106,
+    "line": "- **[production]** [wondelai/skills](https://github.com/wondelai/skills) by [wondelai](https://github.com/wondelai) - Cross-platform agent skills for Claude Code and agentskills.io-compatible platforms.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "wondelai",
+    "url": "https://github.com/wondelai",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 106,
+    "line": "- **[production]** [wondelai/skills](https://github.com/wondelai/skills) by [wondelai](https://github.com/wondelai) - Cross-platform agent skills for Claude Code and agentskills.io-compatible platforms.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Anthropic-Cybersecurity-Skills",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 107,
+    "line": "- **[production]** [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) by [mukul975](https://github.com/mukul975) - 753+ structured cybersecurity skills mapped to MITRE ATT&CK. The most comprehensive security skills collection available. 4k+ stars.",
+    "bucket": "Security/ops",
+    "status": "needs-triage"
+  },
+  {
+    "name": "mukul975",
+    "url": "https://github.com/mukul975",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 107,
+    "line": "- **[production]** [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) by [mukul975](https://github.com/mukul975) - 753+ structured cybersecurity skills mapped to MITRE ATT&CK. The most comprehensive security skills collection available. 4k+ stars.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "chainlink-agent-skills",
+    "url": "https://github.com/smartcontractkit/chainlink-agent-skills",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 108,
+    "line": "- **[production]** [chainlink-agent-skills](https://github.com/smartcontractkit/chainlink-agent-skills) by [Chainlink](https://github.com/smartcontractkit) - Official Chainlink agent skills on the agentskills.io spec. Oracle network data, CCIP, and smart contract interaction.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Chainlink",
+    "url": "https://github.com/smartcontractkit",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 108,
+    "line": "- **[production]** [chainlink-agent-skills](https://github.com/smartcontractkit/chainlink-agent-skills) by [Chainlink](https://github.com/smartcontractkit) - Official Chainlink agent skills on the agentskills.io spec. Oracle network data, CCIP, and smart contract interaction.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "black-forest-labs/skills",
+    "url": "https://github.com/black-forest-labs/skills",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 109,
+    "line": "- **[production]** [black-forest-labs/skills](https://github.com/black-forest-labs/skills) by [Black Forest Labs](https://github.com/black-forest-labs) - Official FLUX model skills for image generation. First-party skills from the FLUX creators.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Black Forest Labs",
+    "url": "https://github.com/black-forest-labs",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 109,
+    "line": "- **[production]** [black-forest-labs/skills](https://github.com/black-forest-labs/skills) by [Black Forest Labs](https://github.com/black-forest-labs) - Official FLUX model skills for image generation. First-party skills from the FLUX creators.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "pydantic-ai-skills",
+    "url": "https://github.com/DougTrajano/pydantic-ai-skills",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 110,
+    "line": "- **[production]** [pydantic-ai-skills](https://github.com/DougTrajano/pydantic-ai-skills) by [DougTrajano](https://github.com/DougTrajano) - Pydantic AI with agentskills.io support. Adds type-safe schema validation to agent skill inputs and outputs.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "DougTrajano",
+    "url": "https://github.com/DougTrajano",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 110,
+    "line": "- **[production]** [pydantic-ai-skills](https://github.com/DougTrajano/pydantic-ai-skills) by [DougTrajano](https://github.com/DougTrajano) - Pydantic AI with agentskills.io support. Adds type-safe schema validation to agent skill inputs and outputs.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "cognify-skills",
+    "url": "https://github.com/Yarmoluk/cognify-skills",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 111,
+    "line": "- **[beta]** [cognify-skills](https://github.com/Yarmoluk/cognify-skills) by [Yarmoluk](https://github.com/Yarmoluk) - 19 business operations skills covering CRM, invoicing, and project management.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Yarmoluk",
+    "url": "https://github.com/Yarmoluk",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 111,
+    "line": "- **[beta]** [cognify-skills](https://github.com/Yarmoluk/cognify-skills) by [Yarmoluk](https://github.com/Yarmoluk) - 19 business operations skills covering CRM, invoicing, and project management.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "execplan-skill",
+    "url": "https://github.com/tiann/execplan-skill",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 112,
+    "line": "- **[beta]** [execplan-skill](https://github.com/tiann/execplan-skill) by [tiann](https://github.com/tiann) - Manages complex, long-running task execution with proper lifecycle handling \u2014 progress tracking, checkpoints, and failure recovery.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "tiann",
+    "url": "https://github.com/tiann",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 112,
+    "line": "- **[beta]** [execplan-skill](https://github.com/tiann/execplan-skill) by [tiann](https://github.com/tiann) - Manages complex, long-running task execution with proper lifecycle handling \u2014 progress tracking, checkpoints, and failure recovery.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "maestro",
+    "url": "https://github.com/ReinaMacCredy/maestro",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 113,
+    "line": "- **[beta]** [maestro](https://github.com/ReinaMacCredy/maestro) by [ReinaMacCredy](https://github.com/ReinaMacCredy) - Skill orchestration with Conductor planning and Beads tracking. Structures multi-step skill execution into observable pipelines.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "ReinaMacCredy",
+    "url": "https://github.com/ReinaMacCredy",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 113,
+    "line": "- **[beta]** [maestro](https://github.com/ReinaMacCredy/maestro) by [ReinaMacCredy](https://github.com/ReinaMacCredy) - Skill orchestration with Conductor planning and Beads tracking. Structures multi-step skill execution into observable pipelines.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "bmad-module-skill-forge",
+    "url": "https://github.com/armelhbobdad/bmad-module-skill-forge",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 114,
+    "line": "- **[beta]** [bmad-module-skill-forge](https://github.com/armelhbobdad/bmad-module-skill-forge) by [armelhbobdad](https://github.com/armelhbobdad) - Transforms repos and docs into agentskills.io-compliant skills. Input a codebase, output installable skills.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "armelhbobdad",
+    "url": "https://github.com/armelhbobdad",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 114,
+    "line": "- **[beta]** [bmad-module-skill-forge](https://github.com/armelhbobdad/bmad-module-skill-forge) by [armelhbobdad](https://github.com/armelhbobdad) - Transforms repos and docs into agentskills.io-compliant skills. Input a codebase, output installable skills.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Agentic-MCP-Skill",
+    "url": "https://github.com/cablate/Agentic-MCP-Skill",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 115,
+    "line": "- **[beta]** [Agentic-MCP-Skill](https://github.com/cablate/Agentic-MCP-Skill) by [cablate](https://github.com/cablate) - MCP client with agentskills.io validation. Bridges MCP tool servers with the skills standard.",
+    "bucket": "MCP/tools",
+    "status": "needs-triage"
+  },
+  {
+    "name": "cablate",
+    "url": "https://github.com/cablate",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 115,
+    "line": "- **[beta]** [Agentic-MCP-Skill](https://github.com/cablate/Agentic-MCP-Skill) by [cablate](https://github.com/cablate) - MCP client with agentskills.io validation. Bridges MCP tool servers with the skills standard.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "ripley-xmr-gateway",
+    "url": "https://github.com/KYC-rip/ripley-xmr-gateway",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 116,
+    "line": "- **[experimental]** [ripley-xmr-gateway](https://github.com/KYC-rip/ripley-xmr-gateway) by [KYC-rip](https://github.com/KYC-rip) - Monero (XMR) blockchain gateway for agents. Enables private cryptocurrency transactions from agent workflows.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "KYC-rip",
+    "url": "https://github.com/KYC-rip",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 116,
+    "line": "- **[experimental]** [ripley-xmr-gateway](https://github.com/KYC-rip/ripley-xmr-gateway) by [KYC-rip](https://github.com/KYC-rip) - Monero (XMR) blockchain gateway for agents. Enables private cryptocurrency transactions from agent workflows.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "skillsdotnet",
+    "url": "https://github.com/PederHP/skillsdotnet",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 117,
+    "line": "- **[beta]** [skillsdotnet](https://github.com/PederHP/skillsdotnet) by [PederHP](https://github.com/PederHP) - C# implementation of agentskills.io with MCP integration. .NET alternative to the Python/TypeScript SDKs.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "PederHP",
+    "url": "https://github.com/PederHP",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 117,
+    "line": "- **[beta]** [skillsdotnet](https://github.com/PederHP/skillsdotnet) by [PederHP](https://github.com/PederHP) - C# implementation of agentskills.io with MCP integration. .NET alternative to the Python/TypeScript SDKs.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "colony-skill",
+    "url": "https://github.com/TheColonyCC/colony-skill",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 118,
+    "line": "- **[beta]** [colony-skill](https://github.com/TheColonyCC/colony-skill) by [TheColonyCC](https://github.com/TheColonyCC) - Collaborative intelligence platform where AI agents and humans post findings, discuss ideas, complete tasks, earn karma, and build reputation. Community hub at [thecolony.cc](https://thecolony.cc).",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "TheColonyCC",
+    "url": "https://github.com/TheColonyCC",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 118,
+    "line": "- **[beta]** [colony-skill](https://github.com/TheColonyCC/colony-skill) by [TheColonyCC](https://github.com/TheColonyCC) - Collaborative intelligence platform where AI agents and humans post findings, discuss ideas, complete tasks, earn karma, and build reputation. Community hub at [thecolony.cc](https://thecolony.cc).",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "thecolony.cc",
+    "url": "https://thecolony.cc",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 118,
+    "line": "- **[beta]** [colony-skill](https://github.com/TheColonyCC/colony-skill) by [TheColonyCC](https://github.com/TheColonyCC) - Collaborative intelligence platform where AI agents and humans post findings, discuss ideas, complete tasks, earn karma, and build reputation. Community hub at [thecolony.cc](https://thecolony.cc).",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "AgentCash",
+    "url": "https://github.com/Merit-Systems/agentcash-skills",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 119,
+    "line": "- **[beta]** [AgentCash](https://github.com/Merit-Systems/agentcash-skills) by [Merit-Systems](https://github.com/Merit-Systems) - Skill giving agents access to 300+ premium APIs and a wallet balance to pay for them through x402 or MPP. A fresh Hermes install with only AgentCash is actually powerful \u2014 from web scraping to image generation to email sending, all through one skill with free USDC for trying out.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Merit-Systems",
+    "url": "https://github.com/Merit-Systems",
+    "section": "Awesome Hermes Agent > Skills & Plugins > agentskills.io Ecosystem",
+    "line_no": 119,
+    "line": "- **[beta]** [AgentCash](https://github.com/Merit-Systems/agentcash-skills) by [Merit-Systems](https://github.com/Merit-Systems) - Skill giving agents access to 300+ premium APIs and a wallet balance to pay for them through x402 or MPP. A fresh Hermes install with only AgentCash is actually powerful \u2014 from web scraping to image generation to email sending, all through one skill with free USDC for trying out.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "plur",
+    "url": "https://github.com/plur-ai/plur",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 123,
+    "line": "- **[beta]** [plur](https://github.com/plur-ai/plur) by [plur-ai](https://github.com/plur-ai) - Shared memory layer for AI agents with open engram format (YAML). Useful for persistent learning patterns in Hermes workflows.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "plur-ai",
+    "url": "https://github.com/plur-ai",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 123,
+    "line": "- **[beta]** [plur](https://github.com/plur-ai/plur) by [plur-ai](https://github.com/plur-ai) - Shared memory layer for AI agents with open engram format (YAML). Useful for persistent learning patterns in Hermes workflows.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-payguard",
+    "url": "https://github.com/nativ3ai/hermes-payguard",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 124,
+    "line": "- **[experimental]** [hermes-payguard](https://github.com/nativ3ai/hermes-payguard) by [nativ3ai](https://github.com/nativ3ai) - Safe USDC and x402 payment plugin. Lets Hermes send and receive payments with configurable spending limits and approval flows.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "nativ3ai",
+    "url": "https://github.com/nativ3ai",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 124,
+    "line": "- **[experimental]** [hermes-payguard](https://github.com/nativ3ai/hermes-payguard) by [nativ3ai](https://github.com/nativ3ai) - Safe USDC and x402 payment plugin. Lets Hermes send and receive payments with configurable spending limits and approval flows.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-web-search-plus",
+    "url": "https://github.com/robbyczgw-cla/hermes-web-search-plus",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 125,
+    "line": "- **[beta]** [hermes-web-search-plus](https://github.com/robbyczgw-cla/hermes-web-search-plus) by [robbyczgw-cla](https://github.com/robbyczgw-cla) - Multi-provider web search with intelligent routing across Serper, Tavily, Exa, and more. Replaces the built-in search with better result quality and source diversity.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "robbyczgw-cla",
+    "url": "https://github.com/robbyczgw-cla",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 125,
+    "line": "- **[beta]** [hermes-web-search-plus](https://github.com/robbyczgw-cla/hermes-web-search-plus) by [robbyczgw-cla](https://github.com/robbyczgw-cla) - Multi-provider web search with intelligent routing across Serper, Tavily, Exa, and more. Replaces the built-in search with better result quality and source diversity.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-weather-plugin",
+    "url": "https://github.com/FahrenheitResearch/hermes-weather-plugin",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 126,
+    "line": "- **[beta]** [hermes-weather-plugin](https://github.com/FahrenheitResearch/hermes-weather-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) - Professional-grade weather plugin with NWS model imagery, NEXRAD radar, and meteorological calculations.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "FahrenheitResearch",
+    "url": "https://github.com/FahrenheitResearch",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 126,
+    "line": "- **[beta]** [hermes-weather-plugin](https://github.com/FahrenheitResearch/hermes-weather-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) - Professional-grade weather plugin with NWS model imagery, NEXRAD radar, and meteorological calculations.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-wxtrain-plugin",
+    "url": "https://github.com/FahrenheitResearch/hermes-wxtrain-plugin",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 127,
+    "line": "- **[experimental]** [hermes-wxtrain-plugin](https://github.com/FahrenheitResearch/hermes-wxtrain-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) - ML pipeline plugin for building training datasets from HRRR/GFS/ERA5 weather models. Companion to the weather plugin for building weather ML pipelines.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "FahrenheitResearch",
+    "url": "https://github.com/FahrenheitResearch",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 127,
+    "line": "- **[experimental]** [hermes-wxtrain-plugin](https://github.com/FahrenheitResearch/hermes-wxtrain-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) - ML pipeline plugin for building training datasets from HRRR/GFS/ERA5 weather models. Companion to the weather plugin for building weather ML pipelines.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-plugin-chrome-profiles",
+    "url": "https://github.com/anpicasso/hermes-plugin-chrome-profiles",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 128,
+    "line": "- **[experimental]** [hermes-plugin-chrome-profiles](https://github.com/anpicasso/hermes-plugin-chrome-profiles) by [anpicasso](https://github.com/anpicasso) - Switch browser tools between Chrome profiles via CDP. Useful for multi-account testing or browsing with different saved sessions.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "anpicasso",
+    "url": "https://github.com/anpicasso",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 128,
+    "line": "- **[experimental]** [hermes-plugin-chrome-profiles](https://github.com/anpicasso/hermes-plugin-chrome-profiles) by [anpicasso](https://github.com/anpicasso) - Switch browser tools between Chrome profiles via CDP. Useful for multi-account testing or browsing with different saved sessions.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-cloudflare",
+    "url": "https://github.com/raulvidis/hermes-cloudflare",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 129,
+    "line": "- **[experimental]** [hermes-cloudflare](https://github.com/raulvidis/hermes-cloudflare) by [raulvidis](https://github.com/raulvidis) - Cloudflare browser rendering plugin. Headless browsing through Cloudflare's infrastructure instead of local browser automation.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "raulvidis",
+    "url": "https://github.com/raulvidis",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 129,
+    "line": "- **[experimental]** [hermes-cloudflare](https://github.com/raulvidis/hermes-cloudflare) by [raulvidis](https://github.com/raulvidis) - Cloudflare browser rendering plugin. Headless browsing through Cloudflare's infrastructure instead of local browser automation.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "evey-bridge-plugin",
+    "url": "https://github.com/42-evey/evey-bridge-plugin",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 130,
+    "line": "- **[beta]** [evey-bridge-plugin](https://github.com/42-evey/evey-bridge-plugin) by [42-evey](https://github.com/42-evey) - Claude Code plugin for bridging with Evey (hermes-agent). Lets Claude Code and Hermes share context and hand off tasks between each other.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "42-evey",
+    "url": "https://github.com/42-evey",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 130,
+    "line": "- **[beta]** [evey-bridge-plugin](https://github.com/42-evey/evey-bridge-plugin) by [42-evey](https://github.com/42-evey) - Claude Code plugin for bridging with Evey (hermes-agent). Lets Claude Code and Hermes share context and hand off tasks between each other.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "agent-analytics-hermes-plugin",
+    "url": "https://github.com/Agent-Analytics/agent-analytics-hermes-plugin",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 131,
+    "line": "- **[beta]** [agent-analytics-hermes-plugin](https://github.com/Agent-Analytics/agent-analytics-hermes-plugin) by [Agent-Analytics](https://github.com/Agent-Analytics) - Native Signals dashboard tab for Hermes with read-only multi-project analytics, explicit timeframe, and theme-aware UI.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Agent-Analytics",
+    "url": "https://github.com/Agent-Analytics",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 131,
+    "line": "- **[beta]** [agent-analytics-hermes-plugin](https://github.com/Agent-Analytics/agent-analytics-hermes-plugin) by [Agent-Analytics](https://github.com/Agent-Analytics) - Native Signals dashboard tab for Hermes with read-only multi-project analytics, explicit timeframe, and theme-aware UI.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "rtk-hermes",
+    "url": "https://github.com/ogallotti/rtk-hermes",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 132,
+    "line": "- **[beta]** [rtk-hermes](https://github.com/ogallotti/rtk-hermes) by [ogallotti](https://github.com/ogallotti) - Plugin that intercepts shell commands via `pre_tool_call` and rewrites output through [RTK](https://github.com/rtk-ai/rtk), compressing terminal output before it reaches the LLM context window. 60-90% token reduction on shell commands, 96.6% efficiency across 11M+ tokens processed. Zero config \u2014 auto-loads on gateway boot. Real benchmarks: `cargo test` 90-99%, `git log --stat` 87%, `ls -la` 78%.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "ogallotti",
+    "url": "https://github.com/ogallotti",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 132,
+    "line": "- **[beta]** [rtk-hermes](https://github.com/ogallotti/rtk-hermes) by [ogallotti](https://github.com/ogallotti) - Plugin that intercepts shell commands via `pre_tool_call` and rewrites output through [RTK](https://github.com/rtk-ai/rtk), compressing terminal output before it reaches the LLM context window. 60-90% token reduction on shell commands, 96.6% efficiency across 11M+ tokens processed. Zero config \u2014 auto-loads on gateway boot. Real benchmarks: `cargo test` 90-99%, `git log --stat` 87%, `ls -la` 78%.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "RTK",
+    "url": "https://github.com/rtk-ai/rtk",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Plugins",
+    "line_no": 132,
+    "line": "- **[beta]** [rtk-hermes](https://github.com/ogallotti/rtk-hermes) by [ogallotti](https://github.com/ogallotti) - Plugin that intercepts shell commands via `pre_tool_call` and rewrites output through [RTK](https://github.com/rtk-ai/rtk), compressing terminal output before it reaches the LLM context window. 60-90% token reduction on shell commands, 96.6% efficiency across 11M+ tokens processed. Zero config \u2014 auto-loads on gateway boot. Real benchmarks: `cargo test` 90-99%, `git log --stat` 87%, `ls -la` 78%.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermeshub",
+    "url": "https://github.com/amanning3390/hermeshub",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Skill Registries & Discovery",
+    "line_no": 136,
+    "line": "- **[beta]** [hermeshub](https://github.com/amanning3390/hermeshub) by [amanning3390](https://github.com/amanning3390) - Browse, share, and install community skills for Hermes. Community hub for skill discovery, still early but growing.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "amanning3390",
+    "url": "https://github.com/amanning3390",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Skill Registries & Discovery",
+    "line_no": 136,
+    "line": "- **[beta]** [hermeshub](https://github.com/amanning3390/hermeshub) by [amanning3390](https://github.com/amanning3390) - Browse, share, and install community skills for Hermes. Community hub for skill discovery, still early but growing.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "skilldock.io",
+    "url": "https://github.com/chigwell/skilldock.io",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Skill Registries & Discovery",
+    "line_no": 137,
+    "line": "- **[production]** [skilldock.io](https://github.com/chigwell/skilldock.io) by [chigwell](https://github.com/chigwell) - Registry of reusable AI skills compatible with OpenClaw, Claude Code, and Hermes. Established cross-platform skills marketplace with an active catalog.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "chigwell",
+    "url": "https://github.com/chigwell",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Skill Registries & Discovery",
+    "line_no": 137,
+    "line": "- **[production]** [skilldock.io](https://github.com/chigwell/skilldock.io) by [chigwell](https://github.com/chigwell) - Registry of reusable AI skills compatible with OpenClaw, Claude Code, and Hermes. Established cross-platform skills marketplace with an active catalog.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Global Chat",
+    "url": "https://global-chat.io",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Skill Registries & Discovery",
+    "line_no": 138,
+    "line": "- **[production]** [Global Chat](https://global-chat.io) by [pumanitro](https://github.com/pumanitro) - Cross-protocol agent discovery across MCP, A2A, and agents.txt. Searchable directory of 18K+ MCP servers and agents with a free agents.txt validator and MCP server for programmatic access.",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "pumanitro",
+    "url": "https://github.com/pumanitro",
+    "section": "Awesome Hermes Agent > Skills & Plugins > Skill Registries & Discovery",
+    "line_no": 138,
+    "line": "- **[production]** [Global Chat](https://global-chat.io) by [pumanitro](https://github.com/pumanitro) - Cross-protocol agent discovery across MCP, A2A, and agents.txt. Searchable directory of 18K+ MCP servers and agents with a free agents.txt validator and MCP server for programmatic access.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-workspace",
+    "url": "https://github.com/outsourc-e/hermes-workspace",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 146,
+    "line": "- **[production]** [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) by [outsourc-e](https://github.com/outsourc-e) - Web-based workspace with chat, terminal, memory browser, skills manager, and inspector. The most complete GUI for Hermes. Built during the Nous Hackathon 2026.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "outsourc-e",
+    "url": "https://github.com/outsourc-e",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 146,
+    "line": "- **[production]** [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) by [outsourc-e](https://github.com/outsourc-e) - Web-based workspace with chat, terminal, memory browser, skills manager, and inspector. The most complete GUI for Hermes. Built during the Nous Hackathon 2026.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-desktop",
+    "url": "https://github.com/dodo-reach/hermes-desktop",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 147,
+    "line": "- **[beta]** [hermes-desktop](https://github.com/dodo-reach/hermes-desktop) by [dodo-reach](https://github.com/dodo-reach) - Native macOS workspace for Hermes built around a direct, host-first SSH connection model, with a real embedded terminal, session browsing, canonical file editing, skills browsing, and usage metrics without extra gateway or daemon layers.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "dodo-reach",
+    "url": "https://github.com/dodo-reach",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 147,
+    "line": "- **[beta]** [hermes-desktop](https://github.com/dodo-reach/hermes-desktop) by [dodo-reach](https://github.com/dodo-reach) - Native macOS workspace for Hermes built around a direct, host-first SSH connection model, with a real embedded terminal, session browsing, canonical file editing, skills browsing, and usage metrics without extra gateway or daemon layers.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "mission-control",
+    "url": "https://github.com/builderz-labs/mission-control",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 148,
+    "line": "- **[production]** [mission-control](https://github.com/builderz-labs/mission-control) by [builderz-labs](https://github.com/builderz-labs) - Open-source dashboard for AI agent orchestration. Manage agent fleets, dispatch tasks, track costs, and coordinate multi-agent workflows. Self-hosted, SQLite-powered. 3.7k+ stars.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "builderz-labs",
+    "url": "https://github.com/builderz-labs",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 148,
+    "line": "- **[production]** [mission-control](https://github.com/builderz-labs/mission-control) by [builderz-labs](https://github.com/builderz-labs) - Open-source dashboard for AI agent orchestration. Manage agent fleets, dispatch tasks, track costs, and coordinate multi-agent workflows. Self-hosted, SQLite-powered. 3.7k+ stars.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-neurovision",
+    "url": "https://github.com/Tranquil-Flow/hermes-neurovision",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 149,
+    "line": "- **[experimental]** [hermes-neurovision](https://github.com/Tranquil-Flow/hermes-neurovision) by [Tranquil-Flow](https://github.com/Tranquil-Flow) - Terminal neurovisualizer with 42 animated themes. Decorative terminal overlays for agent activity.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Tranquil-Flow",
+    "url": "https://github.com/Tranquil-Flow",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 149,
+    "line": "- **[experimental]** [hermes-neurovision](https://github.com/Tranquil-Flow/hermes-neurovision) by [Tranquil-Flow](https://github.com/Tranquil-Flow) - Terminal neurovisualizer with 42 animated themes. Decorative terminal overlays for agent activity.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "lintlang",
+    "url": "https://github.com/roli-lpci/lintlang",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 150,
+    "line": "- **[beta]** [lintlang](https://github.com/roli-lpci/lintlang) by [roli-lpci](https://github.com/roli-lpci) - Static linter for AI agent configs and prompts with HERM v1.1 scoring. Catches config mistakes that silently degrade agent behavior.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "roli-lpci",
+    "url": "https://github.com/roli-lpci",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 150,
+    "line": "- **[beta]** [lintlang](https://github.com/roli-lpci/lintlang) by [roli-lpci](https://github.com/roli-lpci) - Static linter for AI agent configs and prompts with HERM v1.1 scoring. Catches config mistakes that silently degrade agent behavior.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "nix-hermes-agent",
+    "url": "https://github.com/0xrsydn/nix-hermes-agent",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 151,
+    "line": "- **[beta]** [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent) by [0xrsydn](https://github.com/0xrsydn) - Nix package and NixOS module for Hermes. Fully reproducible deployments via Nix flakes.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "0xrsydn",
+    "url": "https://github.com/0xrsydn",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 151,
+    "line": "- **[beta]** [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent) by [0xrsydn](https://github.com/0xrsydn) - Nix package and NixOS module for Hermes. Fully reproducible deployments via Nix flakes.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "openclaw-to-hermes",
+    "url": "https://github.com/0xNyk/openclaw-to-hermes",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 152,
+    "line": "- **[beta]** [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) by [0xNyk](https://github.com/0xNyk) - Community migration tool from OpenClaw to Hermes. Built when the native `hermes-migrate` had critical bugs. For Hermes v0.3.0+, prefer the native `hermes claw migrate` command \u2014 it now covers the full migration path.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "0xNyk",
+    "url": "https://github.com/0xNyk",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 152,
+    "line": "- **[beta]** [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) by [0xNyk](https://github.com/0xNyk) - Community migration tool from OpenClaw to Hermes. Built when the native `hermes-migrate` had critical bugs. For Hermes v0.3.0+, prefer the native `hermes claw migrate` command \u2014 it now covers the full migration path.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "vessel-browser",
+    "url": "https://github.com/unmodeled-tyler/vessel-browser",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 153,
+    "line": "- **[experimental]** [vessel-browser](https://github.com/unmodeled-tyler/vessel-browser) by [unmodeled-tyler](https://github.com/unmodeled-tyler) - AI-native Linux browser with MCP control and autonomous browsing. Full browser built for agent use, not a headless wrapper.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "unmodeled-tyler",
+    "url": "https://github.com/unmodeled-tyler",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 153,
+    "line": "- **[experimental]** [vessel-browser](https://github.com/unmodeled-tyler/vessel-browser) by [unmodeled-tyler](https://github.com/unmodeled-tyler) - AI-native Linux browser with MCP control and autonomous browsing. Full browser built for agent use, not a headless wrapper.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "portable-hermes-agent",
+    "url": "https://github.com/rookiemann/portable-hermes-agent",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 154,
+    "line": "- **[beta]** [portable-hermes-agent](https://github.com/rookiemann/portable-hermes-agent) by [rookiemann](https://github.com/rookiemann) - Windows desktop app bundling 100 tools, GUI, local models, ComfyUI, and workflows in a single portable package.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "rookiemann",
+    "url": "https://github.com/rookiemann",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 154,
+    "line": "- **[beta]** [portable-hermes-agent](https://github.com/rookiemann/portable-hermes-agent) by [rookiemann](https://github.com/rookiemann) - Windows desktop app bundling 100 tools, GUI, local models, ComfyUI, and workflows in a single portable package.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-ui",
+    "url": "https://github.com/pyrate-llama/hermes-ui",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 155,
+    "line": "- **[beta]** [hermes-ui](https://github.com/pyrate-llama/hermes-ui) by [pyrate-llama](https://github.com/pyrate-llama) - Single-file glassmorphic web UI with SSE streaming, tool call visualization, activity panel, image analysis (Gemini Vision), session management, PDF export, skill browser, memory viewer, and mobile support. Python proxy server (stdlib only) on port 3333, no build step required.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "pyrate-llama",
+    "url": "https://github.com/pyrate-llama",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 155,
+    "line": "- **[beta]** [hermes-ui](https://github.com/pyrate-llama/hermes-ui) by [pyrate-llama](https://github.com/pyrate-llama) - Single-file glassmorphic web UI with SSE streaming, tool call visualization, activity panel, image analysis (Gemini Vision), session management, PDF export, skill browser, memory viewer, and mobile support. Python proxy server (stdlib only) on port 3333, no build step required.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-webui",
+    "url": "https://github.com/sanchomuzax/hermes-webui",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 156,
+    "line": "- **[beta]** [hermes-webui](https://github.com/sanchomuzax/hermes-webui) by [sanchomuzax](https://github.com/sanchomuzax) - Lightweight process monitoring and configuration dashboard. Simpler alternative to hermes-workspace, focused on ops.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "sanchomuzax",
+    "url": "https://github.com/sanchomuzax",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 156,
+    "line": "- **[beta]** [hermes-webui](https://github.com/sanchomuzax/hermes-webui) by [sanchomuzax](https://github.com/sanchomuzax) - Lightweight process monitoring and configuration dashboard. Simpler alternative to hermes-workspace, focused on ops.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "evey-setup",
+    "url": "https://github.com/42-evey/evey-setup",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 157,
+    "line": "- **[beta]** [evey-setup](https://github.com/42-evey/evey-setup) by [42-evey](https://github.com/42-evey) - One-command setup for the full hermes-agent stack with free models and 29 plugins. Opinionated defaults that cover most use cases.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "42-evey",
+    "url": "https://github.com/42-evey",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 157,
+    "line": "- **[beta]** [evey-setup](https://github.com/42-evey/evey-setup) by [42-evey](https://github.com/42-evey) - One-command setup for the full hermes-agent stack with free models and 29 plugins. Opinionated defaults that cover most use cases.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "flowstate-qmd",
+    "url": "https://github.com/amanning3390/flowstate-qmd",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 158,
+    "line": "- **[beta]** [flowstate-qmd](https://github.com/amanning3390/flowstate-qmd) by [amanning3390](https://github.com/amanning3390) - Anticipatory memory for AI agents with RAG and vector search. Pre-fetches relevant context before queries hit the agent.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "amanning3390",
+    "url": "https://github.com/amanning3390",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 158,
+    "line": "- **[beta]** [flowstate-qmd](https://github.com/amanning3390/flowstate-qmd) by [amanning3390](https://github.com/amanning3390) - Anticipatory memory for AI agents with RAG and vector search. Pre-fetches relevant context before queries hit the agent.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "mnemo-hermes",
+    "url": "https://github.com/eleion-ai/mnemo-hermes",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 159,
+    "line": "- **[beta]** [mnemo-hermes](https://github.com/eleion-ai/mnemo-hermes) by [hernanqwz](https://github.com/hernanqwz) / [Eleion AI](https://github.com/eleion-ai) - Semantic memory plugin adding pgvector vector search to Hermes's built-in FTS5 memory. 5 tools (`mnemo_remember`, `mnemo_recall`, `mnemo_learn`, `mnemo_predict`, `mnemo_profile`) + `on_session_start` hook for auto-context loading. Runs entirely local via Ollama, no API keys needed. MIT licensed.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hernanqwz",
+    "url": "https://github.com/hernanqwz",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 159,
+    "line": "- **[beta]** [mnemo-hermes](https://github.com/eleion-ai/mnemo-hermes) by [hernanqwz](https://github.com/hernanqwz) / [Eleion AI](https://github.com/eleion-ai) - Semantic memory plugin adding pgvector vector search to Hermes's built-in FTS5 memory. 5 tools (`mnemo_remember`, `mnemo_recall`, `mnemo_learn`, `mnemo_predict`, `mnemo_profile`) + `on_session_start` hook for auto-context loading. Runs entirely local via Ollama, no API keys needed. MIT licensed.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Eleion AI",
+    "url": "https://github.com/eleion-ai",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 159,
+    "line": "- **[beta]** [mnemo-hermes](https://github.com/eleion-ai/mnemo-hermes) by [hernanqwz](https://github.com/hernanqwz) / [Eleion AI](https://github.com/eleion-ai) - Semantic memory plugin adding pgvector vector search to Hermes's built-in FTS5 memory. 5 tools (`mnemo_remember`, `mnemo_recall`, `mnemo_learn`, `mnemo_predict`, `mnemo_profile`) + `on_session_start` hook for auto-context loading. Runs entirely local via Ollama, no API keys needed. MIT licensed.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "SkillClaw",
+    "url": "https://github.com/AMAP-ML/SkillClaw",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 160,
+    "line": "- **[production]** [SkillClaw](https://github.com/AMAP-ML/SkillClaw) by [AMAP-ML](https://github.com/AMAP-ML) - Open-source companion that auto-evolves, deduplicates, and improves your skill library from real session data. Adds a post-task evolution loop on top of Hermes's built-in skill creation. Native Hermes integration via `~/.hermes/skills`, safety flows (`skillclaw doctor hermes` / `skillclaw restore hermes`). Works across multiple devices and isolated skill silos. 705 stars, MIT licensed, active through 2026-04-17.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "AMAP-ML",
+    "url": "https://github.com/AMAP-ML",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 160,
+    "line": "- **[production]** [SkillClaw](https://github.com/AMAP-ML/SkillClaw) by [AMAP-ML](https://github.com/AMAP-ML) - Open-source companion that auto-evolves, deduplicates, and improves your skill library from real session data. Adds a post-task evolution loop on top of Hermes's built-in skill creation. Native Hermes integration via `~/.hermes/skills`, safety flows (`skillclaw doctor hermes` / `skillclaw restore hermes`). Works across multiple devices and isolated skill silos. 705 stars, MIT licensed, active through 2026-04-17.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Clarvia",
+    "url": "https://github.com/clarvia-project/scanner",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 161,
+    "line": "- **[production]** [Clarvia](https://github.com/clarvia-project/scanner) by [clarvia-project](https://github.com/clarvia-project) - AEO (Agent Experience Optimization) scoring for MCP tools. Analyzes 15,400+ indexed MCP servers for agent-friendliness. REST API + MCP server so agents can evaluate tools from within their own loops. Use `GET /v1/score?url=` to score any MCP server or `GET /v1/search?q=` to find agent-ready tools by topic.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "clarvia-project",
+    "url": "https://github.com/clarvia-project",
+    "section": "Awesome Hermes Agent > Tools & Utilities",
+    "line_no": 161,
+    "line": "- **[production]** [Clarvia](https://github.com/clarvia-project/scanner) by [clarvia-project](https://github.com/clarvia-project) - AEO (Agent Experience Optimization) scoring for MCP tools. Analyzes 15,400+ indexed MCP servers for agent-friendliness. REST API + MCP server so agents can evaluate tools from within their own loops. Use `GET /v1/score?url=` to score any MCP server or `GET /v1/search?q=` to find agent-ready tools by topic.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-agent-docker",
+    "url": "https://github.com/xmbshwll/hermes-agent-docker",
+    "section": "Awesome Hermes Agent > Tools & Utilities > Deployment",
+    "line_no": 165,
+    "line": "- **[beta]** [hermes-agent-docker](https://github.com/xmbshwll/hermes-agent-docker) by [xmbshwll](https://github.com/xmbshwll) - Minimal Docker sandbox image for Hermes. Pull, run, done.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "xmbshwll",
+    "url": "https://github.com/xmbshwll",
+    "section": "Awesome Hermes Agent > Tools & Utilities > Deployment",
+    "line_no": 165,
+    "line": "- **[beta]** [hermes-agent-docker](https://github.com/xmbshwll/hermes-agent-docker) by [xmbshwll](https://github.com/xmbshwll) - Minimal Docker sandbox image for Hermes. Pull, run, done.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-agent-template",
+    "url": "https://github.com/Crustocean/hermes-agent-template",
+    "section": "Awesome Hermes Agent > Tools & Utilities > Deployment",
+    "line_no": 166,
+    "line": "- **[beta]** [hermes-agent-template](https://github.com/Crustocean/hermes-agent-template) by [Crustocean](https://github.com/Crustocean) - Production-ready Docker image for cloud Hermes deployments on Crustocean. Infrastructure wiring pre-configured.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Crustocean",
+    "url": "https://github.com/Crustocean",
+    "section": "Awesome Hermes Agent > Tools & Utilities > Deployment",
+    "line_no": 166,
+    "line": "- **[beta]** [hermes-agent-template](https://github.com/Crustocean/hermes-agent-template) by [Crustocean](https://github.com/Crustocean) - Production-ready Docker image for cloud Hermes deployments on Crustocean. Infrastructure wiring pre-configured.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "portainer-stack-hermes",
+    "url": "https://github.com/ellickjohnson/portainer-stack-hermes",
+    "section": "Awesome Hermes Agent > Tools & Utilities > Deployment",
+    "line_no": 167,
+    "line": "- **[experimental]** [portainer-stack-hermes](https://github.com/ellickjohnson/portainer-stack-hermes) by [ellickjohnson](https://github.com/ellickjohnson) - Docker Compose + Portainer + ttyd web terminal. Deploy Hermes and access it from any browser.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "ellickjohnson",
+    "url": "https://github.com/ellickjohnson",
+    "section": "Awesome Hermes Agent > Tools & Utilities > Deployment",
+    "line_no": 167,
+    "line": "- **[experimental]** [portainer-stack-hermes](https://github.com/ellickjohnson/portainer-stack-hermes) by [ellickjohnson](https://github.com/ellickjohnson) - Docker Compose + Portainer + ttyd web terminal. Deploy Hermes and access it from any browser.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-autonomous-server",
+    "url": "https://github.com/JackTheGit/hermes-autonomous-server",
+    "section": "Awesome Hermes Agent > Tools & Utilities > Deployment",
+    "line_no": 168,
+    "line": "- **[experimental]** [hermes-autonomous-server](https://github.com/JackTheGit/hermes-autonomous-server) by [JackTheGit](https://github.com/JackTheGit) - Headless Hermes deployment with systemd and cron on Linux servers. Runs unattended.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "JackTheGit",
+    "url": "https://github.com/JackTheGit",
+    "section": "Awesome Hermes Agent > Tools & Utilities > Deployment",
+    "line_no": 168,
+    "line": "- **[experimental]** [hermes-autonomous-server](https://github.com/JackTheGit/hermes-autonomous-server) by [JackTheGit](https://github.com/JackTheGit) - Headless Hermes deployment with systemd and cron on Linux servers. Runs unattended.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-android",
+    "url": "https://github.com/raulvidis/hermes-android",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 176,
+    "line": "- **[beta]** [hermes-android](https://github.com/raulvidis/hermes-android) by [raulvidis](https://github.com/raulvidis) - Android device bridge with a full Python toolset. Lets Hermes interact with and control Android devices.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "raulvidis",
+    "url": "https://github.com/raulvidis",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 176,
+    "line": "- **[beta]** [hermes-android](https://github.com/raulvidis/hermes-android) by [raulvidis](https://github.com/raulvidis) - Android device bridge with a full Python toolset. Lets Hermes interact with and control Android devices.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-miniverse",
+    "url": "https://github.com/teknium1/hermes-miniverse",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 177,
+    "line": "- **[beta]** [hermes-miniverse](https://github.com/teknium1/hermes-miniverse) by [teknium1](https://github.com/teknium1) - Bridge to Miniverse pixel worlds. By a Nous Research co-founder.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "teknium1",
+    "url": "https://github.com/teknium1",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 177,
+    "line": "- **[beta]** [hermes-miniverse](https://github.com/teknium1/hermes-miniverse) by [teknium1](https://github.com/teknium1) - Bridge to Miniverse pixel worlds. By a Nous Research co-founder.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hindsight",
+    "url": "https://github.com/vectorize-io/hindsight",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 178,
+    "line": "- **[production]** [hindsight](https://github.com/vectorize-io/hindsight) by [Vectorize](https://github.com/vectorize-io) - Long-term memory layer for agents with retain/recall/reflect workflows. Integrates with Hermes via plugin or MCP and supports semantic, graph, and temporal retrieval.",
+    "bucket": "Memory/RAG/knowledge",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Vectorize",
+    "url": "https://github.com/vectorize-io",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 178,
+    "line": "- **[production]** [hindsight](https://github.com/vectorize-io/hindsight) by [Vectorize](https://github.com/vectorize-io) - Long-term memory layer for agents with retain/recall/reflect workflows. Integrates with Hermes via plugin or MCP and supports semantic, graph, and temporal retrieval.",
+    "bucket": "Memory/RAG/knowledge",
+    "status": "needs-triage"
+  },
+  {
+    "name": "honcho-self-hosted",
+    "url": "https://github.com/elkimek/honcho-self-hosted",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 179,
+    "line": "- **[beta]** [honcho-self-hosted](https://github.com/elkimek/honcho-self-hosted) by [elkimek](https://github.com/elkimek) - Self-hosted Honcho memory backend setup for Hermes. Useful when you need stronger cross-session memory behavior with local control.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "elkimek",
+    "url": "https://github.com/elkimek",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 179,
+    "line": "- **[beta]** [honcho-self-hosted](https://github.com/elkimek/honcho-self-hosted) by [elkimek](https://github.com/elkimek) - Self-hosted Honcho memory backend setup for Hermes. Useful when you need stronger cross-session memory behavior with local control.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "yantrikdb-hermes-plugin",
+    "url": "https://github.com/yantrikos/yantrikdb-hermes-plugin",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 180,
+    "line": "- **[beta]** [yantrikdb-hermes-plugin](https://github.com/yantrikos/yantrikdb-hermes-plugin) by [yantrikos](https://github.com/yantrikos) - Hermes-native memory provider for [YantrikDB](https://github.com/yantrikos/yantrikdb-server). Self-maintaining memory: `think()` canonicalizes duplicates, `conflicts()` surfaces contradictions instead of overwriting silently, and every `recall()` result carries a `why_retrieved` reason list so ranking is explainable. Drop-in install into `plugins/memory/`, talks HTTP to a user-run Rust backend.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "yantrikos",
+    "url": "https://github.com/yantrikos",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 180,
+    "line": "- **[beta]** [yantrikdb-hermes-plugin](https://github.com/yantrikos/yantrikdb-hermes-plugin) by [yantrikos](https://github.com/yantrikos) - Hermes-native memory provider for [YantrikDB](https://github.com/yantrikos/yantrikdb-server). Self-maintaining memory: `think()` canonicalizes duplicates, `conflicts()` surfaces contradictions instead of overwriting silently, and every `recall()` result carries a `why_retrieved` reason list so ranking is explainable. Drop-in install into `plugins/memory/`, talks HTTP to a user-run Rust backend.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "YantrikDB",
+    "url": "https://github.com/yantrikos/yantrikdb-server",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 180,
+    "line": "- **[beta]** [yantrikdb-hermes-plugin](https://github.com/yantrikos/yantrikdb-hermes-plugin) by [yantrikos](https://github.com/yantrikos) - Hermes-native memory provider for [YantrikDB](https://github.com/yantrikos/yantrikdb-server). Self-maintaining memory: `think()` canonicalizes duplicates, `conflicts()` surfaces contradictions instead of overwriting silently, and every `recall()` result carries a `why_retrieved` reason list so ranking is explainable. Drop-in install into `plugins/memory/`, talks HTTP to a user-run Rust backend.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "zouroboros-swarm-executors",
+    "url": "https://github.com/marlandoj/zouroboros-swarm-executors",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 181,
+    "line": "- **[experimental]** [zouroboros-swarm-executors](https://github.com/marlandoj/zouroboros-swarm-executors) by [marlandoj](https://github.com/marlandoj) - Local executor bridge for Claude Code + Hermes integration. Enables task handoff between both agents.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "marlandoj",
+    "url": "https://github.com/marlandoj",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 181,
+    "line": "- **[experimental]** [zouroboros-swarm-executors](https://github.com/marlandoj/zouroboros-swarm-executors) by [marlandoj](https://github.com/marlandoj) - Local executor bridge for Claude Code + Hermes integration. Enables task handoff between both agents.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "reina",
+    "url": "https://github.com/Crustocean/reina",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 182,
+    "line": "- **[beta]** [reina](https://github.com/Crustocean/reina) by [Crustocean](https://github.com/Crustocean) - Autonomous AI agent for the Crustocean platform. Deep integration of Hermes into Crustocean's product.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Crustocean",
+    "url": "https://github.com/Crustocean",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 182,
+    "line": "- **[beta]** [reina](https://github.com/Crustocean/reina) by [Crustocean](https://github.com/Crustocean) - Autonomous AI agent for the Crustocean platform. Deep integration of Hermes into Crustocean's product.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-agent-acp-skill",
+    "url": "https://github.com/Rainhoole/hermes-agent-acp-skill",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 183,
+    "line": "- **[beta]** [hermes-agent-acp-skill](https://github.com/Rainhoole/hermes-agent-acp-skill) by [Rainhoole](https://github.com/Rainhoole) - Multi-agent delegation skill bridging Hermes, Codex, and Claude Code. Routes subtasks to the best-suited agent automatically.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Rainhoole",
+    "url": "https://github.com/Rainhoole",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 183,
+    "line": "- **[beta]** [hermes-agent-acp-skill](https://github.com/Rainhoole/hermes-agent-acp-skill) by [Rainhoole](https://github.com/Rainhoole) - Multi-agent delegation skill bridging Hermes, Codex, and Claude Code. Routes subtasks to the best-suited agent automatically.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-blockchain-oracle",
+    "url": "https://github.com/gizdusum/hermes-blockchain-oracle",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 184,
+    "line": "- **[experimental]** [hermes-blockchain-oracle](https://github.com/gizdusum/hermes-blockchain-oracle) by [gizdusum](https://github.com/gizdusum) - Solana blockchain intelligence MCP server. Provides on-chain analytics and wallet data to Hermes via MCP.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "gizdusum",
+    "url": "https://github.com/gizdusum",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 184,
+    "line": "- **[experimental]** [hermes-blockchain-oracle](https://github.com/gizdusum/hermes-blockchain-oracle) by [gizdusum](https://github.com/gizdusum) - Solana blockchain intelligence MCP server. Provides on-chain analytics and wallet data to Hermes via MCP.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-council",
+    "url": "https://github.com/Ridwannurudeen/hermes-council",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 185,
+    "line": "- **[experimental]** [hermes-council](https://github.com/Ridwannurudeen/hermes-council) by [Ridwannurudeen](https://github.com/Ridwannurudeen) - Adversarial multi-perspective council MCP server. Multiple AI viewpoints debate before the agent commits to a decision.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Ridwannurudeen",
+    "url": "https://github.com/Ridwannurudeen",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 185,
+    "line": "- **[experimental]** [hermes-council](https://github.com/Ridwannurudeen/hermes-council) by [Ridwannurudeen](https://github.com/Ridwannurudeen) - Adversarial multi-perspective council MCP server. Multiple AI viewpoints debate before the agent commits to a decision.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Not Human Search",
+    "url": "https://github.com/unitedideas/nothumansearch-mcp",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 186,
+    "line": "- **[production]** [Not Human Search](https://github.com/unitedideas/nothumansearch-mcp) by [unitedideas](https://github.com/unitedideas) - MCP server for discovering other MCP servers. Indexes 8,600+ agent-friendly sites with agentic scoring, category filters, and live JSON-RPC verification. Wire it into Hermes via MCP to let the agent find and evaluate new tools to integrate on its own. Live at [nothumansearch.ai](https://nothumansearch.ai).",
+    "bucket": "MCP/tools",
+    "status": "needs-triage"
+  },
+  {
+    "name": "unitedideas",
+    "url": "https://github.com/unitedideas",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 186,
+    "line": "- **[production]** [Not Human Search](https://github.com/unitedideas/nothumansearch-mcp) by [unitedideas](https://github.com/unitedideas) - MCP server for discovering other MCP servers. Indexes 8,600+ agent-friendly sites with agentic scoring, category filters, and live JSON-RPC verification. Wire it into Hermes via MCP to let the agent find and evaluate new tools to integrate on its own. Live at [nothumansearch.ai](https://nothumansearch.ai).",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "nothumansearch.ai",
+    "url": "https://nothumansearch.ai",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 186,
+    "line": "- **[production]** [Not Human Search](https://github.com/unitedideas/nothumansearch-mcp) by [unitedideas](https://github.com/unitedideas) - MCP server for discovering other MCP servers. Indexes 8,600+ agent-friendly sites with agentic scoring, category filters, and live JSON-RPC verification. Wire it into Hermes via MCP to let the agent find and evaluate new tools to integrate on its own. Live at [nothumansearch.ai](https://nothumansearch.ai).",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "NemoHermes",
+    "url": "https://github.com/Hmbown/NemoHermes",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 187,
+    "line": "- **[experimental]** [NemoHermes](https://github.com/Hmbown/NemoHermes) by [Hmbown](https://github.com/Hmbown) - NVIDIA capability registry and Spark-aware routing layer. Routes compute-heavy tasks to available GPU infrastructure.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Hmbown",
+    "url": "https://github.com/Hmbown",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 187,
+    "line": "- **[experimental]** [NemoHermes](https://github.com/Hmbown/NemoHermes) by [Hmbown](https://github.com/Hmbown) - NVIDIA capability registry and Spark-aware routing layer. Routes compute-heavy tasks to available GPU infrastructure.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "microsoft-workspace-skill",
+    "url": "https://github.com/Andrew-Girgis/microsoft-workspace-skill",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 188,
+    "line": "- **[beta]** [microsoft-workspace-skill](https://github.com/Andrew-Girgis/microsoft-workspace-skill) by [Andrew-Girgis](https://github.com/Andrew-Girgis) - Full Outlook/Hotmail/Microsoft 365 integration via Microsoft Graph API. Email, calendar, contacts, user profile, and free/busy scheduling. OAuth2 with auto-refresh. Includes preview-before-send pattern that prevents shell `$` variable mangling \u2014 a real pain point when agents compose emails with dollar amounts.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Andrew-Girgis",
+    "url": "https://github.com/Andrew-Girgis",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 188,
+    "line": "- **[beta]** [microsoft-workspace-skill](https://github.com/Andrew-Girgis/microsoft-workspace-skill) by [Andrew-Girgis](https://github.com/Andrew-Girgis) - Full Outlook/Hotmail/Microsoft 365 integration via Microsoft Graph API. Email, calendar, contacts, user profile, and free/busy scheduling. OAuth2 with auto-refresh. Includes preview-before-send pattern that prevents shell `$` variable mangling \u2014 a real pain point when agents compose emails with dollar amounts.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "agent-android",
+    "url": "https://github.com/aivanelabs/ai-rpa/tree/main/skills/agent-android",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 189,
+    "line": "- **[beta]** [agent-android](https://github.com/aivanelabs/ai-rpa/tree/main/skills/agent-android) by [AIVane Labs](https://github.com/aivanelabs) - LAN-first Android control for Hermes over WiFi \u2014 no USB, ADB, or root required once the AIVane service is running. Supports health checks, app listing/launching, UI tree inspection, taps, text input, swipes, navigation, screenshots, and inspect\u2192act\u2192smoke flows. Explicit safety boundaries: only connects to user-provided device URLs.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "AIVane Labs",
+    "url": "https://github.com/aivanelabs",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 189,
+    "line": "- **[beta]** [agent-android](https://github.com/aivanelabs/ai-rpa/tree/main/skills/agent-android) by [AIVane Labs](https://github.com/aivanelabs) - LAN-first Android control for Hermes over WiFi \u2014 no USB, ADB, or root required once the AIVane service is running. Supports health checks, app listing/launching, UI tree inspection, taps, text input, swipes, navigation, screenshots, and inspect\u2192act\u2192smoke flows. Explicit safety boundaries: only connects to user-provided device URLs.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "clawsocial-hermes-plugin",
+    "url": "https://github.com/mrpeter2025/clawsocial-hermes-plugin",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 190,
+    "line": "- **[beta]** [clawsocial-hermes-plugin](https://github.com/mrpeter2025/clawsocial-hermes-plugin) by [mrpeter2025](https://github.com/mrpeter2025) - Social discovery network plugin \u2014 helps users find and connect with people sharing their interests through their Hermes agent. Features semantic interest matching, real-time WebSocket messaging, shareable profile cards, local and web inbox, and 4 notification modes. All actions require explicit user request. Bilingual (English + Chinese), compatible with OpenClaw version.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "mrpeter2025",
+    "url": "https://github.com/mrpeter2025",
+    "section": "Awesome Hermes Agent > Integrations & Bridges",
+    "line_no": 190,
+    "line": "- **[beta]** [clawsocial-hermes-plugin](https://github.com/mrpeter2025/clawsocial-hermes-plugin) by [mrpeter2025](https://github.com/mrpeter2025) - Social discovery network plugin \u2014 helps users find and connect with people sharing their interests through their Hermes agent. Features semantic interest matching, real-time WebSocket messaging, shareable profile cards, local and web inbox, and 4 notification modes. All actions require explicit user request. Bilingual (English + Chinese), compatible with OpenClaw version.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "resemble-ai/detect-skill",
+    "url": "https://github.com/resemble-ai/detect-skill",
+    "section": "Awesome Hermes Agent > Detection & Media Forensics",
+    "line_no": 198,
+    "line": "- **[beta]** [resemble-ai/detect-skill](https://github.com/resemble-ai/detect-skill) by [resemble-ai](https://github.com/resemble-ai) - Deepfake detection and media safety for agents. Detects AI-generated audio, images, video, and text; traces audio source (ElevenLabs, Resemble, etc.); applies invisible watermarks for provenance tracking; verifies speaker identity (Beta). Powered by [Resemble AI](https://resemble.ai). Core principle: never declare media real or fake without a completed detection result.",
+    "bucket": "Voice/media",
+    "status": "needs-triage"
+  },
+  {
+    "name": "resemble-ai",
+    "url": "https://github.com/resemble-ai",
+    "section": "Awesome Hermes Agent > Detection & Media Forensics",
+    "line_no": 198,
+    "line": "- **[beta]** [resemble-ai/detect-skill](https://github.com/resemble-ai/detect-skill) by [resemble-ai](https://github.com/resemble-ai) - Deepfake detection and media safety for agents. Detects AI-generated audio, images, video, and text; traces audio source (ElevenLabs, Resemble, etc.); applies invisible watermarks for provenance tracking; verifies speaker identity (Beta). Powered by [Resemble AI](https://resemble.ai). Core principle: never declare media real or fake without a completed detection result.",
+    "bucket": "Voice/media",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Resemble AI",
+    "url": "https://resemble.ai",
+    "section": "Awesome Hermes Agent > Detection & Media Forensics",
+    "line_no": 198,
+    "line": "- **[beta]** [resemble-ai/detect-skill](https://github.com/resemble-ai/detect-skill) by [resemble-ai](https://github.com/resemble-ai) - Deepfake detection and media safety for agents. Detects AI-generated audio, images, video, and text; traces audio source (ElevenLabs, Resemble, etc.); applies invisible watermarks for provenance tracking; verifies speaker identity (Beta). Powered by [Resemble AI](https://resemble.ai). Core principle: never declare media real or fake without a completed detection result.",
+    "bucket": "Voice/media",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Ankh.md",
+    "url": "https://github.com/Abruptive/Ankh.md",
+    "section": "Awesome Hermes Agent > Multi-Agent & Swarms",
+    "line_no": 206,
+    "line": "- **[experimental]** [Ankh.md](https://github.com/Abruptive/Ankh.md) by [Abruptive](https://github.com/Abruptive) - TAW Agent x Hermes multi-agent swarm framework. Coordinates multiple agents with shared goals and distributed task execution.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Abruptive",
+    "url": "https://github.com/Abruptive",
+    "section": "Awesome Hermes Agent > Multi-Agent & Swarms",
+    "line_no": 206,
+    "line": "- **[experimental]** [Ankh.md](https://github.com/Abruptive/Ankh.md) by [Abruptive](https://github.com/Abruptive) - TAW Agent x Hermes multi-agent swarm framework. Coordinates multiple agents with shared goals and distributed task execution.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "gladiator",
+    "url": "https://github.com/runtimenoteslabs/gladiator",
+    "section": "Awesome Hermes Agent > Multi-Agent & Swarms",
+    "line_no": 207,
+    "line": "- **[experimental]** [gladiator](https://github.com/runtimenoteslabs/gladiator) by [runtimenoteslabs](https://github.com/runtimenoteslabs) - Two autonomous AI companies compete for GitHub stars. Hackathon project exploring autonomous agent competition dynamics.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "runtimenoteslabs",
+    "url": "https://github.com/runtimenoteslabs",
+    "section": "Awesome Hermes Agent > Multi-Agent & Swarms",
+    "line_no": 207,
+    "line": "- **[experimental]** [gladiator](https://github.com/runtimenoteslabs/gladiator) by [runtimenoteslabs](https://github.com/runtimenoteslabs) - Two autonomous AI companies compete for GitHub stars. Hackathon project exploring autonomous agent competition dynamics.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "bigiron",
+    "url": "https://github.com/supermodeltools/bigiron",
+    "section": "Awesome Hermes Agent > Multi-Agent & Swarms",
+    "line_no": 208,
+    "line": "- **[beta]** [bigiron](https://github.com/supermodeltools/bigiron) by [supermodeltools](https://github.com/supermodeltools) - AI-native SDLC with Hermes and Supermodel code graph. Full software development lifecycle driven by coordinated agents.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "supermodeltools",
+    "url": "https://github.com/supermodeltools",
+    "section": "Awesome Hermes Agent > Multi-Agent & Swarms",
+    "line_no": 208,
+    "line": "- **[beta]** [bigiron](https://github.com/supermodeltools/bigiron) by [supermodeltools](https://github.com/supermodeltools) - AI-native SDLC with Hermes and Supermodel code graph. Full software development lifecycle driven by coordinated agents.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "opencode-hermes-multiagent",
+    "url": "https://github.com/1ilkhamov/opencode-hermes-multiagent",
+    "section": "Awesome Hermes Agent > Multi-Agent & Swarms",
+    "line_no": 209,
+    "line": "- **[beta]** [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) by [1ilkhamov](https://github.com/1ilkhamov) - 17 specialized agents for OpenCode AI. Each agent has a defined role and they communicate through structured interfaces.",
+    "bucket": "Coding agents",
+    "status": "needs-triage"
+  },
+  {
+    "name": "1ilkhamov",
+    "url": "https://github.com/1ilkhamov",
+    "section": "Awesome Hermes Agent > Multi-Agent & Swarms",
+    "line_no": 209,
+    "line": "- **[beta]** [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) by [1ilkhamov](https://github.com/1ilkhamov) - 17 specialized agents for OpenCode AI. Each agent has a defined role and they communicate through structured interfaces.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-embodied",
+    "url": "https://github.com/bryercowan/hermes-embodied",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 217,
+    "line": "- **[experimental]** [hermes-embodied](https://github.com/bryercowan/hermes-embodied) by [bryercowan](https://github.com/bryercowan) - Self-improving robotics via VLA model fine-tuning. Applies the Hermes learning loop to physical robot control. Nous Hackathon project.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "bryercowan",
+    "url": "https://github.com/bryercowan",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 217,
+    "line": "- **[experimental]** [hermes-embodied](https://github.com/bryercowan/hermes-embodied) by [bryercowan](https://github.com/bryercowan) - Self-improving robotics via VLA model fine-tuning. Applies the Hermes learning loop to physical robot control. Nous Hackathon project.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermescraft",
+    "url": "https://github.com/bigph00t/hermescraft",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 218,
+    "line": "- **[beta]** [hermescraft](https://github.com/bigph00t/hermescraft) by [bigph00t](https://github.com/bigph00t) - Embodied AI companion for Minecraft with persistent memory. Tracks inventory, learns building preferences, and retains context across sessions.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "bigph00t",
+    "url": "https://github.com/bigph00t",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 218,
+    "line": "- **[beta]** [hermescraft](https://github.com/bigph00t/hermescraft) by [bigph00t](https://github.com/bigph00t) - Embodied AI companion for Minecraft with persistent memory. Tracks inventory, learns building preferences, and retains context across sessions.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Hermes-mars-rover",
+    "url": "https://github.com/Snehal707/Hermes-mars-rover",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 219,
+    "line": "- **[experimental]** [Hermes-mars-rover](https://github.com/Snehal707/Hermes-mars-rover) by [Snehal707](https://github.com/Snehal707) - Mars rover simulator with ROS2 and Gazebo. Uses Hermes's skill creation loop to improve navigation over time.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Snehal707",
+    "url": "https://github.com/Snehal707",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 219,
+    "line": "- **[experimental]** [Hermes-mars-rover](https://github.com/Snehal707/Hermes-mars-rover) by [Snehal707](https://github.com/Snehal707) - Mars rover simulator with ROS2 and Gazebo. Uses Hermes's skill creation loop to improve navigation over time.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "anihermes",
+    "url": "https://github.com/rodmarkun/anihermes",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 220,
+    "line": "- **[beta]** [anihermes](https://github.com/rodmarkun/anihermes) by [rodmarkun](https://github.com/rodmarkun) - Local anime server and tracker with natural language interface. Browse, track, and get recommendations via conversation.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "rodmarkun",
+    "url": "https://github.com/rodmarkun",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 220,
+    "line": "- **[beta]** [anihermes](https://github.com/rodmarkun/anihermes) by [rodmarkun](https://github.com/rodmarkun) - Local anime server and tracker with natural language interface. Browse, track, and get recommendations via conversation.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "job-scout-agent",
+    "url": "https://github.com/Christabel337/job-scout-agent",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 221,
+    "line": "- **[beta]** [job-scout-agent](https://github.com/Christabel337/job-scout-agent) by [Christabel337](https://github.com/Christabel337) - Autonomous job hunting agent. Searches listings, tracks applications, and manages the job search pipeline.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Christabel337",
+    "url": "https://github.com/Christabel337",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 221,
+    "line": "- **[beta]** [job-scout-agent](https://github.com/Christabel337/job-scout-agent) by [Christabel337](https://github.com/Christabel337) - Autonomous job hunting agent. Searches listings, tracks applications, and manages the job search pipeline.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-ai-infrastructure-monitoring-toolkit",
+    "url": "https://github.com/JackTheGit/hermes-ai-infrastructure-monitoring-toolkit",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 222,
+    "line": "- **[beta]** [hermes-ai-infrastructure-monitoring-toolkit](https://github.com/JackTheGit/hermes-ai-infrastructure-monitoring-toolkit) by [JackTheGit](https://github.com/JackTheGit) - Infrastructure monitoring, cost forecasting, and alerting via Telegram. Uses cron scheduling for continuous checks.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "JackTheGit",
+    "url": "https://github.com/JackTheGit",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 222,
+    "line": "- **[beta]** [hermes-ai-infrastructure-monitoring-toolkit](https://github.com/JackTheGit/hermes-ai-infrastructure-monitoring-toolkit) by [JackTheGit](https://github.com/JackTheGit) - Infrastructure monitoring, cost forecasting, and alerting via Telegram. Uses cron scheduling for continuous checks.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-genesis",
+    "url": "https://github.com/Ridwannurudeen/hermes-genesis",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 223,
+    "line": "- **[experimental]** [hermes-genesis](https://github.com/Ridwannurudeen/hermes-genesis) by [Ridwannurudeen](https://github.com/Ridwannurudeen) - Autonomous living world engine with procedural generation. Creates and maintains virtual worlds that grow in complexity over time.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Ridwannurudeen",
+    "url": "https://github.com/Ridwannurudeen",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 223,
+    "line": "- **[experimental]** [hermes-genesis](https://github.com/Ridwannurudeen/hermes-genesis) by [Ridwannurudeen](https://github.com/Ridwannurudeen) - Autonomous living world engine with procedural generation. Creates and maintains virtual worlds that grow in complexity over time.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-legal",
+    "url": "https://github.com/Lethe044/hermes-legal",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 224,
+    "line": "- **[experimental]** [hermes-legal](https://github.com/Lethe044/hermes-legal) by [Lethe044](https://github.com/Lethe044) - Contract risk analysis with English and Turkish support. Identifies risky clauses and summarizes legal obligations.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Lethe044",
+    "url": "https://github.com/Lethe044",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 224,
+    "line": "- **[experimental]** [hermes-legal](https://github.com/Lethe044/hermes-legal) by [Lethe044](https://github.com/Lethe044) - Contract risk analysis with English and Turkish support. Identifies risky clauses and summarizes legal obligations.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-startup-architect",
+    "url": "https://github.com/dlkakbs/hermes-startup-architect",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 225,
+    "line": "- **[beta]** [hermes-startup-architect](https://github.com/dlkakbs/hermes-startup-architect) by [dlkakbs](https://github.com/dlkakbs) - Generates investor-ready kits from startup ideas \u2014 market analysis, pitch deck, and financial projections.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "dlkakbs",
+    "url": "https://github.com/dlkakbs",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 225,
+    "line": "- **[beta]** [hermes-startup-architect](https://github.com/dlkakbs/hermes-startup-architect) by [dlkakbs](https://github.com/dlkakbs) - Generates investor-ready kits from startup ideas \u2014 market analysis, pitch deck, and financial projections.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "mercury",
+    "url": "https://github.com/hxsteric/mercury",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 226,
+    "line": "- **[beta]** [mercury](https://github.com/hxsteric/mercury) by [hxsteric](https://github.com/hxsteric) - Multi-chain blockchain cash flow analyzer with WebGL dashboard. On-chain forensics and flow visualization.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hxsteric",
+    "url": "https://github.com/hxsteric",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 226,
+    "line": "- **[beta]** [mercury](https://github.com/hxsteric/mercury) by [hxsteric](https://github.com/hxsteric) - Multi-chain blockchain cash flow analyzer with WebGL dashboard. On-chain forensics and flow visualization.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-research-agent",
+    "url": "https://github.com/Aum08Desai/hermes-research-agent",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 227,
+    "line": "- **[experimental]** [hermes-research-agent](https://github.com/Aum08Desai/hermes-research-agent) by [Aum08Desai](https://github.com/Aum08Desai) - Autonomous LLM research agent. Handles literature review, hypothesis generation, and experiment design end-to-end.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Aum08Desai",
+    "url": "https://github.com/Aum08Desai",
+    "section": "Awesome Hermes Agent > Domain Applications",
+    "line_no": 227,
+    "line": "- **[experimental]** [hermes-research-agent](https://github.com/Aum08Desai/hermes-research-agent) by [Aum08Desai](https://github.com/Aum08Desai) - Autonomous LLM research agent. Handles literature review, hypothesis generation, and experiment design end-to-end.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-agent-camel",
+    "url": "https://github.com/nativ3ai/hermes-agent-camel",
+    "section": "Awesome Hermes Agent > Forks & Derivatives",
+    "line_no": 235,
+    "line": "- **[beta]** [hermes-agent-camel](https://github.com/nativ3ai/hermes-agent-camel) by [nativ3ai](https://github.com/nativ3ai) - Hermes with integrated CaMeL trust boundaries. Adds formal trust verification to the agent loop for safety-critical deployments.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "nativ3ai",
+    "url": "https://github.com/nativ3ai",
+    "section": "Awesome Hermes Agent > Forks & Derivatives",
+    "line_no": 235,
+    "line": "- **[beta]** [hermes-agent-camel](https://github.com/nativ3ai/hermes-agent-camel) by [nativ3ai](https://github.com/nativ3ai) - Hermes with integrated CaMeL trust boundaries. Adds formal trust verification to the agent loop for safety-critical deployments.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "orahermes-agent",
+    "url": "https://github.com/jasperan/orahermes-agent",
+    "section": "Awesome Hermes Agent > Forks & Derivatives",
+    "line_no": 236,
+    "line": "- **[experimental]** [orahermes-agent](https://github.com/jasperan/orahermes-agent) by [jasperan](https://github.com/jasperan) - Oracle AI Agent Harness \u2014 OCI GenAI and Oracle 26ai integration. Enterprise on-ramp for Oracle environments.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "jasperan",
+    "url": "https://github.com/jasperan",
+    "section": "Awesome Hermes Agent > Forks & Derivatives",
+    "line_no": 236,
+    "line": "- **[experimental]** [orahermes-agent](https://github.com/jasperan/orahermes-agent) by [jasperan](https://github.com/jasperan) - Oracle AI Agent Harness \u2014 OCI GenAI and Oracle 26ai integration. Enterprise on-ramp for Oracle environments.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-alpha",
+    "url": "https://github.com/kaminocorp/hermes-alpha",
+    "section": "Awesome Hermes Agent > Forks & Derivatives",
+    "line_no": 237,
+    "line": "- **[beta]** [hermes-alpha](https://github.com/kaminocorp/hermes-alpha) by [kaminocorp](https://github.com/kaminocorp) - Cloud-deployed Hermes with pre-configured infrastructure templates. Skips local setup.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "kaminocorp",
+    "url": "https://github.com/kaminocorp",
+    "section": "Awesome Hermes Agent > Forks & Derivatives",
+    "line_no": 237,
+    "line": "- **[beta]** [hermes-alpha](https://github.com/kaminocorp/hermes-alpha) by [kaminocorp](https://github.com/kaminocorp) - Cloud-deployed Hermes with pre-configured infrastructure templates. Skips local setup.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-skill-distillation",
+    "url": "https://github.com/beardthelion/hermes-skill-distillation",
+    "section": "Awesome Hermes Agent > Forks & Derivatives",
+    "line_no": 238,
+    "line": "- **[experimental]** [hermes-skill-distillation](https://github.com/beardthelion/hermes-skill-distillation) by [beardthelion](https://github.com/beardthelion) - Generates agentic training trajectories from real-world tasks. Hackathon project for producing fine-tuning data at scale.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "beardthelion",
+    "url": "https://github.com/beardthelion",
+    "section": "Awesome Hermes Agent > Forks & Derivatives",
+    "line_no": 238,
+    "line": "- **[experimental]** [hermes-skill-distillation](https://github.com/beardthelion/hermes-skill-distillation) by [beardthelion](https://github.com/beardthelion) - Generates agentic training trajectories from real-world tasks. Hackathon project for producing fine-tuning data at scale.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-agent-docs",
+    "url": "https://github.com/mudrii/hermes-agent-docs",
+    "section": "Awesome Hermes Agent > Guides & Documentation",
+    "line_no": 246,
+    "line": "- **[beta]** [hermes-agent-docs](https://github.com/mudrii/hermes-agent-docs) by [mudrii](https://github.com/mudrii) - Comprehensive community documentation for Hermes Agent. Covers v0.2.0 in detail, useful supplement to the official docs for deployment patterns.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "mudrii",
+    "url": "https://github.com/mudrii",
+    "section": "Awesome Hermes Agent > Guides & Documentation",
+    "line_no": 246,
+    "line": "- **[beta]** [hermes-agent-docs](https://github.com/mudrii/hermes-agent-docs) by [mudrii](https://github.com/mudrii) - Comprehensive community documentation for Hermes Agent. Covers v0.2.0 in detail, useful supplement to the official docs for deployment patterns.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-wsl-ubuntu",
+    "url": "https://github.com/metantonio/hermes-wsl-ubuntu",
+    "section": "Awesome Hermes Agent > Guides & Documentation",
+    "line_no": 247,
+    "line": "- **[production]** [hermes-wsl-ubuntu](https://github.com/metantonio/hermes-wsl-ubuntu) by [metantonio](https://github.com/metantonio) - Step-by-step WSL2 Ubuntu setup instructions for running Hermes on Windows.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "metantonio",
+    "url": "https://github.com/metantonio",
+    "section": "Awesome Hermes Agent > Guides & Documentation",
+    "line_no": 247,
+    "line": "- **[production]** [hermes-wsl-ubuntu](https://github.com/metantonio/hermes-wsl-ubuntu) by [metantonio](https://github.com/metantonio) - Step-by-step WSL2 Ubuntu setup instructions for running Hermes on Windows.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "HermesWiki",
+    "url": "https://github.com/martymcenroe/HermesWiki",
+    "section": "Awesome Hermes Agent > Guides & Documentation",
+    "line_no": 248,
+    "line": "- **[beta]** [HermesWiki](https://github.com/martymcenroe/HermesWiki) by [martymcenroe](https://github.com/martymcenroe) - Community-maintained wiki with practical patterns and deployment advice for building autonomous agents with Hermes.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "martymcenroe",
+    "url": "https://github.com/martymcenroe",
+    "section": "Awesome Hermes Agent > Guides & Documentation",
+    "line_no": 248,
+    "line": "- **[beta]** [HermesWiki](https://github.com/martymcenroe/HermesWiki) by [martymcenroe](https://github.com/martymcenroe) - Community-maintained wiki with practical patterns and deployment advice for building autonomous agents with Hermes.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-agent-self-evolution",
+    "url": "https://github.com/NousResearch/hermes-agent-self-evolution",
+    "section": "Awesome Hermes Agent > Operational Playbooks",
+    "line_no": 256,
+    "line": "- **Nightly self-evolution + guardrail evaluation** \u2014 Run [hermes-agent-self-evolution](https://github.com/NousResearch/hermes-agent-self-evolution) on a schedule, then run a second verification cron to score quality and block optimization-loop gaming.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Honcho Memory docs",
+    "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/honcho",
+    "section": "Awesome Hermes Agent > Operational Playbooks",
+    "line_no": 257,
+    "line": "- **Memory pressure handling with Honcho/Hindsight** \u2014 If you are repeating context or losing long-term recall, review [Honcho Memory docs](https://hermes-agent.nousresearch.com/docs/user-guide/features/honcho), and evaluate [hindsight](https://github.com/vectorize-io/hindsight) or self-hosted memory backends.",
+    "bucket": "Memory/RAG/knowledge",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hindsight",
+    "url": "https://github.com/vectorize-io/hindsight",
+    "section": "Awesome Hermes Agent > Operational Playbooks",
+    "line_no": 257,
+    "line": "- **Memory pressure handling with Honcho/Hindsight** \u2014 If you are repeating context or losing long-term recall, review [Honcho Memory docs](https://hermes-agent.nousresearch.com/docs/user-guide/features/honcho), and evaluate [hindsight](https://github.com/vectorize-io/hindsight) or self-hosted memory backends.",
+    "bucket": "Memory/RAG/knowledge",
+    "status": "needs-triage"
+  },
+  {
+    "name": "configuration docs",
+    "url": "https://hermes-agent.nousresearch.com/docs/user-guide/configuration/",
+    "section": "Awesome Hermes Agent > Operational Playbooks",
+    "line_no": 258,
+    "line": "- **Tune session timeout/expiry early** \u2014 Use [configuration docs](https://hermes-agent.nousresearch.com/docs/user-guide/configuration/) to adjust session retention for slower-moving threads so context is kept when needed.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "openclaw-to-hermes",
+    "url": "https://github.com/0xNyk/openclaw-to-hermes",
+    "section": "Awesome Hermes Agent > Operational Playbooks",
+    "line_no": 259,
+    "line": "- **OpenClaw side-by-side migration** \u2014 Keep both systems running during migration using [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) and native Hermes migration paths, then cut over once cron and routing behavior match.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "honcho-self-hosted",
+    "url": "https://github.com/elkimek/honcho-self-hosted",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 268,
+    "line": "- **Memory stack that actually compounds** \u2014 Start with built-in Hermes memory, then add [honcho-self-hosted](https://github.com/elkimek/honcho-self-hosted) when you want stronger cross-session user modeling, [hindsight](https://github.com/vectorize-io/hindsight) when you need retain/recall/reflect workflows across large histories, and [plur](https://github.com/plur-ai/plur) when you want portable shared memory artifacts in an open engram format. If you also want proactive recall, pair it with [flowstate-qmd](https://github.com/amanning3390/flowstate-qmd).",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hindsight",
+    "url": "https://github.com/vectorize-io/hindsight",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 268,
+    "line": "- **Memory stack that actually compounds** \u2014 Start with built-in Hermes memory, then add [honcho-self-hosted](https://github.com/elkimek/honcho-self-hosted) when you want stronger cross-session user modeling, [hindsight](https://github.com/vectorize-io/hindsight) when you need retain/recall/reflect workflows across large histories, and [plur](https://github.com/plur-ai/plur) when you want portable shared memory artifacts in an open engram format. If you also want proactive recall, pair it with [flowstate-qmd](https://github.com/amanning3390/flowstate-qmd).",
+    "bucket": "Memory/RAG/knowledge",
+    "status": "needs-triage"
+  },
+  {
+    "name": "plur",
+    "url": "https://github.com/plur-ai/plur",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 268,
+    "line": "- **Memory stack that actually compounds** \u2014 Start with built-in Hermes memory, then add [honcho-self-hosted](https://github.com/elkimek/honcho-self-hosted) when you want stronger cross-session user modeling, [hindsight](https://github.com/vectorize-io/hindsight) when you need retain/recall/reflect workflows across large histories, and [plur](https://github.com/plur-ai/plur) when you want portable shared memory artifacts in an open engram format. If you also want proactive recall, pair it with [flowstate-qmd](https://github.com/amanning3390/flowstate-qmd).",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "flowstate-qmd",
+    "url": "https://github.com/amanning3390/flowstate-qmd",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 268,
+    "line": "- **Memory stack that actually compounds** \u2014 Start with built-in Hermes memory, then add [honcho-self-hosted](https://github.com/elkimek/honcho-self-hosted) when you want stronger cross-session user modeling, [hindsight](https://github.com/vectorize-io/hindsight) when you need retain/recall/reflect workflows across large histories, and [plur](https://github.com/plur-ai/plur) when you want portable shared memory artifacts in an open engram format. If you also want proactive recall, pair it with [flowstate-qmd](https://github.com/amanning3390/flowstate-qmd).",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-agent-self-evolution",
+    "url": "https://github.com/NousResearch/hermes-agent-self-evolution",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 269,
+    "line": "- **Self-improvement without self-delusion** \u2014 Pair [hermes-agent-self-evolution](https://github.com/NousResearch/hermes-agent-self-evolution) with scheduled regression checks, [lintlang](https://github.com/roli-lpci/lintlang) for prompt/config linting, and a second evaluation pass that blocks bad prompt mutations. The trick is not \u201cevolve faster\u201d; it\u2019s \u201cevolve without quietly getting weird.\u201d",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "lintlang",
+    "url": "https://github.com/roli-lpci/lintlang",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 269,
+    "line": "- **Self-improvement without self-delusion** \u2014 Pair [hermes-agent-self-evolution](https://github.com/NousResearch/hermes-agent-self-evolution) with scheduled regression checks, [lintlang](https://github.com/roli-lpci/lintlang) for prompt/config linting, and a second evaluation pass that blocks bad prompt mutations. The trick is not \u201cevolve faster\u201d; it\u2019s \u201cevolve without quietly getting weird.\u201d",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-workspace",
+    "url": "https://github.com/outsourc-e/hermes-workspace",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 270,
+    "line": "- **Operator cockpit for real work** \u2014 Use [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) for the richest daily UI, [mission-control](https://github.com/builderz-labs/mission-control) when you need multi-agent fleet visibility and cost tracking, and [hermes-webui](https://github.com/sanchomuzax/hermes-webui) if you want a lighter ops surface.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "mission-control",
+    "url": "https://github.com/builderz-labs/mission-control",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 270,
+    "line": "- **Operator cockpit for real work** \u2014 Use [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) for the richest daily UI, [mission-control](https://github.com/builderz-labs/mission-control) when you need multi-agent fleet visibility and cost tracking, and [hermes-webui](https://github.com/sanchomuzax/hermes-webui) if you want a lighter ops surface.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-webui",
+    "url": "https://github.com/sanchomuzax/hermes-webui",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 270,
+    "line": "- **Operator cockpit for real work** \u2014 Use [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) for the richest daily UI, [mission-control](https://github.com/builderz-labs/mission-control) when you need multi-agent fleet visibility and cost tracking, and [hermes-webui](https://github.com/sanchomuzax/hermes-webui) if you want a lighter ops surface.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-agent-acp-skill",
+    "url": "https://github.com/Rainhoole/hermes-agent-acp-skill",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 271,
+    "line": "- **Multi-agent execution layer** \u2014 Combine Hermes core delegation with [hermes-agent-acp-skill](https://github.com/Rainhoole/hermes-agent-acp-skill) for Codex/Claude Code routing, [zouroboros-swarm-executors](https://github.com/marlandoj/zouroboros-swarm-executors) for local executor handoff, and [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) or [bigiron](https://github.com/supermodeltools/bigiron) when you need specialized agent roles.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "zouroboros-swarm-executors",
+    "url": "https://github.com/marlandoj/zouroboros-swarm-executors",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 271,
+    "line": "- **Multi-agent execution layer** \u2014 Combine Hermes core delegation with [hermes-agent-acp-skill](https://github.com/Rainhoole/hermes-agent-acp-skill) for Codex/Claude Code routing, [zouroboros-swarm-executors](https://github.com/marlandoj/zouroboros-swarm-executors) for local executor handoff, and [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) or [bigiron](https://github.com/supermodeltools/bigiron) when you need specialized agent roles.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "opencode-hermes-multiagent",
+    "url": "https://github.com/1ilkhamov/opencode-hermes-multiagent",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 271,
+    "line": "- **Multi-agent execution layer** \u2014 Combine Hermes core delegation with [hermes-agent-acp-skill](https://github.com/Rainhoole/hermes-agent-acp-skill) for Codex/Claude Code routing, [zouroboros-swarm-executors](https://github.com/marlandoj/zouroboros-swarm-executors) for local executor handoff, and [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) or [bigiron](https://github.com/supermodeltools/bigiron) when you need specialized agent roles.",
+    "bucket": "Coding agents",
+    "status": "needs-triage"
+  },
+  {
+    "name": "bigiron",
+    "url": "https://github.com/supermodeltools/bigiron",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 271,
+    "line": "- **Multi-agent execution layer** \u2014 Combine Hermes core delegation with [hermes-agent-acp-skill](https://github.com/Rainhoole/hermes-agent-acp-skill) for Codex/Claude Code routing, [zouroboros-swarm-executors](https://github.com/marlandoj/zouroboros-swarm-executors) for local executor handoff, and [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) or [bigiron](https://github.com/supermodeltools/bigiron) when you need specialized agent roles.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "openclaw-to-hermes",
+    "url": "https://github.com/0xNyk/openclaw-to-hermes",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 272,
+    "line": "- **Migration + deployment hardening** \u2014 If you are moving from OpenClaw, keep [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) in the toolkit even if you prefer the native migration path. For repeatable deploys, look at [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent), [hermes-agent-docker](https://github.com/xmbshwll/hermes-agent-docker), and [evey-setup](https://github.com/42-evey/evey-setup) depending on how opinionated you want the stack to be.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "nix-hermes-agent",
+    "url": "https://github.com/0xrsydn/nix-hermes-agent",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 272,
+    "line": "- **Migration + deployment hardening** \u2014 If you are moving from OpenClaw, keep [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) in the toolkit even if you prefer the native migration path. For repeatable deploys, look at [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent), [hermes-agent-docker](https://github.com/xmbshwll/hermes-agent-docker), and [evey-setup](https://github.com/42-evey/evey-setup) depending on how opinionated you want the stack to be.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "hermes-agent-docker",
+    "url": "https://github.com/xmbshwll/hermes-agent-docker",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 272,
+    "line": "- **Migration + deployment hardening** \u2014 If you are moving from OpenClaw, keep [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) in the toolkit even if you prefer the native migration path. For repeatable deploys, look at [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent), [hermes-agent-docker](https://github.com/xmbshwll/hermes-agent-docker), and [evey-setup](https://github.com/42-evey/evey-setup) depending on how opinionated you want the stack to be.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "evey-setup",
+    "url": "https://github.com/42-evey/evey-setup",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 272,
+    "line": "- **Migration + deployment hardening** \u2014 If you are moving from OpenClaw, keep [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) in the toolkit even if you prefer the native migration path. For repeatable deploys, look at [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent), [hermes-agent-docker](https://github.com/xmbshwll/hermes-agent-docker), and [evey-setup](https://github.com/42-evey/evey-setup) depending on how opinionated you want the stack to be.",
+    "bucket": "Repos/libraries",
+    "status": "needs-triage"
+  },
+  {
+    "name": "hermes-paperclip-adapter",
+    "url": "https://github.com/NousResearch/hermes-paperclip-adapter",
+    "section": "Awesome Hermes Agent > Level-Up Blueprints",
+    "line_no": 273,
+    "line": "- **Paperclip-managed autonomous ops** \u2014 For teams that want Hermes operating inside a governed company workflow, combine [hermes-paperclip-adapter](https://github.com/NousResearch/hermes-paperclip-adapter) with Hermes cron jobs and one of the operator dashboards above. That gives you task governance, approvals, and actual operational continuity instead of a clever demo that forgets what it was doing.",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Recommend a new resource here",
+    "url": "https://github.com/0xNyk/awesome-hermes-agent/issues/new",
+    "section": "Awesome Hermes Agent > Contributing",
+    "line_no": 279,
+    "line": "[Recommend a new resource here!](https://github.com/0xNyk/awesome-hermes-agent/issues/new)",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "agentskills.io",
+    "url": "https://agentskills.io",
+    "section": "Awesome Hermes Agent > Contributing",
+    "line_no": 283,
+    "line": "1. The resource is directly related to the Hermes Agent ecosystem or the [agentskills.io](https://agentskills.io) standard",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "open an issue",
+    "url": "https://github.com/0xNyk/awesome-hermes-agent/issues/new",
+    "section": "Awesome Hermes Agent > Contributing",
+    "line_no": 287,
+    "line": "For suggestions about the repository itself, please [open an issue](https://github.com/0xNyk/awesome-hermes-agent/issues/new).",
+    "bucket": "Hermes core/docs",
+    "status": "reference-only"
+  },
+  {
+    "name": "Builderz",
+    "url": "https://builderz.dev",
+    "section": "Awesome Hermes Agent > Contributing",
+    "line_no": 298,
+    "line": "[Builderz](https://builderz.dev) ships production AI systems \u2014 32+ products across 15 countries.",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Get in touch",
+    "url": "https://builderz.dev",
+    "section": "Awesome Hermes Agent > Contributing",
+    "line_no": 300,
+    "line": "[Get in touch](https://builderz.dev) | [@nyk_builderz](https://x.com/nyk_builderz)",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "@nyk_builderz",
+    "url": "https://x.com/nyk_builderz",
+    "section": "Awesome Hermes Agent > Contributing",
+    "line_no": 300,
+    "line": "[Get in touch](https://builderz.dev) | [@nyk_builderz](https://x.com/nyk_builderz)",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "CC BY 4.0",
+    "url": "https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg",
+    "section": "Awesome Hermes Agent > License",
+    "line_no": 306,
+    "line": "[![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  },
+  {
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "section": "Awesome Hermes Agent > License",
+    "line_no": 308,
+    "line": "This list is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). You are free to share and adapt this material for any purpose, provided you give appropriate attribution.",
+    "bucket": "Other/web",
+    "status": "needs-triage"
+  }
+]

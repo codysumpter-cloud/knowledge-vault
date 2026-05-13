@@ -1,49 +1,27 @@
 ---
 date: {{date}}
 status: active
-energy: 
-focus_score: 
-revenue: 
-trading_pnl: 
-youtube_progress: 
-family_time: 
-health: 
-effort: 
-primary_focus: 
+release_receipts: 0
+profit_actions: 0
+vault_updates: 0
+agent_runs: 0
+focus_score:
+family_time:
+effort:
 ---
-# {{date}} Daily Command Note
-
-> [!focus] Current Focus
-> One target. End-to-end. No context drift.
+# Daily Command Note — {{date}}
 
 ## Top 3 Priorities
-- [ ] Priority 1
-- [ ] Priority 2
-- [ ] Priority 3
-
-## Carryovers
+- [ ] 
+- [ ] 
 - [ ] 
 
-## Metrics
-- Energy: 
-- Focus score: 
-- Revenue: 
-- Trading P/L: 
-- YouTube progress: 
-- Family time: 
-- Health: 
-- Effort /10: 
+## Current Focus
+
+## Tasks
 
 ## Activity Log
-![[01-Dashboard/Activity Log/{{date}}]]
 
-## Calendar / Schedule
-- 
+## Inbox Pull
 
-## Notes
-- 
-
-## Close Day Reflection
-- Wins:
-- Lessons:
-- Carryovers:
+## Close Day Notes
