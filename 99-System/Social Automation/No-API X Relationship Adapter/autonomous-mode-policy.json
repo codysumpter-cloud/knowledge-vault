@@ -1,0 +1,127 @@
+{
+  "name": "Prismtek X Autonomous Relationship Mode v1",
+  "status": "guarded_autonomous",
+  "created": "2026-05-14",
+  "x_api_required": false,
+  "default_mode_after_x_226": {
+    "auto_read": true,
+    "auto_receipts": true,
+    "auto_drafts": true,
+    "auto_likes": "paused_or_one_test_max",
+    "auto_replies": "paused",
+    "auto_dms": false
+  },
+  "autonomous_allowed": [
+    "scan_notifications",
+    "scan_recent_posts",
+    "detect_retweets",
+    "detect_replies",
+    "detect_mentions",
+    "detect_quote_posts_if_visible",
+    "write_relationship_receipts",
+    "write_run_receipts",
+    "update_seen_json",
+    "classify_accounts",
+    "track_repeated_supporters",
+    "track_suspicious_accounts",
+    "draft_replies",
+    "draft_dms",
+    "draft_follow_up_posts",
+    "create_approval_packets"
+  ],
+  "low_risk_engagement": {
+    "auto_like_allowed": true,
+    "max_auto_likes_per_day": 10,
+    "min_minutes_between_auto_likes": 20,
+    "dedupe_by": [
+      "source_post_id",
+      "actor_handle",
+      "action_type"
+    ],
+    "never_like_classifications": [
+      "suspicious_or_low_quality",
+      "spam",
+      "scam",
+      "adult",
+      "pump",
+      "ragebait"
+    ]
+  },
+  "limited_autonomous_replies": {
+    "allowed_when_all_conditions_pass": true,
+    "max_autonomous_replies_per_day": 3,
+    "min_minutes_between_autonomous_replies": 30,
+    "conditions": [
+      "no_active_x_code_226_or_344",
+      "no_auth_challenge_or_friction",
+      "account_real_legitimate",
+      "account_not_suspicious_spam_scam_adult_pump_gambling_ragebait",
+      "visible_profile_context_enough_for_light_personalization",
+      "relevant_or_neutral_positive_actor",
+      "no_previous_reply_to_same_actor_source_pair",
+      "no_duplicate_or_near_duplicate_reply_text",
+      "short_human_non_pushy_reply",
+      "no_hard_sell_repeated_cta_or_generic_dm_me_spam",
+      "reply_text_stored_with_sha256",
+      "receipt_path_ready",
+      "direct_control_route_healthy"
+    ],
+    "approved_styles": [
+      "Appreciate the boost @handle — building Prismtek in public so the work stays visible and accountable.",
+      "Thanks for sharing this @handle. Prismtek is focused on durable agent memory, guarded execution, and receipts.",
+      "Appreciate it @handle. If local-first agents or workflow automation are your lane too, happy to compare notes."
+    ]
+  },
+  "approval_required": [
+    "dms",
+    "follows",
+    "quote_posts",
+    "reposts",
+    "paid_boosts",
+    "tagging_or_mentioning_someone_in_standalone_posts",
+    "replying_after_any_active_x_automation_challenge",
+    "replying_to_controversial_or_risky_accounts",
+    "replying_with_work_together_cta",
+    "publishing_more_than_3_relationship_replies_per_day",
+    "deleting_posts_or_replies",
+    "changing_profile_settings"
+  ],
+  "stop_conditions": [
+    "x_code_226",
+    "x_code_344",
+    "credits_depleted_plus_browser_route_instability",
+    "login_challenge",
+    "mfa",
+    "captcha",
+    "suspicious_activity_screen",
+    "account_lock_or_warning",
+    "unexpected_composer_state",
+    "duplicate_detection_failure",
+    "receipt_write_failure",
+    "more_than_one_route_failure_in_a_row",
+    "user_says_stop"
+  ],
+  "notifications_required_for": [
+    "retweet_detected",
+    "relevant_reply_detected",
+    "potential_collaborator_found",
+    "autonomous_like_taken",
+    "autonomous_reply_published",
+    "action_blocked",
+    "x_friction_or_challenge",
+    "daily_caps_reached",
+    "reply_dm_follow_needs_approval"
+  ],
+  "cron": {
+    "job_name": "prismtek-x-relationship-autopilot",
+    "schedule": "every 2 hours during active posting windows",
+    "stagger_minutes_from_other_browser_jobs": 15,
+    "do_not_overlap_with": [
+      "x_autopublisher",
+      "youtube_upload_jobs",
+      "market_sports_scans",
+      "heavy_browser_control_jobs"
+    ],
+    "future_target": "VPS for recurring scans and automation"
+  }
+}
