@@ -1,0 +1,98 @@
+{
+  "name": "Prismtek No-API X Relationship Adapter",
+  "version": "1.0.0",
+  "purpose": "Avoid paid X API dependency for relationship detection/drafting by using local signed-in browser/session routes and manual seed fallback.",
+  "safe_public_route_names": [
+    "signed-in Safari UI",
+    "signed-in local web-session fallback",
+    "manual seed fallback",
+    "screenshot/vision read",
+    "X API optional"
+  ],
+  "routes": [
+    {
+      "id": "signed_in_safari_ui",
+      "priority": 1,
+      "read_supported": true,
+      "write_supported": true,
+      "description": "Use the user's signed-in Safari session and visible UI.",
+      "requires": ["Safari login", "macOS Automation permission", "Screen Recording for receipts"],
+      "stop_conditions": ["login challenge", "MFA", "CAPTCHA", "account lock", "suspicious activity", "platform rate limit"]
+    },
+    {
+      "id": "safari_javascript_bookmarklet",
+      "priority": 2,
+      "read_supported": true,
+      "write_supported": true,
+      "description": "Use javascript: URL/bookmarklet-style actions when Safari do JavaScript hangs.",
+      "requires": ["Safari login", "user-visible page", "no challenge screen"],
+      "stop_conditions": ["DOM unavailable", "challenge", "unexpected page", "platform friction"]
+    },
+    {
+      "id": "screenshot_vision_read",
+      "priority": 3,
+      "read_supported": true,
+      "write_supported": false,
+      "description": "Use screenshots and visual inspection to read notifications/retweeter context.",
+      "requires": ["Screen Recording permission"],
+      "stop_conditions": ["text not visible", "ambiguous identity", "private/sensitive content"]
+    },
+    {
+      "id": "accessibility_click_type",
+      "priority": 4,
+      "read_supported": false,
+      "write_supported": true,
+      "description": "Use macOS Accessibility to click/type when user has granted permission.",
+      "requires": ["Accessibility permission", "stable UI coordinates or element discovery"],
+      "stop_conditions": ["System Events UI disabled", "wrong focused element", "challenge", "unexpected page"]
+    },
+    {
+      "id": "signed_in_web_session_graphql",
+      "priority": 5,
+      "read_supported": true,
+      "write_supported": true,
+      "description": "Use local signed-in web-session routes without storing secrets in KnowledgeVault.",
+      "requires": ["local session available", "no raw secrets in receipts"],
+      "stop_conditions": ["auth error", "route block", "friction", "rate limit"]
+    },
+    {
+      "id": "manual_seed_fallback",
+      "priority": 6,
+      "read_supported": true,
+      "write_supported": false,
+      "description": "User or Hermes manually seeds known relationship events when automated reads fail.",
+      "requires": ["source post URL", "actor handle"],
+      "stop_conditions": ["missing source URL", "missing handle"]
+    },
+    {
+      "id": "x_api_optional",
+      "priority": 7,
+      "read_supported": true,
+      "write_supported": true,
+      "description": "Use X API only when available. CreditsDepleted is non-fatal and should fall back.",
+      "requires": ["API credits", "valid auth"],
+      "stop_conditions": ["CreditsDepleted", "auth error", "rate limit", "paid quota unavailable"]
+    }
+  ],
+  "caps": {
+    "auto_likes_per_day": 10,
+    "queued_reply_drafts_per_day": 10,
+    "approved_published_replies_per_day": 3,
+    "auto_dms_per_day": 0,
+    "min_minutes_between_engagement_actions": 20,
+    "max_retries_per_route": 1
+  },
+  "dedupe_key": ["source_post_id", "actor_handle", "action_type"],
+  "blocked": [
+    "CAPTCHA bypass",
+    "MFA bypass",
+    "account-lock bypass",
+    "platform-limit bypass",
+    "raw token/cookie export",
+    "mass replies",
+    "mass DMs",
+    "identical CTA repetition",
+    "fake personalization",
+    "harassment/dogpiling"
+  ]
+}
