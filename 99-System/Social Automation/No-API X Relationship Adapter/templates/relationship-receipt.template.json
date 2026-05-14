@@ -1,0 +1,36 @@
+{
+  "receipt_id": "<receipt-id>",
+  "created_at": "<iso timestamp>",
+  "source_post_url": "<source post url>",
+  "source_post_id": "<source post id>",
+  "actor_handle": "<handle>",
+  "event_type": "retweet | quote | reply | mention",
+  "dedupe_key": "<source_post_id>:<actor_handle>:<action_type>",
+  "duplicate_existing_receipt": false,
+  "detected_route": "manual seed fallback | signed-in Safari UI | screenshot/vision read | signed-in local web-session fallback | X API optional",
+  "classification": "builder_or_ai_tools | creator_or_community | prospect | unknown_or_low_context | suspicious_or_low_quality",
+  "risk_level": "normal | review | high",
+  "profile_summary": "<public context summary>",
+  "actions": {
+    "external_action_taken": false,
+    "like_taken": false,
+    "reply_published": false,
+    "dm_sent": false,
+    "followed": false
+  },
+  "drafts": {
+    "reply_draft_path": null,
+    "reply_text_sha256": null,
+    "approval_phrase": null
+  },
+  "approval_required_for": [
+    "reply",
+    "dm",
+    "follow",
+    "quote",
+    "repost",
+    "mention_tag"
+  ],
+  "notes": "<notes>",
+  "uncertainty": "<uncertainty>"
+}
