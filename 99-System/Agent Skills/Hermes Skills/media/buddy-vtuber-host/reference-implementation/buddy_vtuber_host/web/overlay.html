@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buddy VTuber Overlay</title>
+  <link rel="stylesheet" href="/overlay.css" />
+</head>
+<body>
+  <main id="stage" aria-label="Buddy transparent overlay">
+    <section id="buddy" class="buddy idle" data-mouth="closed">
+      <div class="antenna antenna-left"><span></span></div>
+      <div class="antenna antenna-right"><span></span></div>
+      <div class="body">
+        <div class="spark spark-a">✦</div>
+        <div class="spark spark-b">✧</div>
+        <div class="face">
+          <div class="eye eye-left"></div>
+          <div class="eye eye-right"></div>
+          <div class="mouth"></div>
+        </div>
+        <div class="arm arm-left"></div>
+        <div class="arm arm-right"></div>
+        <div class="heart">♥</div>
+        <div class="foot foot-left"></div>
+        <div class="foot foot-right"></div>
+      </div>
+      <div class="shadow"></div>
+    </section>
+
+    <aside id="caption" aria-live="polite"></aside>
+  </main>
+
+  <audio id="voice" preload="auto"></audio>
+  <script src="/overlay.js"></script>
+</body>
+</html>
