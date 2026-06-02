@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wikipedia Karpathy Topic Card",
+  "type": "object",
+  "required": [
+    "title",
+    "slug",
+    "source",
+    "freshness",
+    "tiny_model",
+    "primitives",
+    "relationships",
+    "quality"
+  ],
+  "properties": {
+    "title": { "type": "string" },
+    "slug": { "type": "string" },
+    "note_type": {
+      "type": "string",
+      "enum": ["concept_card", "learning_note", "source_map", "reading_path", "citation_index"]
+    },
+    "domain": { "type": "string" },
+    "source": {
+      "type": "object",
+      "required": ["project", "title", "url", "retrieved_at"],
+      "properties": {
+        "project": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string" },
+        "revision_id": { "type": ["string", "null"] },
+        "retrieved_at": { "type": "string" },
+        "license_note": { "type": "string" }
+      }
+    },
+    "freshness": {
+      "type": "object",
+      "required": ["class", "verify_live_before_answering"],
+      "properties": {
+        "class": { "type": "string", "enum": ["stable", "medium", "volatile"] },
+        "verify_live_before_answering": { "type": "boolean" },
+        "why": { "type": "string" }
+      }
+    },
+    "tiny_model": { "type": "string" },
+    "why_it_exists": { "type": "string" },
+    "primitives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "meaning"],
+        "properties": {
+          "name": { "type": "string" },
+          "meaning": { "type": "string" }
+        }
+      }
+    },
+    "mechanism": { "type": "string" },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "relation", "to"],
+        "properties": {
+          "from": { "type": "string" },
+          "relation": { "type": "string" },
+          "to": { "type": "string" }
+        }
+      }
+    },
+    "examples": { "type": "array", "items": { "type": "string" } },
+    "common_confusions": { "type": "array", "items": { "type": "string" } },
+    "read_next": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "reason"],
+        "properties": {
+          "title": { "type": "string" },
+          "reason": { "type": "string" },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": [
+        "has_source_url",
+        "has_retrieval_date",
+        "has_freshness_label",
+        "has_original_summary",
+        "has_no_large_verbatim_copy"
+      ],
+      "properties": {
+        "has_source_url": { "type": "boolean" },
+        "has_retrieval_date": { "type": "boolean" },
+        "has_freshness_label": { "type": "boolean" },
+        "has_original_summary": { "type": "boolean" },
+        "has_no_large_verbatim_copy": { "type": "boolean" }
+      }
+    }
+  }
+}
