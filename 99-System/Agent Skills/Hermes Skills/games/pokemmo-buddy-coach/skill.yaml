@@ -1,0 +1,119 @@
+skill_id: pokemmo_buddy_coach
+name: PokeMMO Buddy Coach
+version: 0.1.0
+status: draft
+category:
+  - game-coach
+  - screenshot-analysis
+  - team-planning
+  - breeding-planner
+runtime:
+  engine: hermes-agent
+  mode: advisory_only
+  invocation_names:
+    - PokeMMO Buddy Coach
+    - PokeBuddy Coach
+    - PokeMMO coach
+summary: >-
+  A safe Hermes/Buddy advisory skill for PokeMMO that analyzes user-provided
+  screenshots and manual game state to produce route, team, breeding, EV,
+  GTL, and money-optimization advice without automating gameplay.
+
+inputs:
+  user_message:
+    type: string
+    required: true
+  screenshot:
+    type: image
+    required: false
+    description: User-provided PokeMMO screenshot, such as Pokemon summary, GTL listing, route, battle, or inventory screen.
+  manual_game_state:
+    type: object
+    required: false
+    description: Optional structured state such as region, badges, current city, party, money, items, objective, and constraints.
+
+outputs:
+  verdict:
+    type: string
+  next_actions:
+    type: array
+    items: string
+  reasoning_summary:
+    type: string
+  warnings:
+    type: array
+    items: string
+  preview_gate:
+    type: array
+    items: string
+    description: Used for breeding or expensive purchases; lists what must be visible before confirming.
+  citations:
+    type: array
+    items: string
+    required_when: web_or_external_sources_used
+
+safety:
+  advisory_only: true
+  allowed:
+    - analyze_user_provided_screenshots
+    - analyze_manual_stats_and_prices
+    - plan_story_routes
+    - evaluate_iv_ev_nature_role_fit
+    - plan_breeding_paths
+    - suggest_gtl_buy_sell_skip_decisions
+    - suggest_money_methods_without_automation
+    - maintain_local_checklists
+  forbidden:
+    - read_game_memory
+    - inspect_network_packets
+    - inject_into_client
+    - patch_or_modify_client
+    - send_keyboard_mouse_controller_inputs
+    - generate_macros_or_bots
+    - automate_battles_catches_routes_farming_or_gtl
+    - bypass_anticheat_or_server_rules
+  uncertainty_policy:
+    - Use in-game Pokédex, current screenshots, or current public sources when mechanics may have changed.
+    - Say when an answer depends on current PokeMMO data not visible in the screenshot.
+    - Never present guessed spawn tables or GTL values as confirmed.
+
+response_template: |
+  Verdict: <one-line answer>
+
+  Why:
+  - <reason>
+  - <reason>
+
+  Do this:
+  1. <step>
+  2. <step>
+  3. <step>
+
+  Watch out:
+  - <important caveat, only if useful>
+
+state_defaults:
+  user: Prismtek
+  current_game: PokeMMO
+  roms:
+    kanto: FireRed
+    johto: HeartGold
+    hoenn: Emerald
+    sinnoh: Platinum
+    unova: Black
+  preferences:
+    - OT-safe when practical
+    - stylish ball choices matter
+    - avoid wasteful breeding
+    - prefer clear practical action over pure theory
+  signature_exception:
+    pokemon: Porygon
+    policy: May travel across regions as a cross-region digital companion arc.
+    forms:
+      - Kanto: Porygon
+      - midgame_region: Porygon2
+      - final_region: Porygon-Z
+
+knowledge_files:
+  - POKEMMO_BUDDY_COACH_SKILL.md
+  - POKEMMO_BUDDY_COACH_WIKI.md
