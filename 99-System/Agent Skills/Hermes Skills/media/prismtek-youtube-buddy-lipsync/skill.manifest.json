@@ -1,0 +1,14 @@
+{
+  "name": "prismtek-youtube-buddy-lipsync",
+  "version": "1.1.0",
+  "description": "Durable knowledge-vault reference for the Buddy talking-host lip-sync workflow.",
+  "canonical_runtime": "codysumpter-cloud/buddy-agent#18",
+  "operator_reference": "codysumpter-cloud/buddy-brain#315",
+  "app_contract": "codysumpter-cloud/prismtek-apps#138",
+  "local_device_reference": "codysumpter-cloud/omni-buddy#11",
+  "upstream_context": "NousResearch/hermes-agent#26463",
+  "verification": [
+    "python3 -m py_compile scripts/*.py",
+    "python3 -m pytest tests/test_prismtek_youtube_buddy_lipsync.py -q"
+  ]
+}
