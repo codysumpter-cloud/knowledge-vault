@@ -1,0 +1,60 @@
+skill_id: wikipedia_karpathy_wiki
+name: Wikipedia Karpathy Wiki
+version: 0.1.0
+status: draft
+owner: Prismtek / Buddy ecosystem
+runtime: hermes-agent
+mode: source_guided_reference
+category:
+  - reference
+  - world-knowledge
+  - learning
+  - research
+summary: >-
+  Turns English Wikipedia into compact Karpathy-style concept cards,
+  learning notes, source maps, and reading paths without committing a
+  raw Wikipedia mirror into Git.
+sources:
+  - https://en.wikipedia.org
+  - https://dumps.wikimedia.org/enwiki/latest/
+  - https://www.mediawiki.org/wiki/API:Main_page
+  - https://www.mediawiki.org/wiki/API:Etiquette
+  - https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use
+inputs:
+  - user_question
+  - topic_optional
+  - wikipedia_url_optional
+  - article_title_optional
+  - desired_depth_optional
+  - freshness_requirement_optional
+outputs:
+  - answer
+  - concept_card_optional
+  - dependency_graph_optional
+  - reading_path_optional
+  - uncertainty_notes
+  - citations_when_source_used
+capabilities:
+  public_reference_use: true
+  wikipedia_api_use: true
+  dump_ingestion_planning: true
+  karpathy_summary_generation: true
+  concept_graph_generation: true
+limits:
+  raw_dump_commits: false
+  large_verbatim_copying: false
+  media_reuse_without_license_check: false
+  high_stakes_final_authority_from_wikipedia_only: false
+quality:
+  require_source_url: true
+  require_retrieval_date: true
+  require_freshness_label: true
+  require_original_summary: true
+  require_attribution_for_reused_text: true
+  require_live_verification_for_volatile_topics: true
+files:
+  readme: README.md
+  skill_contract: WIKIPEDIA_KARPATHY_WIKI_SKILL.md
+  sourcebook: WIKIPEDIA_KARPATHY_SOURCEBOOK.md
+  ingestion_runbook: WIKIPEDIA_INGESTION_RUNBOOK.md
+  schema: WIKIPEDIA_TOPIC_SCHEMA.json
