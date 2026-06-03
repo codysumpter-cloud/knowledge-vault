@@ -57,4 +57,4 @@ files:
   skill_contract: WIKIPEDIA_KARPATHY_WIKI_SKILL.md
   sourcebook: WIKIPEDIA_KARPATHY_SOURCEBOOK.md
   ingestion_runbook: WIKIPEDIA_INGESTION_RUNBOOK.md
-  schema: WIKIPEDIA_TOPIC_SCHEMA.json
+  schema: WIKIPEDIA_TOPIC_SCHEMA.md
