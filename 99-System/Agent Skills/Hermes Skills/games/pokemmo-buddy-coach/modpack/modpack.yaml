@@ -1,0 +1,76 @@
+pack_id: prismtek_pokemmo_buddy_modpack
+name: Prismtek PokeMMO Buddy Modpack Index
+version: 0.1.0
+status: source_index
+mode: links_and_runbook_only
+summary: >-
+  Curated source index and install workflow for PokeMMO client customization.
+  This manifest intentionally stores links, categories, safety checks, and local
+  cache paths rather than vendoring third-party mod binaries.
+
+local_cache:
+  root: ~/Games/PokeMMO/modpacks/prismtek-buddy
+  downloads: ~/Games/PokeMMO/modpacks/prismtek-buddy/downloads
+  enabled: ~/Games/PokeMMO/modpacks/prismtek-buddy/enabled
+  disabled: ~/Games/PokeMMO/modpacks/prismtek-buddy/disabled
+  receipts: ~/Games/PokeMMO/modpacks/prismtek-buddy/receipts
+
+allowed_categories:
+  - follower_sprites
+  - battle_sprites
+  - music_audio
+  - ui_themes
+  - qol_visual_only
+  - fonts_if_redistribution_allowed
+
+forbidden_categories:
+  - roms
+  - client_patches
+  - memory_readers
+  - packet_inspectors
+  - macros
+  - bots
+  - input_automation
+  - shiny_scanners
+  - gtl_snipers
+  - account_tools
+
+sources:
+  official_forum_client_customization:
+    label: PokeMMO Forums - Client Customization
+    url: https://forums.pokemmo.com/index.php?/forum/33-client-customization/
+    role: primary mod and theme discovery source
+    trust: high_for_discovery
+    note: Verify each individual thread for update date, credits, install steps, and redistribution language.
+  official_support_mods_themes:
+    label: PokeMMO Support - how to use mods and themes
+    url: https://support.pokemmo.com/knowledgebase/article/how-to-use-mods-and-themes
+    role: install guidance
+    trust: official
+    note: If inaccessible, use the in-client Mod Management UI and official forum guidance.
+
+install_policy:
+  vendor_third_party_files: false
+  require_source_url: true
+  require_author_credit: true
+  require_retrieval_date: true
+  require_local_receipt: true
+  require_safety_review: true
+
+recommended_pack_slots:
+  - slot: followers
+    category: follower_sprites
+    priority: high
+    desired: clean follower sprites that preserve PokeMMO readability
+  - slot: battle_visuals
+    category: battle_sprites
+    priority: medium
+    desired: readable sprites over noisy HD replacements
+  - slot: ui_theme
+    category: ui_themes
+    priority: high
+    desired: clean dark or pixel-friendly UI with readable text
+  - slot: music
+    category: music_audio
+    priority: low
+    desired: nostalgic audio without huge download size

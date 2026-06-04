@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prismtek.dev/schemas/pokemmo-mod-entry.schema.json",
+  "title": "PokeMMO Mod Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "category",
+    "source_url",
+    "author",
+    "retrieved_at",
+    "status",
+    "safety"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "follower_sprites",
+        "battle_sprites",
+        "music_audio",
+        "ui_themes",
+        "qol_visual_only",
+        "fonts"
+      ]
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "author": {
+      "type": "string"
+    },
+    "license_or_permission": {
+      "type": "string",
+      "default": "unknown"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "redistribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "allowed": {
+          "type": "boolean"
+        },
+        "evidence": {
+          "type": "string"
+        }
+      }
+    },
+    "install_type": {
+      "type": "string",
+      "enum": [
+        "mod_management_import",
+        "theme_import",
+        "manual_verify"
+      ],
+      "default": "mod_management_import"
+    },
+    "local_filename": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "candidate",
+        "recommended",
+        "installed",
+        "rejected",
+        "stale"
+      ]
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "executable",
+        "automation",
+        "memory_access",
+        "packet_access"
+      ],
+      "properties": {
+        "executable": {
+          "type": "boolean"
+        },
+        "automation": {
+          "type": "boolean"
+        },
+        "memory_access": {
+          "type": "boolean"
+        },
+        "packet_access": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
