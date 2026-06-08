@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-06-04",
+  "source": "KnowledgeVault curated seed registry. Full registry generation should be automated from Skill Index and SKILL.md frontmatter.",
+  "skills": [
+    {
+      "id": "github-pr-workflow",
+      "name": "GitHub PR Workflow",
+      "category": "github",
+      "runtime": "vault-reference",
+      "status": "reference",
+      "risk_level": "medium",
+      "requires_network": true,
+      "requires_local_tooling": true,
+      "allowed_in_public_alpha": true,
+      "entrypoint": "99-System/Agent Skills/Hermes Skills/github/github-pr-workflow/SKILL.md",
+      "summary": "Reference workflow for branch, commit, PR, CI, review, and merge operations.",
+      "notes": [
+        "Runtime availability must be verified in the target repo before claiming it is wired."
+      ]
+    },
+    {
+      "id": "secure-credential-management",
+      "name": "Secure Credential Management",
+      "category": "devops",
+      "runtime": "vault-reference",
+      "status": "reference",
+      "risk_level": "high",
+      "requires_network": false,
+      "requires_local_tooling": false,
+      "allowed_in_public_alpha": true,
+      "entrypoint": "99-System/Agent Skills/Hermes Skills/devops/secure-credential-management/SKILL.md",
+      "summary": "Reference patterns for safe handling of sensitive integration material.",
+      "notes": [
+        "Keep examples sanitized in public vault docs."
+      ]
+    },
+    {
+      "id": "release-conductor",
+      "name": "Release Conductor",
+      "category": "devops",
+      "runtime": "vault-reference",
+      "status": "reference",
+      "risk_level": "medium",
+      "requires_network": true,
+      "requires_local_tooling": true,
+      "allowed_in_public_alpha": true,
+      "entrypoint": "99-System/Agent Skills/Hermes Skills/devops/release-conductor/SKILL.md",
+      "summary": "Release management discipline for the Prismtek/Buddy ecosystem.",
+      "notes": [
+        "Use as a checklist unless runtime integration is verified."
+      ]
+    },
+    {
+      "id": "pixel-art",
+      "name": "Pixel Art",
+      "category": "creative",
+      "runtime": "vault-reference",
+      "status": "reference",
+      "risk_level": "low",
+      "requires_network": false,
+      "requires_local_tooling": true,
+      "allowed_in_public_alpha": true,
+      "entrypoint": "99-System/Agent Skills/Hermes Skills/creative/pixel-art/SKILL.md",
+      "summary": "Reference guidance for hard-edged era-style pixel art workflows.",
+      "notes": [
+        "Good candidate for Buddy public creative workflows."
+      ]
+    },
+    {
+      "id": "pokemmo-buddy-coach-modpack",
+      "name": "PokeMMO Buddy Coach Modpack Index",
+      "category": "games",
+      "runtime": "vault-reference",
+      "status": "reference",
+      "risk_level": "medium",
+      "requires_network": true,
+      "requires_local_tooling": false,
+      "allowed_in_public_alpha": true,
+      "entrypoint": "99-System/Agent Skills/Hermes Skills/games/pokemmo-buddy-coach/modpack/README.md",
+      "summary": "Source index and runbook for safe visual/audio/UI PokeMMO customization guidance.",
+      "notes": [
+        "Does not vendor third-party mod binaries.",
+        "Does not permit gameplay automation."
+      ]
+    }
+  ]
+}
