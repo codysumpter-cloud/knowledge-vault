@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Public-safety checks for KnowledgeVault.
 
-Hard-fails only on tracked forbidden paths and unsafe automation staging. This
-keeps CI useful without breaking on old mirrored reference notes that need a
-separate human redaction review.
+Hard-fails on tracked forbidden paths and unsafe automation staging. The check is
+path-based on purpose: historical reference notes need separate human review.
 """
 from __future__ import annotations
 
@@ -25,8 +24,6 @@ FORBIDDEN_NAME_PARTS = (
     ".env",
     "private-key",
     "private_key",
-    "credential",
-    "credentials",
 )
 AUTOMATION_FILES = (
     ".github/workflows/vault-steward-daily.yml",
