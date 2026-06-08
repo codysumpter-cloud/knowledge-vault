@@ -18,17 +18,23 @@ if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
 fi
 
 python3 "99-System/Automation/vault_maintainer.py"
+python3 "99-System/Automation/vault_doctor.py"
 
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   git add \
     "AGENTS.md" \
+    "README.md" \
+    "SYSTEMMAP.md" \
+    "RUNBOOK.md" \
+    "BACKLOG.md" \
+    "SECURITY.md" \
     ".github/workflows" \
     "01-Dashboard" \
     "30 - Projects/GitHub" \
     "99-System/Agents" \
     "99-System/Automation" \
+    "99-System/Agent Skills" \
     "99-System/Repositories" \
-    "99-System/Security" \
     ".gitignore"
 
   if ! git diff --cached --quiet; then
