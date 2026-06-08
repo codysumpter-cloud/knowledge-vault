@@ -5,6 +5,17 @@ __MACOSX/
 # Archives / package artifacts
 *.zip
 
+# ChatGPT raw exports / private intake material
+conversations.json
+chat.html
+message_feedback.json
+model_comparisons.json
+user.json
+chatgpt-export*/
+chatgpt-history-raw*/
+raw-chatgpt*/
+local-chatgpt*/
+
 # Obsidian local workspace state
 .obsidian/workspace.json
 .obsidian/workspaces.json
