@@ -29,6 +29,9 @@ jobs:
           VAULT_TRACK_PRIVATE: "false"
         run: python3 "99-System/Automation/vault_maintainer.py"
 
+      - name: Generate dashboards
+        run: python3 "99-System/Automation/generate_vault_dashboards.py"
+
       - name: Run Vault Doctor
         run: python3 "99-System/Automation/vault_doctor.py"
 
