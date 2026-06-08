@@ -29,19 +29,30 @@ jobs:
           VAULT_TRACK_PRIVATE: "false"
         run: python3 "99-System/Automation/vault_maintainer.py"
 
+      - name: Generate dashboards
+        run: python3 "99-System/Automation/generate_vault_dashboards.py"
+
+      - name: Run Vault Doctor
+        run: python3 "99-System/Automation/vault_doctor.py"
+
       - name: Commit safe vault updates
         run: |
           git config user.name "vault-steward[bot]"
           git config user.email "vault-steward[bot]@users.noreply.github.com"
           git add \
             AGENTS.md \
+            README.md \
+            SYSTEMMAP.md \
+            RUNBOOK.md \
+            BACKLOG.md \
+            SECURITY.md \
             .github/workflows \
             "01-Dashboard" \
             "30 - Projects/GitHub" \
             "99-System/Agents" \
             "99-System/Automation" \
+            "99-System/Agent Skills" \
             "99-System/Repositories" \
-            "99-System/Security" \
             .gitignore
           if git diff --cached --quiet; then
             echo "No vault changes to commit."

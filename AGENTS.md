@@ -15,6 +15,7 @@ This vault is the project-memory source of truth for Prismtek's work.
 - Hermes-agent is the current main working agent system.
 - Buddy-agent is the intended primary and eventually only agent repository. New durable agent work should converge there.
 - Buddy-brain remains continuity and memory context until Buddy-agent fully owns that role.
+- KnowledgeVault is the book/memory layer, not the execution runtime.
 
 ## Prismtek operating preferences
 
@@ -26,11 +27,23 @@ This vault is the project-memory source of truth for Prismtek's work.
 
 ## Startup memory contract
 
-Agents should read SOUL.md, USER.md, AGENTS.md, daily notes, SYSTEMMAP.md, RUNBOOK.md, BACKLOG.md, and file listings before trusting automation claims when those files exist.
+Agents should read these files, in order, before trusting automation claims or editing the vault:
+
+1. `README.md`
+2. `AGENTS.md`
+3. `SYSTEMMAP.md`
+4. `RUNBOOK.md`
+5. `BACKLOG.md`
+6. `SECURITY.md`
+7. `01-Dashboard/Today.md`
+8. `01-Dashboard/Project Source of Truth.md`
+9. `01-Dashboard/Agent Handoff.md`
+10. relevant project notes under `30 - Projects/GitHub/codysumpter-cloud/`
+11. relevant skill notes under `99-System/Agent Skills/`
 
 ## Agent: Vault Steward
 
-The Vault Steward maintains repo project folders, indexes, registries, and daily logs.
+The Vault Steward maintains repo project folders, indexes, registries, dashboards, and daily logs.
 
 Default behavior:
 
@@ -39,14 +52,31 @@ Default behavior:
 3. Generate or refresh `Project.md`, `Agent Context.md`, `Decisions.md`, and `Tasks.md` when missing.
 4. Preserve human-written notes outside generated blocks.
 5. Update the GitHub project index and public repo registry.
-6. Commit changes through GitHub Actions when files changed.
+6. Generate dashboard pages under `01-Dashboard/`.
+7. Run `99-System/Automation/vault_doctor.py` before committing automation updates.
+8. Commit changes through GitHub Actions when files changed.
 
 Private repo handling is opt-in only. Keep `VAULT_TRACK_PRIVATE=false` unless the vault repository is private.
+
+## Skill claim rules
+
+A skill note in KnowledgeVault is a reference unless proven otherwise in the target runtime repo.
+
+Use explicit status wording:
+
+- `reference` — useful source material only
+- `draft` — designed but not implemented
+- `ported` — copied/adapted into the target repo
+- `wired` — connected to a runtime or app path
+- `tested` — validated by command, CI, or runtime behavior
+- `disabled` — intentionally unavailable
+- `public-alpha-safe` — allowed for guarded public alpha use
 
 ## Safety invariants
 
 - Never write private repo names into tracked public files.
 - Never print sensitive values into logs.
 - Never commit files under `00-Private/**`.
+- Never commit files under `99-System/Security/**`.
 - Never overwrite human-authored sections unless they are between explicit generated markers.
 - Prefer additive updates over destructive rewrites.

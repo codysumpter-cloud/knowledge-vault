@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prismtek.dev/schemas/knowledge-vault/skill-registry.schema.json",
+  "title": "KnowledgeVault Skill Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["generated_at", "source", "skills"],
+  "properties": {
+    "generated_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "source": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "category",
+          "runtime",
+          "status",
+          "risk_level",
+          "requires_network",
+          "requires_local_tooling",
+          "allowed_in_public_alpha",
+          "entrypoint"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "runtime": {
+            "type": "string",
+            "enum": ["hermes", "buddy-agent", "vault-reference", "unknown"]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["reference", "draft", "ported", "wired", "tested", "disabled", "public-alpha-safe"]
+          },
+          "risk_level": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "blocked", "unknown"]
+          },
+          "requires_network": {
+            "type": "boolean"
+          },
+          "requires_local_tooling": {
+            "type": "boolean"
+          },
+          "allowed_in_public_alpha": {
+            "type": "boolean"
+          },
+          "entrypoint": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
