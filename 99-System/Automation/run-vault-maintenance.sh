@@ -18,6 +18,7 @@ if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
 fi
 
 python3 "99-System/Automation/vault_maintainer.py"
+python3 "99-System/Automation/generate_vault_dashboards.py"
 python3 "99-System/Automation/vault_doctor.py"
 
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
