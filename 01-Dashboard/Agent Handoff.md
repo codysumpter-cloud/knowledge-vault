@@ -1,0 +1,50 @@
+---
+type: dashboard
+scope: agent-handoff
+last_synced: 2026-06-04
+tags:
+  - dashboard
+  - agent
+  - handoff
+---
+
+# Agent Handoff
+
+Read this before making changes in KnowledgeVault.
+
+## Current operating direction
+
+- OpenClaw is retired for current work.
+- Hermes-agent is the current main working agent system.
+- Buddy-agent is being prepared to become the primary runtime.
+- KnowledgeVault is the book and memory layer.
+
+## Required reading
+
+1. `README.md`
+2. `AGENTS.md`
+3. `SYSTEMMAP.md`
+4. `RUNBOOK.md`
+5. `BACKLOG.md`
+6. `SECURITY.md`
+7. `01-Dashboard/Project Source of Truth.md`
+8. `30 - Projects/GitHub/GitHub Projects Index.md`
+
+## Safe change pattern
+
+1. Make additive changes.
+2. Preserve human-authored sections unless directly asked to rewrite them.
+3. Do not present reference notes as implemented runtime features.
+4. Run `python3 "99-System/Automation/vault_doctor.py"`.
+5. Open a PR with clear receipts.
+
+## What to verify externally
+
+Always verify these in GitHub or the owning app/runtime repo before claiming success:
+
+- active PR state
+- CI status
+- mergeability
+- runtime integration
+- shipped app behavior
+- public-alpha readiness
