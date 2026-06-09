@@ -1,7 +1,5 @@
 # KnowledgeVault
 
-> **Suggested GitHub repo description:** Public, agent-readable operating memory for Prismtek: project context, decisions, runbooks, skill indexes, provenance, dashboards, and retrieval-ready knowledge packs for Buddy/Hermes.
-
 KnowledgeVault is Prismtek's public **agent memory database** and human-readable operating book.
 
 It exists so a fresh human, Buddy, Hermes, or future agent can quickly answer:
