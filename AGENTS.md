@@ -32,14 +32,31 @@ Agents should read these files, in order, before trusting automation claims or e
 1. `README.md`
 2. `AGENTS.md`
 3. `SYSTEMMAP.md`
-4. `RUNBOOK.md`
-5. `BACKLOG.md`
-6. `SECURITY.md`
-7. `01-Dashboard/Today.md`
-8. `01-Dashboard/Project Source of Truth.md`
-9. `01-Dashboard/Agent Handoff.md`
-10. relevant project notes under `30 - Projects/GitHub/codysumpter-cloud/`
-11. relevant skill notes under `99-System/Agent Skills/`
+4. `AGENT_DATABASE_BLUEPRINT.md`
+5. `RUNBOOK.md`
+6. `BACKLOG.md`
+7. `SECURITY.md`
+8. `01-Dashboard/Today.md`
+9. `01-Dashboard/Project Source of Truth.md`
+10. `01-Dashboard/Agent Handoff.md`
+11. relevant project notes under `30 - Projects/GitHub/codysumpter-cloud/`
+12. relevant skill notes under `99-System/Agent Skills/`
+
+## Agent database rules
+
+KnowledgeVault should be treated as an agent memory database, not a loose markdown dump.
+
+Agents should prefer notes that are:
+
+- source-linked
+- status-tagged
+- last-verified when they make current claims
+- scoped to known facts, assumptions, risks, and next actions
+- public-safe
+
+Agents should not blindly ingest the whole vault. Load the cold-start path, then retrieve task-specific project notes, skill notes, source packs, or generated bundles.
+
+See `AGENT_DATABASE_BLUEPRINT.md` for the full design standard.
 
 ## Agent: Vault Steward
 
