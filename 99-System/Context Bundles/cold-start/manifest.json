@@ -1,0 +1,79 @@
+{
+  "id": "cold-start",
+  "name": "KnowledgeVault Cold Start",
+  "purpose": "Orient a new human or agent to KnowledgeVault without relying on prior chat context.",
+  "status": "active",
+  "generated_at": "2026-06-09",
+  "privacy": "public",
+  "task_tags": [
+    "orientation",
+    "startup",
+    "agent-memory",
+    "vault-navigation"
+  ],
+  "included_files": [
+    {
+      "path": "README.md",
+      "reason": "Public front door and repo purpose.",
+      "required": true
+    },
+    {
+      "path": "AGENTS.md",
+      "reason": "Agent operating contract and safety rules.",
+      "required": true
+    },
+    {
+      "path": "SYSTEMMAP.md",
+      "reason": "Human and agent navigation map.",
+      "required": true
+    },
+    {
+      "path": "AGENT_DATABASE_BLUEPRINT.md",
+      "reason": "Agent database model, retrieval rules, and quality gates.",
+      "required": true
+    },
+    {
+      "path": "99-System/Standards/NOTE_FORMAT_STANDARD.md",
+      "reason": "Canonical note shape and formatting standard.",
+      "required": true
+    },
+    {
+      "path": "RUNBOOK.md",
+      "reason": "Safe maintenance flow.",
+      "required": true
+    },
+    {
+      "path": "SECURITY.md",
+      "reason": "Public/private safety policy.",
+      "required": true
+    },
+    {
+      "path": "BACKLOG.md",
+      "reason": "Current roadmap and next improvements.",
+      "required": false
+    }
+  ],
+  "excluded_patterns": [
+    "00-Private/**",
+    "99-System/Security/**",
+    "99-System/Logs/**",
+    "99-System/Backups/**"
+  ],
+  "freshness_notes": [
+    "Repo, PR, CI, release, and runtime capability claims must be verified against the owning source before action.",
+    "This bundle is for orientation; it should not be treated as proof that any feature is wired or tested."
+  ],
+  "safety_notes": [
+    "This bundle is public-only.",
+    "Do not add local-only private files to this bundle.",
+    "Do not infer private project state from omitted files."
+  ],
+  "receipt": {
+    "receipt_id": "cold-start-2026-06-09",
+    "live_sources_checked": [],
+    "known_unverified_claims": [
+      "Current GitHub state is not embedded in this bundle.",
+      "Runtime capability status must be checked in the owning runtime repo."
+    ]
+  }
+}
