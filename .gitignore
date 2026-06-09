@@ -5,6 +5,16 @@ __MACOSX/
 # Archives / package artifacts
 *.zip
 
+# Python local/runtime state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
 # ChatGPT raw exports / private intake material
 conversations.json
 chat.html
@@ -39,6 +49,13 @@ local-chatgpt*/
 99-System/Backups/**
 99-System/Prompts/**
 99-System/Templates/**
+
+# Memory Engine generated outputs
+99-System/Memory Engine/memory-index.json
+99-System/Memory Engine/memory-graph.json
+99-System/Memory Engine/Obsidian Memory Index.md
+99-System/Context Bundles/*.bundle.md
+99-System/Context Bundles/*.receipt.json
 
 # Credentials / signing / private key material
 *.certSigningRequest
