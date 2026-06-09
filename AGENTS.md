@@ -15,7 +15,7 @@ This vault is the project-memory source of truth for Prismtek's work.
 - Hermes-agent is the current main working agent system.
 - Buddy-agent is the intended primary and eventually only agent repository. New durable agent work should converge there.
 - Buddy-brain remains continuity and memory context until Buddy-agent fully owns that role.
-- KnowledgeVault is the book/memory layer, not the execution runtime.
+- KnowledgeVault is the book/memory/database layer, not the execution runtime.
 
 ## Prismtek operating preferences
 
@@ -32,15 +32,18 @@ Agents should read these files, in order, before trusting automation claims or e
 1. `README.md`
 2. `AGENTS.md`
 3. `SYSTEMMAP.md`
-4. `AGENT_DATABASE_BLUEPRINT.md`
-5. `RUNBOOK.md`
-6. `BACKLOG.md`
-7. `SECURITY.md`
-8. `01-Dashboard/Today.md`
-9. `01-Dashboard/Project Source of Truth.md`
-10. `01-Dashboard/Agent Handoff.md`
-11. relevant project notes under `30 - Projects/GitHub/codysumpter-cloud/`
-12. relevant skill notes under `99-System/Agent Skills/`
+4. `AGENT_KNOWLEDGE_INDEX.md`
+5. `AGENT_DATABASE_BLUEPRINT.md`
+6. `99-System/Context Bundles/cold-start/bundle.md`
+7. `99-System/Standards/NOTE_FORMAT_STANDARD.md`
+8. `RUNBOOK.md`
+9. `BACKLOG.md`
+10. `SECURITY.md`
+11. `01-Dashboard/Today.md`
+12. `01-Dashboard/Project Source of Truth.md`
+13. `01-Dashboard/Agent Handoff.md`
+14. relevant project notes under `30 - Projects/GitHub/codysumpter-cloud/`
+15. relevant skill notes under `99-System/Agent Skills/`
 
 ## Agent database rules
 
@@ -53,10 +56,22 @@ Agents should prefer notes that are:
 - last-verified when they make current claims
 - scoped to known facts, assumptions, risks, and next actions
 - public-safe
+- shaped according to `99-System/Standards/NOTE_FORMAT_STANDARD.md`
 
 Agents should not blindly ingest the whole vault. Load the cold-start path, then retrieve task-specific project notes, skill notes, source packs, or generated bundles.
 
-See `AGENT_DATABASE_BLUEPRINT.md` for the full design standard.
+See `AGENT_DATABASE_BLUEPRINT.md` and `AGENT_KNOWLEDGE_INDEX.md` for the full design standard and routing index.
+
+## Quality checks
+
+Before claiming a vault formatting or maintenance pass is complete, run or account for:
+
+```bash
+python3 "99-System/Automation/vault_doctor.py"
+python3 "99-System/Automation/note_quality_linter.py"
+```
+
+`vault_doctor.py` checks publication safety. `note_quality_linter.py` checks whether notes are shaped well enough for agents to retrieve and trust.
 
 ## Agent: Vault Steward
 
@@ -71,7 +86,8 @@ Default behavior:
 5. Update the GitHub project index and public repo registry.
 6. Generate dashboard pages under `01-Dashboard/`.
 7. Run `99-System/Automation/vault_doctor.py` before committing automation updates.
-8. Commit changes through GitHub Actions when files changed.
+8. Run `99-System/Automation/note_quality_linter.py` during quality passes.
+9. Commit changes through GitHub Actions when files changed.
 
 Private repo handling is opt-in only. Keep `VAULT_TRACK_PRIVATE=false` unless the vault repository is private.
 

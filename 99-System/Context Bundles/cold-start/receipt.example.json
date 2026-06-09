@@ -1,0 +1,27 @@
+{
+  "vault": "knowledge-vault",
+  "bundle": "cold-start",
+  "receipt_id": "cold-start-example-2026-06-09",
+  "task": "Orient a new agent to the vault",
+  "loaded_files": [
+    "README.md",
+    "AGENTS.md",
+    "SYSTEMMAP.md",
+    "AGENT_DATABASE_BLUEPRINT.md",
+    "99-System/Standards/NOTE_FORMAT_STANDARD.md",
+    "RUNBOOK.md",
+    "SECURITY.md",
+    "BACKLOG.md"
+  ],
+  "live_sources_checked": [],
+  "stale_or_unverified_claims": [
+    "Current GitHub state was not checked by this bundle.",
+    "Runtime capability status was not checked by this bundle."
+  ],
+  "safety_checks": [
+    "Public-only bundle reviewed.",
+    "Local-only folders excluded.",
+    "Security folders excluded."
+  ],
+  "next_action": "Load task-specific project, skill, source, or runbook notes."
+}
