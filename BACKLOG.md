@@ -1,6 +1,6 @@
 # KnowledgeVault Backlog
 
-This backlog ranks improvements that make KnowledgeVault a better book for humans and a better operating memory for agents.
+This backlog ranks improvements that make KnowledgeVault a better book for humans and a better operating memory/database for agents.
 
 ## Priority legend
 
@@ -14,7 +14,7 @@ This backlog ranks improvements that make KnowledgeVault a better book for human
 
 **Status:** In progress.
 
-**Why:** The repo is public. Private repo names, secrets, local paths, and security material must not leak into tracked files.
+**Why:** The repo is public. Private repo names, sensitive local paths, and security material must not leak into tracked files.
 
 **Done when:**
 
@@ -44,9 +44,10 @@ This backlog ranks improvements that make KnowledgeVault a better book for human
 
 - Root `README.md` exists.
 - `SYSTEMMAP.md`, `RUNBOOK.md`, `SECURITY.md`, and `BACKLOG.md` exist.
+- `AGENT_DATABASE_BLUEPRINT.md` defines the agent-database standard.
 - The `knowledge-vault` project note is marked active and explains its purpose.
 
-## P1 — Agent book quality
+## P1 — Agent database quality
 
 ### 4. Upgrade repo project notes from scaffolds to useful briefs
 
@@ -99,7 +100,7 @@ A canonical registry exists with fields like:
   "runtime": "hermes",
   "status": "reference",
   "risk_level": "medium",
-  "requires_secrets": false,
+  "requires_private_config": false,
   "requires_network": true,
   "allowed_in_public_alpha": true,
   "entrypoint": "99-System/Agent Skills/Hermes Skills/github/github-pr-workflow/SKILL.md"
@@ -123,9 +124,22 @@ A linter flags notes missing:
 - next action
 - source links where claims depend on external state
 
+### 8. Add retrieval receipts
+
+**Status:** Needed.
+
+**Why:** Agents should be able to explain which vault files, bundles, and live sources influenced meaningful answers or repo actions.
+
+**Done when:**
+
+- Bundle export scripts produce a receipt ID.
+- Agent actions can list loaded vault files.
+- Stale or unverified claims are surfaced before action.
+- Safety checks are recorded without exposing sensitive material.
+
 ## P2 — Productization
 
-### 8. Add agent bootstrap packs
+### 9. Add agent bootstrap packs
 
 **Status:** Needed.
 
@@ -142,7 +156,7 @@ The vault includes compact boot packs for:
 - PokeMMO coach
 - content/social ops assistant
 
-### 9. Split public/private vaults or make this repo private
+### 10. Split public/private vaults or make this repo private
 
 **Status:** Future decision.
 
@@ -156,7 +170,7 @@ The vault includes compact boot packs for:
 
 **Current recommendation:** keep this repo public, but create a separate private companion vault before storing deeper operational memory.
 
-### 10. Connect Buddy-agent to curated vault exports
+### 11. Connect Buddy-agent to curated vault exports
 
 **Status:** Future.
 
@@ -167,3 +181,15 @@ The vault includes compact boot packs for:
 - Export scripts produce compact context bundles.
 - Buddy-agent can load a bundle by task type.
 - Receipts show which bundle was used.
+
+### 12. Add graph/index exports
+
+**Status:** Future.
+
+**Why:** Agents will benefit from structured edges between projects, decisions, skills, runbooks, and source packs.
+
+**Done when:**
+
+- The vault can emit a public-safe graph index.
+- Nodes include type, status, freshness, and source-of-truth metadata.
+- Edges connect repos to decisions, skills to runtimes, and runbooks to tasks.
