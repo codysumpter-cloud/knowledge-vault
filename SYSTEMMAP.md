@@ -4,12 +4,13 @@ This map explains how to navigate KnowledgeVault as both a human-readable book a
 
 ## Mental model
 
-KnowledgeVault has four jobs:
+KnowledgeVault has five jobs:
 
 1. **Orient:** explain the Prismtek/Buddy/Hermes ecosystem clearly enough that a new human or agent can get productive quickly.
 2. **Remember:** preserve project decisions, repo state, handoffs, runbooks, and reusable skill knowledge.
 3. **Retrieve:** help agents load the smallest useful context bundle for the task instead of ingesting the entire vault.
-4. **Protect:** keep public knowledge public-safe while keeping private notes and sensitive operational details out of Git.
+4. **Format:** keep notes consistent enough for humans to skim and agents to parse.
+5. **Protect:** keep public knowledge public-safe while keeping private notes and sensitive operational details out of Git.
 
 ## Source-of-truth split
 
@@ -22,6 +23,9 @@ KnowledgeVault has four jobs:
 | Durable decisions | KnowledgeVault |
 | Agent handoffs | KnowledgeVault |
 | Agent database standards | `AGENT_DATABASE_BLUEPRINT.md` |
+| Agent routing index | `AGENT_KNOWLEDGE_INDEX.md` |
+| Formatting standards | `99-System/Standards/` |
+| Context bundle manifests | `99-System/Context Bundles/` |
 | Skills and runbooks | KnowledgeVault / Buddy-agent once ported |
 | Sensitive private context | Never public KnowledgeVault |
 | Private notes while public | Local-only `00-Private/**` |
@@ -33,13 +37,16 @@ Use this path for a cold start:
 1. [`README.md`](README.md) — public front door.
 2. [`AGENTS.md`](AGENTS.md) — rules for agents.
 3. [`SYSTEMMAP.md`](SYSTEMMAP.md) — this navigation map.
-4. [`AGENT_DATABASE_BLUEPRINT.md`](AGENT_DATABASE_BLUEPRINT.md) — standards for making this a true agent memory database.
-5. [`RUNBOOK.md`](RUNBOOK.md) — how to maintain or safely modify the vault.
-6. [`SECURITY.md`](SECURITY.md) — what must not be published.
-7. [`BACKLOG.md`](BACKLOG.md) — current improvement plan.
-8. [`01-Dashboard/Project Source of Truth.md`](01-Dashboard/Project%20Source%20of%20Truth.md) — main dashboard.
-9. [`30 - Projects/GitHub/GitHub Projects Index.md`](30%20-%20Projects/GitHub/GitHub%20Projects%20Index.md) — repo memory index.
-10. [`99-System/Agent Skills/Skill Index.md`](99-System/Agent%20Skills/Skill%20Index.md) — skill catalog.
+4. [`AGENT_KNOWLEDGE_INDEX.md`](AGENT_KNOWLEDGE_INDEX.md) — task routing for agents.
+5. [`AGENT_DATABASE_BLUEPRINT.md`](AGENT_DATABASE_BLUEPRINT.md) — standards for making this a true agent memory database.
+6. [`99-System/Context Bundles/cold-start/bundle.md`](99-System/Context%20Bundles/cold-start/bundle.md) — first curated context bundle.
+7. [`99-System/Standards/NOTE_FORMAT_STANDARD.md`](99-System/Standards/NOTE_FORMAT_STANDARD.md) — note format contract.
+8. [`RUNBOOK.md`](RUNBOOK.md) — how to maintain or safely modify the vault.
+9. [`SECURITY.md`](SECURITY.md) — what must not be published.
+10. [`BACKLOG.md`](BACKLOG.md) — current improvement plan.
+11. [`01-Dashboard/Project Source of Truth.md`](01-Dashboard/Project%20Source%20of%20Truth.md) — main dashboard.
+12. [`30 - Projects/GitHub/GitHub Projects Index.md`](30%20-%20Projects/GitHub/GitHub%20Projects%20Index.md) — repo memory index.
+13. [`99-System/Agent Skills/Skill Index.md`](99-System/Agent%20Skills/Skill%20Index.md) — skill catalog.
 
 ## Folder guide
 
@@ -67,6 +74,33 @@ Each repo should eventually have:
 
 GitHub is still the source of truth for the code. These notes are the source of truth for context.
 
+### `99-System/Context Bundles/`
+
+Curated vault slices for task-specific agent retrieval.
+
+Start with:
+
+- [`99-System/Context Bundles/README.md`](99-System/Context%20Bundles/README.md)
+- [`99-System/Context Bundles/cold-start/bundle.md`](99-System/Context%20Bundles/cold-start/bundle.md)
+
+### `99-System/Standards/`
+
+Formatting and record-shape standards.
+
+Start with:
+
+- [`99-System/Standards/NOTE_FORMAT_STANDARD.md`](99-System/Standards/NOTE_FORMAT_STANDARD.md)
+- [`99-System/Standards/RECORD_EXAMPLES.md`](99-System/Standards/RECORD_EXAMPLES.md)
+
+### `99-System/Schemas/`
+
+Machine-readable schemas for metadata and bundles.
+
+Important files:
+
+- `note.schema.json`
+- `context-bundle.schema.json`
+
 ### `99-System/Agents/`
 
 Agent specifications, operating loops, and logs.
@@ -83,6 +117,7 @@ Important files:
 
 - `vault_maintainer.py` — syncs repo memory folders and indexes.
 - `vault_doctor.py` — checks for public-safety hazards.
+- `note_quality_linter.py` — checks markdown note shape and agent-readiness.
 - `run-vault-maintenance.sh` — local maintenance wrapper.
 - `README.md` — setup and maintenance notes.
 
@@ -116,7 +151,8 @@ This folder is intentionally ignored by Git. Do not rely on public GitHub to pre
 | Whether a skill actually works | skill note + target runtime repo + verification receipt |
 | Vault maintenance | `RUNBOOK.md`, `99-System/Automation/README.md` |
 | Safety/publication rules | `SECURITY.md`, `.gitignore`, Vault Steward spec |
-| Agent database quality rules | `AGENT_DATABASE_BLUEPRINT.md` |
+| Agent database quality rules | `AGENT_DATABASE_BLUEPRINT.md`, `99-System/Standards/` |
+| Context-bundle loading | `AGENT_KNOWLEDGE_INDEX.md`, `99-System/Context Bundles/` |
 | Broad concept learning | relevant source pack README + concept cards + source links |
 
 ## Agent writing rules
@@ -131,6 +167,7 @@ Agents may add or update:
 - Backlog items
 - Retrieval bundle manifests
 - Status-tagged skill metadata
+- Formatting standards and schemas
 
 Agents must not add or update:
 
@@ -152,6 +189,7 @@ A good KnowledgeVault note should be:
 - **Scoped:** says what is known, unknown, and unsafe to assume.
 - **Public-safe:** contains no sensitive private operational details.
 - **Retrieval-friendly:** compact enough to load in a task-specific context bundle.
+- **Lintable:** shaped consistently enough for `note_quality_linter.py` to inspect.
 
 ## Current architecture direction
 
