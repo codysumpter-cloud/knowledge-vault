@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/codysumpter-cloud/knowledge-vault/99-System/Schemas/context-bundle.schema.json",
+  "title": "KnowledgeVault Context Bundle Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "purpose",
+    "status",
+    "generated_at",
+    "privacy",
+    "included_files",
+    "excluded_patterns",
+    "freshness_notes",
+    "safety_notes"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "purpose": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "stale", "disabled"]
+    },
+    "generated_at": { "type": "string" },
+    "privacy": {
+      "type": "string",
+      "enum": ["public", "local-only", "private-companion"]
+    },
+    "task_tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "included_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "reason"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string" },
+          "reason": { "type": "string" },
+          "required": { "type": "boolean", "default": true }
+        }
+      }
+    },
+    "excluded_patterns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "freshness_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "safety_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "receipt": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "receipt_id": { "type": "string" },
+        "live_sources_checked": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "known_unverified_claims": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
