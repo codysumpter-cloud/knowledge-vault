@@ -1,13 +1,34 @@
 # KnowledgeVault
 
-KnowledgeVault is the public, agent-readable operating memory for Prismtek.
+> **Suggested GitHub repo description:** Public, agent-readable operating memory for Prismtek: project context, decisions, runbooks, skill indexes, provenance, dashboards, and retrieval-ready knowledge packs for Buddy/Hermes.
 
-It is designed to be useful in two ways:
+KnowledgeVault is Prismtek's public **agent memory database** and human-readable operating book.
 
-1. **For agents:** a durable source of context, decisions, project state, runbooks, skill indexes, and handoff instructions.
-2. **For humans:** a navigable Obsidian vault that explains what the Prismtek/Buddy ecosystem is, what matters now, and where to go next.
+It exists so a fresh human, Buddy, Hermes, or future agent can quickly answer:
 
-GitHub remains the source of truth for code, issues, pull requests, CI state, and releases. KnowledgeVault is the source of truth for project memory: decisions, status, context, roadmaps, runbooks, handoffs, daily agent logs, and agent-facing operating rules.
+- What is this ecosystem?
+- Which repos matter?
+- What decisions have already been made?
+- What is safe to assume?
+- What is still unknown, stale, or risky?
+- Which source should be checked before acting?
+- What context bundle should an agent load for this task?
+
+GitHub remains the source of truth for code, issues, pull requests, CI state, and releases. KnowledgeVault is the source of truth for durable project memory: decisions, status, context, roadmaps, runbooks, handoffs, daily agent logs, and agent-facing operating rules.
+
+## What this repo is
+
+KnowledgeVault is not just notes. Treat it as a small, public-safe database for agents.
+
+| Layer | Purpose |
+|---|---|
+| **Book** | Human-readable explanations, maps, and dashboards. |
+| **Memory** | Durable decisions, project state, status, and handoffs. |
+| **Index** | Repo maps, skill registries, source maps, and generated dashboards. |
+| **Retrieval substrate** | Curated context that agents can load by task without swallowing the whole vault. |
+| **Safety boundary** | Public/private rules, source-of-truth rules, and claim-status rules. |
+
+The best version of this repo is a **trusted operating memory**: easy for humans to browse, strict enough for automation, and structured enough for agents to retrieve only the right context.
 
 ## Current role in the Prismtek stack
 
@@ -25,6 +46,7 @@ KnowledgeVault is the memory/book layer for the Buddy and Hermes ecosystem.
 |---|---|
 | Agent operating contract | [`AGENTS.md`](AGENTS.md) |
 | Human/agent navigation map | [`SYSTEMMAP.md`](SYSTEMMAP.md) |
+| Agent database north-star design | [`AGENT_DATABASE_BLUEPRINT.md`](AGENT_DATABASE_BLUEPRINT.md) |
 | Maintenance commands and workflows | [`RUNBOOK.md`](RUNBOOK.md) |
 | Current improvement backlog | [`BACKLOG.md`](BACKLOG.md) |
 | Public/private safety policy | [`SECURITY.md`](SECURITY.md) |
@@ -33,6 +55,7 @@ KnowledgeVault is the memory/book layer for the Buddy and Hermes ecosystem.
 | Vault Steward agent | [`99-System/Agents/Vault Steward/AGENT.md`](99-System/Agents/Vault%20Steward/AGENT.md) |
 | Vault automation | [`99-System/Automation/README.md`](99-System/Automation/README.md) |
 | Hermes/Buddy skill index | [`99-System/Agent Skills/Skill Index.md`](99-System/Agent%20Skills/Skill%20Index.md) |
+| Wikipedia knowledge pack | [`99-System/Agent Skills/Hermes Skills/reference/wikipedia-karpathy-wiki/README.md`](99-System/Agent%20Skills/Hermes%20Skills/reference/wikipedia-karpathy-wiki/README.md) |
 
 ## Repository map
 
@@ -40,6 +63,7 @@ KnowledgeVault is the memory/book layer for the Buddy and Hermes ecosystem.
 .
 ├── AGENTS.md                         # Agent operating contract
 ├── README.md                         # Public repo front door
+├── AGENT_DATABASE_BLUEPRINT.md       # North-star design for agent-grade memory
 ├── SYSTEMMAP.md                      # Human + agent navigation map
 ├── RUNBOOK.md                        # Safe operations guide
 ├── BACKLOG.md                        # Ranked improvement backlog
@@ -52,6 +76,84 @@ KnowledgeVault is the memory/book layer for the Buddy and Hermes ecosystem.
 ├── 99-System/Repositories/           # Generated public repo registries
 └── 00-Private/                       # Local-only/private material; ignored by Git
 ```
+
+## What makes this useful for AI agents
+
+An agent database should not be a pile of markdown. It should be predictable, scoped, source-linked, and safe to query.
+
+KnowledgeVault should optimize for these properties:
+
+1. **Cold-start orientation** — a new agent can read a short path and understand the system.
+2. **Source-of-truth clarity** — every note says whether GitHub, the vault, a runtime repo, or an external source is authoritative.
+3. **Provenance** — claims point to repos, PRs, files, source articles, generated manifests, or explicit human decisions.
+4. **Freshness** — volatile or high-stakes claims carry last-verified dates and refresh expectations.
+5. **Claim status** — references, drafts, wired features, tested features, and disabled features are not blurred together.
+6. **Task routing** — agents know which folder or file to inspect for each class of request.
+7. **Retrieval discipline** — agents should load curated bundles, not blindly ingest the full vault.
+8. **Public safety** — secrets, private repo metadata, local-only state, and sensitive operational details stay out of tracked files.
+
+## Agent database model
+
+KnowledgeVault stores four kinds of records.
+
+| Record type | Examples | Agent use |
+|---|---|---|
+| **Project records** | `Project.md`, `Agent Context.md`, `Decisions.md`, `Tasks.md` | Repo status, build/test commands, known risks, next action. |
+| **Operating records** | `AGENTS.md`, `RUNBOOK.md`, `SECURITY.md`, agent specs | Safe behavior, maintenance, boundaries, escalation rules. |
+| **Index records** | repo registry, skill registry, dashboards, system map | Fast routing, search, summarization, task planning. |
+| **Knowledge records** | skill notes, source maps, Wikipedia concept cards, runbooks | Reusable background knowledge and learning paths. |
+
+A good record should be:
+
+- **Skimmable:** headings explain the shape before details.
+- **Durable:** useful weeks later without chat context.
+- **Grounded:** links to source repos, PRs, issues, files, or source articles when possible.
+- **Actionable:** tells the next human or agent what to do next.
+- **Scoped:** says what is known, unknown, stale, risky, and unsafe to assume.
+- **Public-safe:** contains no secrets or private operational details.
+
+## Minimum note contract
+
+Prefer this shape for durable notes:
+
+```yaml
+---
+type: project | decision | runbook | skill | source | dashboard | handoff
+status: reference | draft | active | wired | tested | stale | disabled
+owner: Prismtek
+source_of_truth: github | knowledge-vault | runtime-repo | external-source | mixed
+last_verified: YYYY-MM-DD
+risk_level: low | medium | high
+privacy: public
+tags: []
+---
+```
+
+Then include:
+
+1. **Purpose** — why this note exists.
+2. **Current state** — what is true now.
+3. **Source links** — where claims came from.
+4. **Known unknowns** — what must be checked before acting.
+5. **Next action** — the smallest useful next step.
+6. **Agent instructions** — how an agent should use or avoid the note.
+
+## Agent ingestion order
+
+Agents should read these files before making claims about the vault or changing it:
+
+1. [`README.md`](README.md)
+2. [`AGENTS.md`](AGENTS.md)
+3. [`SYSTEMMAP.md`](SYSTEMMAP.md)
+4. [`AGENT_DATABASE_BLUEPRINT.md`](AGENT_DATABASE_BLUEPRINT.md)
+5. [`RUNBOOK.md`](RUNBOOK.md)
+6. [`BACKLOG.md`](BACKLOG.md)
+7. [`SECURITY.md`](SECURITY.md)
+8. [`01-Dashboard/Project Source of Truth.md`](01-Dashboard/Project%20Source%20of%20Truth.md)
+9. [`30 - Projects/GitHub/GitHub Projects Index.md`](30%20-%20Projects/GitHub/GitHub%20Projects%20Index.md)
+10. Relevant project notes under `30 - Projects/GitHub/codysumpter-cloud/`
+11. Relevant skill notes under `99-System/Agent Skills/`
+12. Task-specific generated context bundles once export tooling exists.
 
 ## What belongs here
 
@@ -66,6 +168,9 @@ Use KnowledgeVault for durable, reusable context:
 - Human-readable dashboards
 - Public-safe source references
 - Generated summaries that are clearly marked
+- Retrieval-ready context packs
+- Agent bootstrap instructions
+- Concept cards and source-guided learning paths
 
 Do **not** use KnowledgeVault for:
 
@@ -75,21 +180,7 @@ Do **not** use KnowledgeVault for:
 - Local machine paths that expose sensitive identity or workspace state
 - Raw vendored mirrors of large third-party datasets
 - ROMs, copyrighted binaries, client patches, bots, cheats, or automation payloads
-
-## Agent ingestion order
-
-Agents should read these files before making claims about the vault or changing it:
-
-1. [`README.md`](README.md)
-2. [`AGENTS.md`](AGENTS.md)
-3. [`SYSTEMMAP.md`](SYSTEMMAP.md)
-4. [`RUNBOOK.md`](RUNBOOK.md)
-5. [`BACKLOG.md`](BACKLOG.md)
-6. [`SECURITY.md`](SECURITY.md)
-7. [`01-Dashboard/Project Source of Truth.md`](01-Dashboard/Project%20Source%20of%20Truth.md)
-8. [`30 - Projects/GitHub/GitHub Projects Index.md`](30%20-%20Projects/GitHub/GitHub%20Projects%20Index.md)
-9. Relevant project notes under `30 - Projects/GitHub/codysumpter-cloud/`
-10. Relevant skill notes under `99-System/Agent Skills/`
+- Unverified claims that a skill is wired, tested, or active in a runtime repo
 
 ## Maintenance
 
@@ -116,8 +207,26 @@ This repo is public. Private memory is local-only by default.
 - Secrets and credential-like filenames are ignored.
 - Vault Steward should never use `git add .`.
 - Private repo tracking must remain disabled unless the vault is made private.
+- Any deeper operating memory should live in a private companion vault or in local-only ignored paths.
 
 See [`SECURITY.md`](SECURITY.md) for the full policy.
+
+## Roadmap to “best agent database”
+
+The north star is not “more notes.” The north star is **trustworthy retrieval**.
+
+Near-term upgrades:
+
+1. Add front matter to critical notes.
+2. Add quality linting for missing status, source links, last-verified dates, and next actions.
+3. Upgrade generated repo scaffolds into useful briefs.
+4. Promote skill notes into a structured registry with explicit runtime status.
+5. Generate task-specific bootstrap packs.
+6. Export curated context bundles for Buddy-agent.
+7. Keep public and private memory separated before storing deeper operational context.
+8. Add receipts so agents can say which vault files or bundles influenced an answer.
+
+See [`AGENT_DATABASE_BLUEPRINT.md`](AGENT_DATABASE_BLUEPRINT.md) and [`BACKLOG.md`](BACKLOG.md) for the implementation path.
 
 ## Status
 
