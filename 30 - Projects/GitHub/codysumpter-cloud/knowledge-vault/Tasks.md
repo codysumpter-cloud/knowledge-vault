@@ -37,19 +37,27 @@ tags:
 - [x] Add note quality linter.
 - [x] Upgrade this repo's `Agent Context.md` from scaffold to useful context.
 - [x] Add durable decisions for the June 2026 agent database direction.
+- [x] Add runnable `memory_engine` Python package.
+- [x] Add CLI commands for indexing, search, show, bundle export, Obsidian index generation, note creation, and local read-only serving.
+- [x] Add Memory Engine guide and Obsidian integration guide.
+- [x] Add default Memory Engine workspace documentation.
+- [x] Add basic Memory Engine tests.
+- [x] Add generated-output ignore rules.
 
 ## Next useful tasks
 
 - [ ] Run `python3 "99-System/Automation/note_quality_linter.py"` locally and triage warnings.
+- [ ] Run `python3 -m memory_engine index` locally and inspect generated outputs.
 - [ ] Add a `vault-steward` context bundle.
 - [ ] Add a `buddy-agent-maintainer` context bundle.
 - [ ] Add a `prismtek-apps-maintainer` context bundle.
 - [ ] Add a `public-alpha-reviewer` context bundle.
 - [ ] Add a bundle export script that emits `bundle.md`, `manifest.json`, and receipt files from a manifest.
-- [ ] Add graph/index exports connecting repos, decisions, skills, runbooks, and source packs.
+- [ ] Add richer graph/index exports connecting repos, decisions, skills, runbooks, and source packs.
 - [ ] Upgrade high-priority generated repo notes from placeholders into verified briefs.
 - [ ] Add or validate front matter on critical root and project docs.
 - [ ] Promote skill notes into a maintained registry with explicit runtime status.
+- [ ] Consider a future Obsidian plugin that wraps the CLI rather than replacing it.
 
 ## Agent instructions
 
