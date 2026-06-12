@@ -17,41 +17,26 @@ import sys
 from pathlib import Path
 from typing import Any
 
-ID_RE = re.compile(r"^(concept|repo|system):[a-z0-9][a-z0-9._:-]*$")
-VALID_TYPES = {"concept", "repo", "system"}
+VALID_TYPES = {"concept", "repo", "system", "task", "decision", "person"}
+ID_RE = re.compile(r"^(" + "|".join(sorted(VALID_TYPES)) + r"):[a-z0-9][a-z0-9._:-]*$")
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+TS_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
 VALID_CONFIDENCE = {"low", "medium", "high"}
 VALID_FRESHNESS = {"current", "stale", "unknown"}
-REQUIRED_FIELDS = {
-    "id",
-    "type",
-    "name",
-    "summary",
-    "tags",
-    "links",
-    "provenance",
-    "freshness",
-}
+REQUIRED_FIELDS = {"id", "type", "name", "summary", "tags", "links", "provenance", "freshness"}
 
 
 def fail(errors: list[str], path: Path, line_no: int, message: str) -> None:
     errors.append(f"{path}:{line_no}: {message}")
 
 
-def require_string(errors: list[str], path: Path, line_no: int, record: dict[str, Any], key: str) -> None:
-    value = record.get(key)
+def require_string(errors: list[str], path: Path, line_no: int, obj: dict[str, Any], key: str) -> None:
+    value = obj.get(key)
     if not isinstance(value, str) or not value.strip():
         fail(errors, path, line_no, f"{key!r} must be a non-empty string")
 
 
-def lint_record(
-    record: Any,
-    *,
-    path: Path,
-    line_no: int,
-    ids: set[str],
-    link_targets: list[tuple[Path, int, str]],
-    errors: list[str],
-) -> None:
+def lint_record(record: Any, *, path: Path, line_no: int, ids: set[str], link_targets: list[tuple[Path, int, str]], errors: list[str]) -> None:
     if not isinstance(record, dict):
         fail(errors, path, line_no, "record must be a JSON object")
         return
@@ -66,7 +51,7 @@ def lint_record(
 
     record_id = record.get("id")
     if not isinstance(record_id, str) or not ID_RE.match(record_id):
-        fail(errors, path, line_no, "'id' must match concept|repo|system namespaced format")
+        fail(errors, path, line_no, "'id' must match concept|repo|system|task|decision|person namespaced format")
     elif record_id in ids:
         fail(errors, path, line_no, f"duplicate id: {record_id}")
     else:
@@ -100,6 +85,9 @@ def lint_record(
             if not isinstance(link, dict):
                 fail(errors, path, line_no, f"links[{index}] must be an object")
                 continue
+            extra_link = sorted(set(link) - {"type", "target", "reason"})
+            if extra_link:
+                fail(errors, path, line_no, f"links[{index}] unknown fields: {', '.join(extra_link)}")
             for key in ("type", "target", "reason"):
                 if not isinstance(link.get(key), str) or not link.get(key, "").strip():
                     fail(errors, path, line_no, f"links[{index}].{key} must be a non-empty string")
@@ -114,19 +102,28 @@ def lint_record(
     if not isinstance(provenance, dict):
         fail(errors, path, line_no, "'provenance' must be an object")
     else:
+        extra_prov = sorted(set(provenance) - {"source", "confidence", "created", "updated"})
+        if extra_prov:
+            fail(errors, path, line_no, f"provenance unknown fields: {', '.join(extra_prov)}")
         if not isinstance(provenance.get("source"), str) or not provenance.get("source", "").strip():
             fail(errors, path, line_no, "provenance.source must be a non-empty string")
         if provenance.get("confidence") not in VALID_CONFIDENCE:
             fail(errors, path, line_no, "provenance.confidence must be low, medium, or high")
+        for key in ("created", "updated"):
+            if key in provenance and (not isinstance(provenance[key], str) or not TS_RE.match(provenance[key])):
+                fail(errors, path, line_no, f"provenance.{key} must use YYYY-MM-DDTHH:MM:SSZ")
 
     freshness = record.get("freshness")
     if not isinstance(freshness, dict):
         fail(errors, path, line_no, "'freshness' must be an object")
     else:
+        extra_fresh = sorted(set(freshness) - {"status", "updated"})
+        if extra_fresh:
+            fail(errors, path, line_no, f"freshness unknown fields: {', '.join(extra_fresh)}")
         if freshness.get("status") not in VALID_FRESHNESS:
             fail(errors, path, line_no, "freshness.status must be current, stale, or unknown")
         updated = freshness.get("updated")
-        if not isinstance(updated, str) or not re.match(r"^\d{4}-\d{2}-\d{2}$", updated):
+        if not isinstance(updated, str) or not DATE_RE.match(updated):
             fail(errors, path, line_no, "freshness.updated must use YYYY-MM-DD")
 
 
@@ -135,7 +132,6 @@ def lint_path(path: Path, ids: set[str], link_targets: list[tuple[Path, int, str
     if not path.exists():
         errors.append(f"{path}: file does not exist")
         return count
-
     with path.open("r", encoding="utf-8") as handle:
         for line_no, raw_line in enumerate(handle, start=1):
             line = raw_line.strip()
@@ -147,14 +143,7 @@ def lint_path(path: Path, ids: set[str], link_targets: list[tuple[Path, int, str
             except json.JSONDecodeError as exc:
                 fail(errors, path, line_no, f"invalid JSON: {exc}")
                 continue
-            lint_record(
-                record,
-                path=path,
-                line_no=line_no,
-                ids=ids,
-                link_targets=link_targets,
-                errors=errors,
-            )
+            lint_record(record, path=path, line_no=line_no, ids=ids, link_targets=link_targets, errors=errors)
     return count
 
 
@@ -162,25 +151,20 @@ def main(argv: list[str]) -> int:
     if len(argv) < 2:
         print("Usage: graph_linter.py <graph.jsonl> [more.graph.jsonl ...]", file=sys.stderr)
         return 2
-
     ids: set[str] = set()
     link_targets: list[tuple[Path, int, str]] = []
     errors: list[str] = []
     total = 0
-
     for arg in argv[1:]:
         total += lint_path(Path(arg), ids, link_targets, errors)
-
     for path, line_no, target in link_targets:
         if target not in ids:
             fail(errors, path, line_no, f"link target does not exist in loaded graph set: {target}")
-
     if errors:
         print("Vegapunk Brain graph lint failed:", file=sys.stderr)
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
-
     print(f"Vegapunk Brain graph lint passed: {total} records, {len(ids)} ids")
     return 0
 
