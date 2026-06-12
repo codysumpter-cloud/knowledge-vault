@@ -37,7 +37,10 @@ def main() -> int:
 
     event_sources = [str(processed)]
     if not any(processed.rglob("*.json")):
-        event_sources = [str(brain / "emitters")]
+        event_sources = [str(path) for path in sorted((brain / "emitters").glob("*.event.example.json"))]
+
+    if not event_sources:
+        raise SystemExit("No processed events or emitter examples found for graph rebuild")
 
     run([sys.executable, str(tools / "graph_compiler.py"), "--events", *event_sources, "--out", str(event_records)])
     run([sys.executable, str(tools / "graph_linter.py"), str(seed), str(event_records)])
