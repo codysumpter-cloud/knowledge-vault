@@ -1,0 +1,13 @@
+{
+  "event_id": "evt-prismtek-apps-20260612-feature-001",
+  "event_type": "feature_added",
+  "source": "prismtek-apps",
+  "timestamp": "2026-06-12T00:00:00Z",
+  "payload": {
+    "name": "Graph-backed Buddy dashboard",
+    "summary": "Prismtek Apps added a user-facing surface for graph-backed Buddy context and system state.",
+    "tags": ["app", "feature", "buddy-dashboard"],
+    "repo": "prismtek-apps",
+    "confidence": "medium"
+  }
+}
