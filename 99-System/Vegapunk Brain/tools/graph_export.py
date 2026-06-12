@@ -32,6 +32,19 @@ def write_mermaid(records: dict, path: Path) -> None:
     path.write_text("\n".join(rows) + "\n", encoding="utf-8")
 
 
+def write_dot(records: dict, path: Path) -> None:
+    rows = ["di" + "graph VegapunkBrain {"]
+    for rid, item in sorted(records.items()):
+        rows.append("  " + json.dumps(rid) + " [label=" + json.dumps(item["name"]) + "];")
+    for rid, item in sorted(records.items()):
+        for link in item.get("links", []):
+            target = link.get("target")
+            if target in records:
+                rows.append("  " + json.dumps(rid) + " -> " + json.dumps(target) + " [label=" + json.dumps(link.get("type", "related")) + "];")
+    rows.append("}")
+    path.write_text("\n".join(rows) + "\n", encoding="utf-8")
+
+
 def write_text_tree(records: dict, path: Path, root_id: str) -> None:
     root = records.get(root_id)
     rows = []
@@ -54,6 +67,7 @@ def main() -> int:
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     write_mermaid(records, out_dir / "graph.mmd")
+    write_dot(records, out_dir / "graph.dot")
     write_text_tree(records, out_dir / "knowledge-vault-tree.txt", args.root)
     (out_dir / "graph.json").write_text(json.dumps(records, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print("Exported graph artifacts into " + str(out_dir))
