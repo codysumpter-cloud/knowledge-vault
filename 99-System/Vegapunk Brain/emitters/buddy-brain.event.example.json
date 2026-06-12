@@ -1,0 +1,13 @@
+{
+  "event_id": "evt-buddy-brain-20260612-decision-001",
+  "event_type": "decision_made",
+  "source": "buddy-brain",
+  "timestamp": "2026-06-12T00:00:00Z",
+  "payload": {
+    "name": "Repos emit events instead of graph records",
+    "summary": "Buddy repositories should emit append-only events; Vegapunk Brain owns graph compilation.",
+    "tags": ["decision", "policy", "event-sourcing"],
+    "target": "system:knowledge-graph",
+    "confidence": "high"
+  }
+}
