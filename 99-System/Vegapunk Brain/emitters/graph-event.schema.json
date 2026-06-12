@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vegapunk Brain Graph Event",
+  "description": "Append-only immutable event emitted by Buddy ecosystem repositories for Vegapunk Brain ingestion.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "event_type", "source", "timestamp", "payload"],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^evt-[a-zA-Z0-9._:-]+$"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "concept_created",
+        "concept_updated",
+        "task_created",
+        "task_completed",
+        "decision_made",
+        "policy_updated",
+        "council_update",
+        "feature_added",
+        "feature_removed",
+        "repo_created",
+        "repo_updated",
+        "memory_created",
+        "memory_updated",
+        "relationship_created",
+        "relationship_removed",
+        "conversation_summarized",
+        "device_registered",
+        "model_changed",
+        "local_memory_created",
+        "app_created",
+        "release_created"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": ["buddy-agent", "buddy-brain", "omni-buddy", "prismtek-apps", "knowledge-vault"]
+    },
+    "timestamp": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}
