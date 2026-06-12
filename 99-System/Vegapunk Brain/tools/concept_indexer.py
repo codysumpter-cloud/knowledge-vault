@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Vegapunk Brain graph indexes.
-
-Usage:
-    python "99-System/Vegapunk Brain/tools/concept_indexer.py" \
-      --graph "99-System/Vegapunk Brain/graph/seed.graph.jsonl" \
-      --out-dir "99-System/Vegapunk Brain/indexes"
-"""
+"""Generate Vegapunk Brain graph indexes."""
 
 from __future__ import annotations
 
@@ -19,6 +13,9 @@ INDEX_NAMES = {
     "concept": "concepts.json",
     "repo": "repos.json",
     "system": "systems.json",
+    "decision": "decisions.json",
+    "task": "tasks.json",
+    "person": "people.json",
 }
 
 
@@ -55,12 +52,7 @@ def build_relationships(records: dict[str, dict[str, Any]]) -> list[dict[str, st
     relationships: list[dict[str, str]] = []
     for source_id, record in sorted(records.items()):
         for link in record.get("links", []):
-            relationships.append({
-                "source": source_id,
-                "type": link["type"],
-                "target": link["target"],
-                "reason": link["reason"],
-            })
+            relationships.append({"source": source_id, "type": link["type"], "target": link["target"], "reason": link["reason"]})
     return relationships
 
 
@@ -92,13 +84,7 @@ def main() -> int:
 
     write_json(out_dir / "relationships.json", build_relationships(records))
     write_json(out_dir / "tags.json", build_tag_index(records))
-    write_json(
-        out_dir / "all-records.json",
-        sorted(
-            [compact(record) for record in records.values()],
-            key=lambda item: item["id"],
-        ),
-    )
+    write_json(out_dir / "all-records.json", sorted([compact(record) for record in records.values()], key=lambda item: item["id"]))
 
     print(f"Indexed {len(records)} records into {out_dir}")
     return 0
