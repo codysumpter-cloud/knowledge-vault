@@ -92,7 +92,13 @@ def main() -> int:
 
     write_json(out_dir / "relationships.json", build_relationships(records))
     write_json(out_dir / "tags.json", build_tag_index(records))
-    write_json(out_dir / "all-records.json", [compact(record) for record in sorted(records.values(), key=lambda item: item["id")])
+    write_json(
+        out_dir / "all-records.json",
+        sorted(
+            [compact(record) for record in records.values()],
+            key=lambda item: item["id"],
+        ),
+    )
 
     print(f"Indexed {len(records)} records into {out_dir}")
     return 0
