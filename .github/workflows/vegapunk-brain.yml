@@ -1,0 +1,30 @@
+name: Vegapunk Brain
+
+on:
+  push:
+    paths:
+      - '99-System/Vegapunk Brain/**'
+      - '.github/workflows/vegapunk-brain.yml'
+  pull_request:
+    paths:
+      - '99-System/Vegapunk Brain/**'
+      - '.github/workflows/vegapunk-brain.yml'
+
+jobs:
+  validate:
+    name: Validate Punk Records
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Lint seed graph
+        run: python "99-System/Vegapunk Brain/tools/graph_linter.py" "99-System/Vegapunk Brain/graph/seed.graph.jsonl"
+
+      - name: Run Vegapunk Brain pipeline
+        run: bash "99-System/Vegapunk Brain/scripts/run-vegapunk-brain.sh"
