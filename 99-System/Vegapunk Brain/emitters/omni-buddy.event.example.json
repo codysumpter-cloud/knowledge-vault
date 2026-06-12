@@ -1,0 +1,13 @@
+{
+  "event_id": "evt-omni-buddy-20260612-device-001",
+  "event_type": "device_registered",
+  "source": "omni-buddy",
+  "timestamp": "2026-06-12T00:00:00Z",
+  "payload": {
+    "name": "Omni Buddy local device satellite",
+    "summary": "A public-safe Omni Buddy device satellite was registered as a graph-aware local agent surface.",
+    "tags": ["device", "local-agent", "satellite"],
+    "repo": "omni-buddy",
+    "confidence": "medium"
+  }
+}
