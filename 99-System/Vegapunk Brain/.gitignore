@@ -1,0 +1,3 @@
+graph/generated.graph.jsonl
+graph/compiled.graph.jsonl
+indexes/*.json
