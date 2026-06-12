@@ -67,7 +67,7 @@ Narrative/world events should use this shape when persisted:
   "event_id": "event-001",
   "timestamp": "2026-06-12T00:00:00Z",
   "actor": "Buddy",
-  "participants": ["Lil Buddy"],
+  "participants": ["Lil' Buddy"],
   "user_intent": "What the human or device event asked for",
   "world_context_refs": ["knowledge-vault/path/to/context.md"],
   "action": "planned | delegated | reviewed | responded | persisted",
