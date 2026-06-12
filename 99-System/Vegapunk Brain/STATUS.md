@@ -47,11 +47,7 @@ Vegapunk Brain has moved from a static graph layer toward an event-sourced share
 ### Event architecture
 
 - Emitter schema.
-- Emitter examples for:
-  - `buddy-agent`
-  - `buddy-brain`
-  - `omni-buddy`
-  - `prismtek-apps`
+- Emitter examples for `buddy-agent`, `buddy-brain`, `omni-buddy`, and `prismtek-apps`.
 - Event inbox and processed directories.
 - Event ingestor.
 - Event router.
@@ -60,7 +56,7 @@ Vegapunk Brain has moved from a static graph layer toward an event-sourced share
 ### Platform operations
 
 - Graph health checks.
-- Mermaid/JSON/text graph export.
+- Mermaid, GraphViz DOT, JSON, and text graph export.
 - Tool syntax doctor.
 - Shared Memory Bus contract.
 - Satellite architecture document.
@@ -97,7 +93,6 @@ Generated outputs are intentionally ignored by git:
 
 - The KnowledgeVault side of the event platform exists.
 - Native event emitters still need to be added inside `buddy-agent`, `buddy-brain`, `omni-buddy`, and `prismtek-apps`.
-- GraphViz DOT export was deferred; Mermaid, JSON, and text tree exports are implemented.
 - Runtime validation must be confirmed by local execution or CI run results.
 
 ## Next useful build
