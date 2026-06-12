@@ -1,0 +1,13 @@
+{
+  "event_id": "event:buddy-agent:2026-06-12:example",
+  "producer": "repo:buddy-agent",
+  "kind": "decision",
+  "title": "KnowledgeVault is the shared memory source of truth",
+  "summary": "Buddy Agent should consume compiled graph context instead of storing canonical project memory locally.",
+  "body": "Decision: KnowledgeVault feeds Buddy Agent. Buddy Agent emits graph updates after tasks.",
+  "tags": ["memory", "agent-system"],
+  "source": "repo:buddy-agent/docs/example.md",
+  "confidence": "high",
+  "created": "2026-06-12T00:00:00Z",
+  "updated": "2026-06-12T00:00:00Z"
+}
