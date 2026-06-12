@@ -1,0 +1,13 @@
+{
+  "event_id": "evt-buddy-agent-20260612-conversation-summary-001",
+  "event_type": "conversation_summarized",
+  "source": "buddy-agent",
+  "timestamp": "2026-06-12T00:00:00Z",
+  "payload": {
+    "name": "Vegapunk Brain session summary",
+    "summary": "Buddy Agent summarized a session about turning KnowledgeVault into an event-sourced shared memory platform.",
+    "tags": ["conversation", "memory", "vegapunk-brain"],
+    "repo": "buddy-agent",
+    "confidence": "high"
+  }
+}
