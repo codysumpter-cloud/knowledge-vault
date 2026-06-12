@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vegapunk Brain Graph Record",
+  "description": "Minimal public-safe JSONL record shape for the KnowledgeVault shared graph layer.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "name", "summary", "tags", "links", "provenance", "freshness"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(concept|repo|system):[a-z0-9][a-z0-9._:-]*$"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["concept", "repo", "system"]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "target", "reason"],
+        "properties": {
+          "type": {"type": "string"},
+          "target": {"type": "string"},
+          "reason": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "confidence"],
+      "properties": {
+        "source": {"type": "string", "minLength": 1},
+        "confidence": {"type": "string", "enum": ["low", "medium", "high"]}
+      }
+    },
+    "freshness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "updated"],
+      "properties": {
+        "status": {"type": "string", "enum": ["current", "stale", "unknown"]},
+        "updated": {"type": "string"}
+      }
+    }
+  }
+}
