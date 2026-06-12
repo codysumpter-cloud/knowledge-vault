@@ -63,7 +63,7 @@ This prevents each satellite from inventing or mutating canonical memory indepen
 | Outbox graph | `outbox/graph-records/` | Generated compiled graph records. |
 | Outbox indexes | `outbox/indexes/` | Generated searchable indexes. |
 | Health | `tools/graph_health.py` | Finds broken graph state. |
-| Export | `tools/graph_export.py` | Emits Mermaid, JSON, and text tree artifacts. |
+| Export | `tools/graph_export.py` | Emits Mermaid, GraphViz DOT, JSON, and text tree artifacts. |
 
 ## Recovery model
 
