@@ -79,7 +79,7 @@ A Buddy task envelope must include:
   "schema_version": "buddy.task.v1",
   "task_id": "task-001",
   "orchestrator": "Buddy",
-  "worker": "Lil Buddy",
+  "worker": "Lil' Buddy",
   "user_intent": "Original user goal in plain language",
   "delegated_scope": "Specific executable work for this worker",
   "constraints": ["No external secrets", "Do not mutate repos without review"],
@@ -98,7 +98,7 @@ A Lil' Buddy result envelope must include:
 {
   "schema_version": "buddy.result.v1",
   "task_id": "task-001",
-  "worker": "Lil Buddy",
+  "worker": "Lil' Buddy",
   "status": "complete | partial | blocked | failed",
   "summary": "What was done",
   "findings": [],
