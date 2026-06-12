@@ -23,8 +23,20 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Lint seed graph
+      - name: Check tool syntax
+        run: python "99-System/Vegapunk Brain/tools/graph_doctor.py"
+
+      - name: Validate seed graph
         run: python "99-System/Vegapunk Brain/tools/graph_linter.py" "99-System/Vegapunk Brain/graph/seed.graph.jsonl"
 
-      - name: Run Vegapunk Brain pipeline
+      - name: Validate event ingestion
+        run: bash "99-System/Vegapunk Brain/scripts/validate-vegapunk-brain.sh"
+
+      - name: Rebuild graph from events
+        run: bash "99-System/Vegapunk Brain/scripts/rebuild-vegapunk-brain.sh"
+
+      - name: Search rebuilt graph
+        run: python "99-System/Vegapunk Brain/tools/graph_search.py" --graph "99-System/Vegapunk Brain/outbox/graph-records/compiled.graph.jsonl" --query "Knowledge Vault"
+
+      - name: Run full pipeline
         run: bash "99-System/Vegapunk Brain/scripts/run-vegapunk-brain.sh"
