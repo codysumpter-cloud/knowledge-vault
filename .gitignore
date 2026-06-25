@@ -74,3 +74,7 @@ Archive_Hermes_Logs_*.md
 
 # Accidental nested vaults / local mirrors
 Obsidian Vault/
+# Generated vault artifacts (keep these out of git)
+KNOWLEDGE_VAULT_INDEX.json
+KNOWLEDGE_VAULT_INDEX.md
+test/
