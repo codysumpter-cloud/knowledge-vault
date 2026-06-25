@@ -74,3 +74,9 @@ Archive_Hermes_Logs_*.md
 
 # Accidental nested vaults / local mirrors
 Obsidian Vault/
+
+# Generated vault indexes and automation outputs (do not commit)
+KNOWLEDGE_VAULT_INDEX.json
+KNOWLEDGE_VAULT_INDEX.md
+test/
+*.tmp
