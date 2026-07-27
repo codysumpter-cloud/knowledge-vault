@@ -1,0 +1,50 @@
+name: Local retrieval benchmark
+
+on:
+  pull_request:
+    paths:
+      - "99-System/Vegapunk Brain/benchmarks/local-retrieval/**"
+      - ".github/workflows/local-retrieval-benchmark.yml"
+  push:
+    branches: [main]
+    paths:
+      - "99-System/Vegapunk Brain/benchmarks/local-retrieval/**"
+
+permissions:
+  contents: read
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Unit tests
+        run: python3 -m unittest discover -s "99-System/Vegapunk Brain/benchmarks/local-retrieval" -p "test_*.py"
+      - name: Python baseline
+        run: >-
+          python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/benchmark.py"
+          --output /tmp/python-baseline.json
+      - name: Web adapter contract
+        run: >-
+          python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/benchmark.py"
+          --adapter external
+          --adapter-command "node '99-System/Vegapunk Brain/benchmarks/local-retrieval/adapters/web/hash-adapter.mjs'"
+          --baseline /tmp/python-baseline.json
+          --output /tmp/web-baseline.json
+      - name: Assert contract targets
+        run: |
+          python3 - <<'PY'
+          import json
+          for path in ("/tmp/python-baseline.json", "/tmp/web-baseline.json"):
+              report = json.load(open(path, encoding="utf-8"))
+              assert report["targets"]["offline_required"]
+              assert report["targets"]["model_download_under_150_mb"]
+              assert report["targets"]["peak_memory_under_500_mb"]
+          PY

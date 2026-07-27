@@ -1,0 +1,22 @@
+[
+  {
+    "query": "Which repository owns guarded execution, approvals, and receipts?",
+    "relevant": ["AGENTS.md", "README.md"]
+  },
+  {
+    "query": "How does Vegapunk Brain rebuild graph state from event history?",
+    "relevant": ["99-System/Vegapunk Brain"]
+  },
+  {
+    "query": "What must stay out of the public Knowledge Vault?",
+    "relevant": ["AGENTS.md", "SECURITY.md"]
+  },
+  {
+    "query": "Where are the event emitter contracts and graph event schema?",
+    "relevant": ["99-System/Vegapunk Brain/emitters"]
+  },
+  {
+    "query": "What checks validate the vault before claiming a maintenance pass is complete?",
+    "relevant": ["AGENTS.md", "RUNBOOK.md", "99-System/Automation"]
+  }
+]
