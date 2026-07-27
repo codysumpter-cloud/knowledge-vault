@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prismtek.dev/schemas/local-retrieval-adapter-protocol.schema.json",
+  "title": "Local retrieval JSONL adapter protocol",
+  "$defs": {
+    "metadata": {
+      "type": "object",
+      "required": ["name", "runtime", "model", "model_download_mb", "offline", "native_acceleration", "browser_fallback", "dimension"],
+      "properties": {
+        "name": { "type": "string" },
+        "runtime": { "type": "string" },
+        "model": { "type": "string" },
+        "model_download_mb": { "type": "number", "minimum": 0 },
+        "offline": { "type": "boolean" },
+        "native_acceleration": { "type": "boolean" },
+        "browser_fallback": { "type": "boolean" },
+        "dimension": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["op"],
+      "properties": { "op": { "const": "metadata" } },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": ["op", "texts"],
+      "properties": {
+        "op": { "const": "embed" },
+        "texts": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  ]
+}
