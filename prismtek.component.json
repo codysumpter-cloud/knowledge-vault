@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/codysumpter-cloud/buddy-universal-agent-profile/main/schemas/prismtek-component.schema.json",
+  "schema_version": "1.0",
+  "component": "knowledge-vault",
+  "repository": "codysumpter-cloud/knowledge-vault",
+  "role": "durable project memory, event-sourced knowledge graph, provenance ledger, and rebuildable indexes",
+  "owns": [
+    "durable-memory",
+    "provenance-ledger",
+    "event-ingestion",
+    "graph-compilation",
+    "source-of-truth-records"
+  ],
+  "provides": [
+    {
+      "contract": "vegapunk.graph-event.v1",
+      "path": "99-System/Vegapunk Brain/emitters/graph-event.schema.json"
+    },
+    {
+      "contract": "knowledge.graph.v1",
+      "path": "99-System/Vegapunk Brain/"
+    }
+  ],
+  "consumes": [
+    {
+      "contract": "buddy.evidence-evaluated.v1",
+      "from": "buddy-agent"
+    },
+    {
+      "contract": "buddy.execution-verified.v1",
+      "from": "buddy-agent"
+    },
+    {
+      "contract": "buddy.policy-report.v1",
+      "from": "buddy-brain"
+    }
+  ],
+  "events": {
+    "emits": [
+      "memory_created",
+      "memory_updated",
+      "relationship_created"
+    ],
+    "receives": [
+      "evidence_evaluated",
+      "execution_verified",
+      "policy_decision_made"
+    ]
+  },
+  "health_checks": [
+    "bash \"99-System/Vegapunk Brain/scripts/run-vegapunk-brain.sh\"",
+    "python3 \"99-System/Automation/vault_doctor.py\""
+  ],
+  "stack_map": "https://github.com/codysumpter-cloud/buddy-universal-agent-profile/blob/main/linked-repos/prismtek-stack.manifest.json"
+}
