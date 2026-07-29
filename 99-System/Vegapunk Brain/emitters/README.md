@@ -49,6 +49,7 @@ Core:
 - `concept_created`
 - `concept_updated`
 - `task_created`
+- `task_state_changed`
 - `task_completed`
 - `decision_made`
 - `feature_added`
@@ -60,6 +61,14 @@ Core:
 - `relationship_created`
 - `relationship_removed`
 - `conversation_summarized`
+
+Trust Fabric extensions:
+
+- `policy_compiled`
+- `policy_decision_made`
+- `evidence_evaluated`
+- `execution_verified`
+- `stack_contract_changed`
 
 Buddy Brain extensions:
 
@@ -76,6 +85,48 @@ Prismtek Apps extensions:
 
 - `app_created`
 - `release_created`
+
+## Task lifecycle events
+
+`task_created` establishes one durable task identity.
+
+`task_state_changed` records later transitions such as:
+
+```text
+created → awaiting_approval → planned → running → completed
+                                           ↘ failed | cancelled
+failed | cancelled → resumed
+```
+
+Use `task_completed` only for the terminal completed state. A task-state event is not proof that execution or verification happened; `execution_verified` remains the stronger event and may be emitted only after a real artifact and required gates are verified.
+
+Recommended `task_state_changed` payload:
+
+```json
+{
+  "class": "task",
+  "task_id": "task-0123456789abcdef01234567",
+  "previous_status": "planned",
+  "status": "running",
+  "risk": "repo-mutation",
+  "revision": 4,
+  "approval": {
+    "required": true,
+    "decision": "approved"
+  },
+  "step_counts": {
+    "pending": 2,
+    "running": 1,
+    "completed": 0,
+    "failed": 0,
+    "skipped": 0
+  },
+  "receipt_count": 3,
+  "summary": "Buddy task started"
+}
+```
+
+Public events must not include the raw task objective, approval note, step detail, prompts, tool inputs/outputs, credentials, browser state, private paths, or source excerpts.
 
 ## Payload conventions
 
@@ -106,7 +157,7 @@ Common fields:
 
 ## Source contracts
 
-- `buddy-agent`: conversations, tasks, task completions, memories.
+- `buddy-agent`: conversations, persistent task state, approvals, task completions, execution evidence, memories.
 - `buddy-brain`: decisions, policies, council updates.
 - `omni-buddy`: device/local-agent state, model changes, sanitized local memories.
 - `prismtek-apps`: apps, features, removals, releases.
