@@ -160,4 +160,5 @@ Common fields:
 - `buddy-agent`: conversations, persistent task state, approvals, task completions, execution evidence, memories.
 - `buddy-brain`: decisions, policies, council updates.
 - `omni-buddy`: device/local-agent state, model changes, sanitized local memories.
-- `prismtek-apps`: apps, features, removals, releases.
+- `prismtek-apps`: native app/game features, removals, releases, and product events.
+- `prismtek-site`: authenticated hosted product/task transitions and website releases; payloads remain account-safe and exclude raw user content.
