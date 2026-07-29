@@ -38,6 +38,12 @@ jobs:
           --adapter-command "node '99-System/Vegapunk Brain/benchmarks/local-retrieval/adapters/web/hash-adapter.mjs'"
           --baseline /tmp/python-baseline.json
           --output /tmp/web-baseline.json
+      - name: Adversarial 10k retrieval-drift benchmark
+        run: >-
+          python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/drift_benchmark.py"
+          --items 10240
+          --queries 128
+          --output /tmp/retrieval-drift-10k.json
       - name: Assert contract targets
         run: |
           python3 - <<'PY'
@@ -47,4 +53,15 @@ jobs:
               assert report["targets"]["offline_required"]
               assert report["targets"]["model_download_under_150_mb"]
               assert report["targets"]["peak_memory_under_500_mb"]
+
+          drift = json.load(open("/tmp/retrieval-drift-10k.json", encoding="utf-8"))
+          baseline = drift["baseline_similarity_only"]
+          provenance = drift["provenance_graph_rerank"]
+          assert drift["corpus"]["items"] == 10240
+          assert baseline["false_current_rate"] >= 0.90
+          assert provenance["current_top1_rate"] == 1.0
+          assert provenance["stale_top1_rate"] == 0.0
+          assert provenance["near_miss_top1_rate"] == 0.0
+          assert provenance["conflict_detection_recall"] == 1.0
+          assert provenance["lineage_coverage"] == 1.0
           PY

@@ -19,6 +19,11 @@
         "task_completed",
         "decision_made",
         "policy_updated",
+        "policy_compiled",
+        "policy_decision_made",
+        "evidence_evaluated",
+        "execution_verified",
+        "stack_contract_changed",
         "council_update",
         "feature_added",
         "feature_removed",
@@ -38,7 +43,14 @@
     },
     "source": {
       "type": "string",
-      "enum": ["buddy-agent", "buddy-brain", "omni-buddy", "prismtek-apps", "knowledge-vault"]
+      "enum": [
+        "buddy-agent",
+        "buddy-brain",
+        "buddy-universal-agent-profile",
+        "omni-buddy",
+        "prismtek-apps",
+        "knowledge-vault"
+      ]
     },
     "timestamp": {
       "type": "string",

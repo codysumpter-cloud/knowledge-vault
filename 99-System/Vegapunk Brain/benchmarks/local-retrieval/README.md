@@ -3,7 +3,7 @@ type: integration
 status: tested
 owner: Prismtek
 source_of_truth: knowledge-vault
-last_verified: 2026-07-27
+last_verified: 2026-07-29
 risk_level: low
 privacy: public
 freshness: slow-changing
@@ -13,6 +13,8 @@ tags:
   - local-retrieval
   - benchmark
   - litert
+  - provenance
+  - retrieval-drift
 ---
 
 # Local Knowledge Vault retrieval benchmark
@@ -60,16 +62,47 @@ python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/benchmark.py" \
 
 The hash adapters are deterministic contract baselines, not semantic-quality targets. A real model adapter must use the same `metadata` and `embed` JSONL protocol, save its report, and compare against a named baseline.
 
+## Adversarial 10k retrieval-drift proof
+
+`drift_benchmark.py` directly exercises the failure mode that appears when a growing knowledge base contains near-duplicates, expired records, newer replacements, and unresolved contradictions.
+
+The default corpus contains **10,240 records** split evenly between:
+
+- current authoritative records;
+- stale records deliberately written to be stronger similarity matches;
+- unresolved contradictory records;
+- near-miss records for similarly named entities.
+
+It compares a dependency-free sparse hash-vector cosine baseline with provenance-aware temporal and graph reranking. The second pass uses stable IDs, content hashes, observation and expiry timestamps, trust tiers, confidence, `superseded_by` links, and contradiction edges.
+
+```bash
+python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/drift_benchmark.py" \
+  --items 10240 \
+  --queries 128 \
+  --output /tmp/retrieval-drift-10k.json
+```
+
+The focused contract expects the adversarial similarity-only baseline to select stale records, then requires provenance/graph reranking to:
+
+- return the current authoritative record at top-1;
+- suppress stale and near-miss top-1 results;
+- detect every planted contradiction;
+- preserve source lineage for every record.
+
+This is a synthetic adversarial proof, not a claim about production Mitosis, hosted-vector, or local-model quality. Those providers should run through the same corpus and metrics before comparative claims are made.
+
 ## Safety
 
-- The default corpus is public-safe and excludes `00-Private`, `99-System/Security`, VCS metadata, virtual environments, and dependency directories.
-- Reports contain paths, ranks, timing, model metadata, and numeric vectors only inside the adapter process. They do not store prompts, secrets, tokens, credentials, or private notes.
+- The default real-vault corpus is public-safe and excludes `00-Private`, `99-System/Security`, VCS metadata, virtual environments, and dependency directories.
+- The adversarial 10k corpus is generated synthetic data and contains no user content.
+- Reports contain paths, ranks, timing, model metadata, stable source IDs, and hashes. They do not store prompts, secrets, tokens, credentials, browser state, or private notes.
 - Native acceleration flags are evidence claims. Keep them false until measured on the target device.
 
 ## Current implementation status
 
-- Python corpus/chunk/rank/evaluation harness: tested locally.
-- Python deterministic adapter: tested locally.
-- Node/web-compatible JSONL adapter: tested locally.
+- Python corpus/chunk/rank/evaluation harness: tested locally and in CI.
+- Python deterministic adapter: tested locally and in CI.
+- Node/web-compatible JSONL adapter: tested locally and in CI.
+- Adversarial 10,240-item drift benchmark: locally tested; CI required on the active PR head.
 - Swift adapter scaffold: source-complete, requires Apple hardware/toolchain verification.
 - Android adapter scaffold: metadata/build boundary only; real embeddings remain blocked on selecting and testing the LiteRT model/runtime.
