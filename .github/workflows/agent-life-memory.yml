@@ -1,0 +1,35 @@
+name: Agent Life memory
+
+on:
+  pull_request:
+    paths:
+      - "99-System/Vegapunk Brain/tools/agent_life_ingest.py"
+      - "99-System/Vegapunk Brain/tools/event_common.py"
+      - "99-System/Vegapunk Brain/tools/graph_compiler.py"
+      - "99-System/Vegapunk Brain/tools/test_agent_life_ingest.py"
+      - "99-System/Vegapunk Brain/integrations/agent-life-memory.md"
+      - ".github/workflows/agent-life-memory.yml"
+  push:
+    branches: [main]
+    paths:
+      - "99-System/Vegapunk Brain/tools/agent_life_ingest.py"
+      - "99-System/Vegapunk Brain/tools/event_common.py"
+      - "99-System/Vegapunk Brain/tools/graph_compiler.py"
+      - "99-System/Vegapunk Brain/tools/test_agent_life_ingest.py"
+      - "99-System/Vegapunk Brain/integrations/agent-life-memory.md"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test Agent Life ingestion and graph compilation
+        working-directory: "99-System/Vegapunk Brain/tools"
+        run: python -m unittest -v test_agent_life_ingest.py
