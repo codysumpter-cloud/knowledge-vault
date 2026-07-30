@@ -38,6 +38,7 @@ EVENT_TO_RECORD_TYPE = {
     "local_memory_created": "concept",
     "app_created": "repo",
     "release_created": "system",
+    "agent_life_updated": "concept",
 }
 
 
@@ -75,6 +76,22 @@ def record_from_event(event: dict[str, Any]) -> dict[str, Any]:
     target = payload.get("target")
     if isinstance(target, str) and ":" in target:
         links.append({"type": "related_to", "target": target, "reason": "Event payload identifies this graph target."})
+
+    if event_type == "agent_life_updated":
+        agent_id = payload.get("agent_id")
+        if isinstance(agent_id, str) and agent_id:
+            links.append({
+                "type": "related_to",
+                "target": f"agent:{slugify(agent_id)}",
+                "reason": "The life event belongs to this persistent agent identity.",
+            })
+        subject_target = payload.get("subject_target")
+        if isinstance(subject_target, str) and ":" in subject_target:
+            links.append({
+                "type": "related_to",
+                "target": subject_target,
+                "reason": "The learned preference or relationship is scoped to this subject.",
+            })
 
     if event_type == "relationship_created":
         src = payload.get("source_record")
