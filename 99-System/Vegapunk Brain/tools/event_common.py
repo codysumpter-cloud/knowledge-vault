@@ -30,6 +30,7 @@ EVENT_TYPES = {
     "local_memory_created",
     "app_created",
     "release_created",
+    "agent_life_updated",
 }
 
 SOURCES = {"buddy-agent", "buddy-brain", "omni-buddy", "prismtek-apps", "knowledge-vault"}
