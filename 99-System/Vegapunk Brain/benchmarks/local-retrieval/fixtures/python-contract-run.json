@@ -1,0 +1,36 @@
+{
+  "schema": "buddy.local-retrieval-run.v1",
+  "measurement_class": "contract_baseline",
+  "target": "github-hosted-python-contract",
+  "model": {
+    "model_id": "none",
+    "model_sha256": null,
+    "quantization": "none"
+  },
+  "runtime": {
+    "name": "python",
+    "version": "3.12",
+    "adapter_version": "hash-ngram-baseline-v1"
+  },
+  "host": {
+    "hardware": "github-hosted-runner",
+    "operating_system": "ubuntu-24.04",
+    "architecture": "x86_64"
+  },
+  "measurements": {
+    "cold_start_ms": null,
+    "warm_latency_ms": null,
+    "peak_memory_mb": null,
+    "energy": {
+      "status": "not_measured",
+      "observation": "CI validates the adapter contract only; hardware energy was not measured."
+    }
+  },
+  "claims": {
+    "offline_verified": true,
+    "fallback_behavior": "dependency-free Python contract baseline",
+    "fallback_verified": false,
+    "native_acceleration": "not_measured"
+  },
+  "evidence_refs": []
+}
