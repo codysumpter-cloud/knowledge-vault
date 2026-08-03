@@ -38,13 +38,25 @@ jobs:
           --adapter-command "node '99-System/Vegapunk Brain/benchmarks/local-retrieval/adapters/web/hash-adapter.mjs'"
           --baseline /tmp/python-baseline.json
           --output /tmp/web-baseline.json
+      - name: Validate Python contract evidence
+        run: >-
+          python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/evidence_contract.py"
+          --report /tmp/python-baseline.json
+          --manifest "99-System/Vegapunk Brain/benchmarks/local-retrieval/fixtures/python-contract-run.json"
+          --output /tmp/python-evidence.json
+      - name: Validate web contract evidence
+        run: >-
+          python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/evidence_contract.py"
+          --report /tmp/web-baseline.json
+          --manifest "99-System/Vegapunk Brain/benchmarks/local-retrieval/fixtures/web-contract-run.json"
+          --output /tmp/web-evidence.json
       - name: Adversarial 10k retrieval-drift benchmark
         run: >-
           python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/drift_benchmark.py"
           --items 10240
           --queries 128
           --output /tmp/retrieval-drift-10k.json
-      - name: Assert contract targets
+      - name: Assert contract targets and evidence honesty
         run: |
           python3 - <<'PY'
           import json
@@ -53,6 +65,13 @@ jobs:
               assert report["targets"]["offline_required"]
               assert report["targets"]["model_download_under_150_mb"]
               assert report["targets"]["peak_memory_under_500_mb"]
+
+          for path in ("/tmp/python-evidence.json", "/tmp/web-evidence.json"):
+              evidence = json.load(open(path, encoding="utf-8"))
+              assert evidence["measurement_class"] == "contract_baseline"
+              assert evidence["qualified_for_routing"] is False
+              assert evidence["raw_queries"] == "excluded"
+              assert evidence["ranked_paths"] == "excluded"
 
           drift = json.load(open("/tmp/retrieval-drift-10k.json", encoding="utf-8"))
           baseline = drift["baseline_similarity_only"]
