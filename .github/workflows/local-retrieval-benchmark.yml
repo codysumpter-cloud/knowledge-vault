@@ -25,6 +25,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Vault publication safety
+        run: python3 "99-System/Automation/vault_doctor.py"
+      - name: Benchmark note quality
+        run: >-
+          python3 "99-System/Automation/note_quality_linter.py"
+          "99-System/Vegapunk Brain/benchmarks/local-retrieval/README.md"
       - name: Unit tests
         run: python3 -m unittest discover -s "99-System/Vegapunk Brain/benchmarks/local-retrieval" -p "test_*.py"
       - name: Python baseline
