@@ -3,7 +3,7 @@ type: integration
 status: tested
 owner: Prismtek
 source_of_truth: knowledge-vault
-last_verified: 2026-07-29
+last_verified: 2026-08-03
 risk_level: low
 privacy: public
 freshness: slow-changing
@@ -62,6 +62,30 @@ python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/benchmark.py" \
 
 The hash adapters are deterministic contract baselines, not semantic-quality targets. A real model adapter must use the same `metadata` and `embed` JSONL protocol, save its report, and compare against a named baseline.
 
+## Evidence contract
+
+A benchmark JSON alone is not enough to approve a local runtime for Buddy routing. Pair the report with a `buddy.local-retrieval-run.v1` manifest, then validate it:
+
+```bash
+python3 "99-System/Vegapunk Brain/benchmarks/local-retrieval/evidence_contract.py" \
+  --report /tmp/knowledge-vault-local-baseline.json \
+  --manifest /path/to/run-manifest.json \
+  --output /tmp/knowledge-vault-local-evidence.json
+```
+
+The validator emits a compact `buddy.local-retrieval-evidence.v1` receipt. It hashes the exact report but excludes raw queries and ranked paths.
+
+Two measurement classes are supported:
+
+- `contract_baseline`: proves corpus, adapter protocol, ranking, and report generation. It must use a non-model adapter and is never qualified for routing.
+- `hardware_measured`: may qualify for routing only when it identifies the real model and SHA-256, quantization, runtime and adapter versions, hardware, operating system, architecture, cold-start latency, warm latency, peak memory, energy observation, offline verification, fallback behavior, acceleration evidence, and durable evidence references.
+
+The manifest model and runtime must match the benchmark report. Warm latency must also match the report within a small rounding tolerance. Missing hardware evidence is a validation failure, not an implied zero or assumed capability.
+
+`--require-routing-qualified` turns a valid contract-only run into a non-zero exit so release or routing workflows cannot accidentally accept it.
+
+CI uses the committed fixtures only as explicit contract baselines. CI does not claim M5, WebGPU, WASM, Android, native acceleration, battery, or real-model performance.
+
 ## Adversarial 10k retrieval-drift proof
 
 `drift_benchmark.py` directly exercises the failure mode that appears when a growing knowledge base contains near-duplicates, expired records, newer replacements, and unresolved contradictions.
@@ -95,14 +119,16 @@ This is a synthetic adversarial proof, not a claim about production Mitosis, hos
 
 - The default real-vault corpus is public-safe and excludes `00-Private`, `99-System/Security`, VCS metadata, virtual environments, and dependency directories.
 - The adversarial 10k corpus is generated synthetic data and contains no user content.
-- Reports contain paths, ranks, timing, model metadata, stable source IDs, and hashes. They do not store prompts, secrets, tokens, credentials, browser state, or private notes.
-- Native acceleration flags are evidence claims. Keep them false until measured on the target device.
+- Full benchmark reports contain public-safe paths, ranks, timing, model metadata, stable source IDs, and hashes. Evidence receipts omit raw queries and ranked paths.
+- Reports and receipts do not store prompts, secrets, tokens, credentials, browser state, or private notes.
+- Native acceleration, offline behavior, fallback behavior, energy, and routing qualification are evidence claims. Keep them unqualified until measured on the target device.
 
 ## Current implementation status
 
 - Python corpus/chunk/rank/evaluation harness: tested locally and in CI.
-- Python deterministic adapter: tested locally and in CI.
-- Node/web-compatible JSONL adapter: tested locally and in CI.
+- Python deterministic adapter: tested locally and in CI as a contract baseline.
+- Node/web-compatible JSONL adapter: tested locally and in CI as a contract baseline.
+- Evidence receipt and routing-qualification contract: implemented; hardware qualification still requires a real target run.
 - Adversarial 10,240-item drift benchmark: locally tested; CI required on the active PR head.
 - Swift adapter scaffold: source-complete, requires Apple hardware/toolchain verification.
 - Android adapter scaffold: metadata/build boundary only; real embeddings remain blocked on selecting and testing the LiteRT model/runtime.

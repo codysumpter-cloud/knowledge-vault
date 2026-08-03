@@ -1,0 +1,36 @@
+{
+  "schema": "buddy.local-retrieval-run.v1",
+  "measurement_class": "contract_baseline",
+  "target": "github-hosted-web-contract",
+  "model": {
+    "model_id": "none",
+    "model_sha256": null,
+    "quantization": "none"
+  },
+  "runtime": {
+    "name": "node-web-compatible",
+    "version": "22",
+    "adapter_version": "hash-ngram-web-fallback-v1"
+  },
+  "host": {
+    "hardware": "github-hosted-runner",
+    "operating_system": "ubuntu-24.04",
+    "architecture": "x86_64"
+  },
+  "measurements": {
+    "cold_start_ms": null,
+    "warm_latency_ms": null,
+    "peak_memory_mb": null,
+    "energy": {
+      "status": "not_measured",
+      "observation": "CI validates the JSONL web adapter contract only; WebGPU, WASM fallback, and energy were not measured."
+    }
+  },
+  "claims": {
+    "offline_verified": true,
+    "fallback_behavior": "Node-compatible deterministic contract adapter",
+    "fallback_verified": false,
+    "native_acceleration": "not_measured"
+  },
+  "evidence_refs": []
+}
