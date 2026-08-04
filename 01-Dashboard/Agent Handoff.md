@@ -1,7 +1,7 @@
 ---
 type: dashboard
 scope: agent-handoff
-last_synced: 2026-06-04
+last_synced: 2026-08-04
 tags:
   - dashboard
   - agent
@@ -30,6 +30,12 @@ Read this before making changes in KnowledgeVault.
 7. `01-Dashboard/Project Source of Truth.md`
 8. `30 - Projects/GitHub/GitHub Projects Index.md`
 
+## Current vault facts
+
+- Public repos indexed: 82
+- Registry owner: `codysumpter-cloud`
+- Last generated: 2026-08-04
+
 ## Safe change pattern
 
 1. Make additive changes.
@@ -37,14 +43,3 @@ Read this before making changes in KnowledgeVault.
 3. Do not present reference notes as implemented runtime features.
 4. Run `python3 "99-System/Automation/vault_doctor.py"`.
 5. Open a PR with clear receipts.
-
-## What to verify externally
-
-Always verify these in GitHub or the owning app/runtime repo before claiming success:
-
-- active PR state
-- CI status
-- mergeability
-- runtime integration
-- shipped app behavior
-- public-alpha readiness

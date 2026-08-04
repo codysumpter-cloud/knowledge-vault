@@ -1,9 +1,9 @@
 ---
 type: github-project-index
 owner: codysumpter-cloud
-repo_count_public: 66
-repo_count_private_local: 10
-last_synced: 2026-05-13
+repo_count_public: 82
+repo_count_private_local: 0
+last_synced: 2026-08-04
 tags:
   - github/index
   - project/index
@@ -11,30 +11,35 @@ tags:
 
 # GitHub Projects Index
 
-This index tracks public project-memory folders for `codysumpter-cloud`.
-
-Private repo folders are intentionally stored under `00-Private/GitHub Projects/codysumpter-cloud/` because `codysumpter-cloud/knowledge-vault` is currently public. Make the vault repository private before tracking private repo names in the synced project tree.
-
-## Public repos
+Private repo folders are kept under `00-Private/GitHub Projects/codysumpter-cloud/` unless `VAULT_TRACK_PRIVATE=true`.
 
 | Repo | Default branch | Visibility | GitHub |
 |---|---|---:|---|
 | [[codysumpter-cloud/agentic-stack/Project|agentic-stack]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/agentic-stack) |
 | [[codysumpter-cloud/agentmemory/Project|agentmemory]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/agentmemory) |
+| [[codysumpter-cloud/ai-vtuber/Project|ai-vtuber]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/ai-vtuber) |
 | [[codysumpter-cloud/arcade-mcp/Project|arcade-mcp]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/arcade-mcp) |
 | [[codysumpter-cloud/aseprite-windows-docker-build/Project|aseprite-windows-docker-build]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/aseprite-windows-docker-build) |
 | [[codysumpter-cloud/autoresearch/Project|autoresearch]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/autoresearch) |
+| [[codysumpter-cloud/awesome-game-remakes/Project|awesome-game-remakes]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/awesome-game-remakes) |
 | [[codysumpter-cloud/awesome-hermes-agent/Project|awesome-hermes-agent]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/awesome-hermes-agent) |
 | [[codysumpter-cloud/be-more-agent/Project|be-more-agent]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/be-more-agent) |
 | [[codysumpter-cloud/bevy/Project|bevy]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/bevy) |
+| [[codysumpter-cloud/buddy-agent/Project|buddy-agent]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/buddy-agent) |
 | [[codysumpter-cloud/buddy-brain/Project|buddy-brain]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/buddy-brain) |
+| [[codysumpter-cloud/buddy-universal-agent-profile/Project|buddy-universal-agent-profile]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/buddy-universal-agent-profile) |
+| [[codysumpter-cloud/buddy-workspace/Project|buddy-workspace]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/buddy-workspace) |
 | [[codysumpter-cloud/caveman/Project|caveman]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/caveman) |
 | [[codysumpter-cloud/chumpy/Project|chumpy]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/chumpy) |
+| [[codysumpter-cloud/claude-fable-5/Project|claude-fable-5]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/claude-fable-5) |
+| [[codysumpter-cloud/claw-machine/Project|claw-machine]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/claw-machine) |
 | [[codysumpter-cloud/context-mode/Project|context-mode]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/context-mode) |
 | [[codysumpter-cloud/DisTrO/Project|DisTrO]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/DisTrO) |
 | [[codysumpter-cloud/docker-aseprite-linux/Project|docker-aseprite-linux]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/docker-aseprite-linux) |
+| [[codysumpter-cloud/ds-game-maker-5-setup/Project|ds-game-maker-5-setup]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/ds-game-maker-5-setup) |
 | [[codysumpter-cloud/eic-wiki/Project|eic-wiki]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/eic-wiki) |
 | [[codysumpter-cloud/gbrain/Project|gbrain]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/gbrain) |
+| [[codysumpter-cloud/gdfg-minigame-godot-example/Project|gdfg-minigame-godot-example]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/gdfg-minigame-godot-example) |
 | [[codysumpter-cloud/gemma/Project|gemma]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/gemma) |
 | [[codysumpter-cloud/hermes-agent/Project|hermes-agent]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/hermes-agent) |
 | [[codysumpter-cloud/hermes-agent-orange-book/Project|hermes-agent-orange-book]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/hermes-agent-orange-book) |
@@ -48,7 +53,6 @@ Private repo folders are intentionally stored under `00-Private/GitHub Projects/
 | [[codysumpter-cloud/hermes-paperclip-adapter/Project|hermes-paperclip-adapter]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/hermes-paperclip-adapter) |
 | [[codysumpter-cloud/hermes-webui/Project|hermes-webui]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/hermes-webui) |
 | [[codysumpter-cloud/Hermes-Wiki/Project|Hermes-Wiki]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/Hermes-Wiki) |
-| [[codysumpter-cloud/hermes-workspace/Project|hermes-workspace]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/hermes-workspace) |
 | [[codysumpter-cloud/json-scada/Project|json-scada]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/json-scada) |
 | [[codysumpter-cloud/knowledge-forge/Project|knowledge-forge]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/knowledge-forge) |
 | [[codysumpter-cloud/knowledge-vault/Project|knowledge-vault]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/knowledge-vault) |
@@ -65,38 +69,31 @@ Private repo folders are intentionally stored under `00-Private/GitHub Projects/
 | [[codysumpter-cloud/nemoclaw/Project|nemoclaw]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/nemoclaw) |
 | [[codysumpter-cloud/omni-buddy/Project|omni-buddy]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/omni-buddy) |
 | [[codysumpter-cloud/omni-openclaw-starter/Project|omni-openclaw-starter]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/omni-openclaw-starter) |
+| [[codysumpter-cloud/openbor/Project|openbor]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/openbor) |
 | [[codysumpter-cloud/openclaw/Project|openclaw]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/openclaw) |
+| [[codysumpter-cloud/openfable/Project|openfable]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/openfable) |
 | [[codysumpter-cloud/OpenMythos/Project|OpenMythos]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/OpenMythos) |
 | [[codysumpter-cloud/oz-for-oss/Project|oz-for-oss]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/oz-for-oss) |
 | [[codysumpter-cloud/pixellab-js/Project|pixellab-js]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/pixellab-js) |
 | [[codysumpter-cloud/pixellab-mcp/Project|pixellab-mcp]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/pixellab-mcp) |
 | [[codysumpter-cloud/pixellab-python/Project|pixellab-python]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/pixellab-python) |
+| [[codysumpter-cloud/Pocket-Bird/Project|Pocket-Bird]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Pocket-Bird) |
+| [[codysumpter-cloud/PocketBuddyPlus/Project|PocketBuddyPlus]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/PocketBuddyPlus) |
+| [[codysumpter-cloud/ponytail/Project|ponytail]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/ponytail) |
 | [[codysumpter-cloud/Prismbot-BMO/Project|Prismbot-BMO]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Prismbot-BMO) |
 | [[codysumpter-cloud/Prismbot-Public/Project|Prismbot-Public]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Prismbot-Public) |
 | [[codysumpter-cloud/prismbot.wix/Project|prismbot.wix]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/prismbot.wix) |
-| [[codysumpter-cloud/prismtek-apps/Project|prismtek-apps]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/prismtek-apps) |
+| [[codysumpter-cloud/prismtek-releases/Project|prismtek-releases]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/prismtek-releases) |
 | [[codysumpter-cloud/Prismtek-s-Mod-Vault/Project|Prismtek-s-Mod-Vault]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Prismtek-s-Mod-Vault) |
-| [[codysumpter-cloud/Prismtek.dev/Project|Prismtek.dev]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Prismtek.dev) |
+| [[codysumpter-cloud/prismtek.dev/Project|prismtek.dev]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/prismtek.dev) |
 | [[codysumpter-cloud/prismteksmods/Project|prismteksmods]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/prismteksmods) |
 | [[codysumpter-cloud/qwen-code/Project|qwen-code]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/qwen-code) |
 | [[codysumpter-cloud/sideband/Project|sideband]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/sideband) |
 | [[codysumpter-cloud/superpowers-zh/Project|superpowers-zh]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/superpowers-zh) |
 | [[codysumpter-cloud/symphony/Project|symphony]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/symphony) |
 | [[codysumpter-cloud/tamagoscii/Project|tamagoscii]] | `claude/ascii-tamagotchi-game-kQSLl` | public | [GitHub](https://github.com/codysumpter-cloud/tamagoscii) |
+| [[codysumpter-cloud/TerrariaDS/Project|TerrariaDS]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/TerrariaDS) |
+| [[codysumpter-cloud/tutorial-demo-repo/Project|tutorial-demo-repo]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/tutorial-demo-repo) |
 | [[codysumpter-cloud/twenty/Project|twenty]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/twenty) |
+| [[codysumpter-cloud/Whisky/Project|Whisky]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Whisky) |
 | [[codysumpter-cloud/Wildlands-Critter-Clash/Project|Wildlands-Critter-Clash]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Wildlands-Critter-Clash) |
-
-## Dataview
-
-```dataview
-TABLE status, priority, default_branch, github_url, last_synced
-FROM "30 - Projects/GitHub/codysumpter-cloud"
-WHERE type = "github-repo"
-SORT repo_name ASC
-```
-
-## Maintenance
-
-- Agent: [[99-System/Agents/Vault Steward/AGENT|Vault Steward]]
-- Automation: [[99-System/Automation/README|Vault Automation]]
-- Registry: [[99-System/Repositories/codysumpter-cloud.public.repo-registry|Public Repo Registry]]
