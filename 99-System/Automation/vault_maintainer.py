@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from datetime import date
 from pathlib import Path
@@ -26,13 +27,13 @@ def vault_root() -> Path:
     return here.parents[2]
 
 
-def request_json(url: str) -> Any:
+def request_json(url: str, *, authenticated: bool = True) -> Any:
     headers = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
         "User-Agent": "KnowledgeVault-Vault-Steward",
     }
-    if TOKEN:
+    if TOKEN and authenticated:
         headers["Authorization"] = f"Bearer {TOKEN}"
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=30) as response:
@@ -40,14 +41,37 @@ def request_json(url: str) -> Any:
 
 
 def fetch_repos() -> list[dict[str, Any]]:
+    """List the owner's repositories, degrading to the public view when needed.
+
+    /user/repos is the authenticated *user's* endpoint. A workflow's default
+    GITHUB_TOKEN is an installation token, not a user token, so that endpoint
+    answers 403 and the steward crashed on every scheduled run. A real personal
+    access token still reaches it and still sees private repositories, so try it
+    first and fall back to the public per-user listing rather than failing.
+    """
     repos: list[dict[str, Any]] = []
     page = 1
+    use_user_endpoint = bool(TOKEN)
     while True:
-        if TOKEN:
+        if use_user_endpoint:
             url = f"https://api.github.com/user/repos?affiliation=owner&per_page=100&page={page}&sort=full_name"
         else:
             url = f"https://api.github.com/users/{OWNER}/repos?per_page=100&page={page}&sort=full_name"
-        batch = request_json(url)
+        try:
+            # A token that cannot reach /user/repos is also not useful on the
+            # public listing, and sending it there just turns 403 into 401.
+            batch = request_json(url, authenticated=use_user_endpoint)
+        except urllib.error.HTTPError as error:
+            if use_user_endpoint and error.code in (401, 403):
+                print(
+                    f"note: /user/repos returned {error.code}; this token cannot list "
+                    "the authenticated user's repositories. Falling back to the public "
+                    f"listing for {OWNER}. Private repositories will be omitted.",
+                    file=sys.stderr,
+                )
+                use_user_endpoint = False
+                continue
+            raise
         if not batch:
             break
         repos.extend([r for r in batch if r.get("owner", {}).get("login") == OWNER])
