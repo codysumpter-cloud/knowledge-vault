@@ -1,0 +1,345 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prismtek.dev/schemas/life-assistant-task-receipt.schema.json",
+  "title": "Prismtek Life Assistant Task Receipt",
+  "description": "Append-only receipt emitted by one task in the five-task Prismtek life-assistant loop.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "task",
+    "started_at",
+    "completed_at",
+    "period_covered",
+    "source_status",
+    "new_facts",
+    "actions_taken",
+    "approval_requests",
+    "handoffs",
+    "failures",
+    "privacy",
+    "overall_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{7,127}$"
+    },
+    "task": {
+      "type": "string",
+      "enum": [
+        "prismtek-command-center",
+        "daytime-command-watch",
+        "prismtek-engineering-watch",
+        "knowledge-vault-daily-log",
+        "weekly-life-strategy-loop"
+      ]
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "period_covered": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "source_status": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source", "status"],
+        "properties": {
+          "source": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "status": {
+            "type": "string",
+            "enum": ["fresh", "stale", "partial", "unavailable", "not_checked"]
+          },
+          "as_of": {
+            "type": ["string", "null"],
+            "format": "date-time"
+          },
+          "detail": {
+            "type": "string",
+            "maxLength": 500
+          }
+        }
+      }
+    },
+    "new_facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["fact_id", "summary", "confidence", "severity", "evidence"],
+        "properties": {
+          "fact_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]{5,127}$"
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["P0", "P1", "P2", "P3"]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            }
+          },
+          "public_safe": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    },
+    "actions_taken": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "action_id",
+          "owner_task",
+          "object_type",
+          "dedupe_key",
+          "status",
+          "reversible",
+          "evidence"
+        ],
+        "properties": {
+          "action_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]{5,127}$"
+          },
+          "owner_task": {
+            "$ref": "#/$defs/task"
+          },
+          "object_type": {
+            "type": "string",
+            "enum": [
+              "email_draft",
+              "email_label",
+              "email_archive",
+              "email_snooze",
+              "calendar_event",
+              "calendar_hold",
+              "checklist_item",
+              "github_issue",
+              "github_comment",
+              "github_label",
+              "git_branch",
+              "git_commit",
+              "pull_request",
+              "workflow_rerun",
+              "vault_record",
+              "ledger_record",
+              "other"
+            ]
+          },
+          "provider": {
+            "type": "string",
+            "maxLength": 100
+          },
+          "provider_object_id": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "dedupe_key": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]{5,191}$"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "proposed",
+              "drafted",
+              "created",
+              "updated",
+              "moved",
+              "removed",
+              "attempted",
+              "blocked"
+            ]
+          },
+          "reversible": {
+            "type": "boolean"
+          },
+          "human_modified": {
+            "type": "boolean",
+            "default": false
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            }
+          }
+        }
+      }
+    },
+    "approval_requests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["approval_id", "decision", "reason", "severity", "safe_default"],
+        "properties": {
+          "approval_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]{5,127}$"
+          },
+          "decision": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["P0", "P1", "P2", "P3"]
+          },
+          "deadline": {
+            "type": ["string", "null"],
+            "format": "date-time"
+          },
+          "safe_default": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        }
+      }
+    },
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["handoff_id", "destination_task", "severity", "dedupe_key", "summary", "evidence"],
+        "properties": {
+          "handoff_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]{5,127}$"
+          },
+          "destination_task": {
+            "$ref": "#/$defs/task"
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["P0", "P1", "P2", "P3"]
+          },
+          "dedupe_key": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]{5,191}$"
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            }
+          },
+          "deadline": {
+            "type": ["string", "null"],
+            "format": "date-time"
+          },
+          "safe_default": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        }
+      }
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source", "summary", "retryable"],
+        "properties": {
+          "source": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "retryable": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "privacy": {
+      "type": "string",
+      "enum": ["private", "public_safe", "restricted"]
+    },
+    "overall_status": {
+      "type": "string",
+      "enum": ["success", "success_with_gaps", "blocked", "no_material_change"]
+    }
+  },
+  "$defs": {
+    "task": {
+      "type": "string",
+      "enum": [
+        "prismtek-command-center",
+        "daytime-command-watch",
+        "prismtek-engineering-watch",
+        "knowledge-vault-daily-log",
+        "weekly-life-strategy-loop"
+      ]
+    }
+  }
+}
