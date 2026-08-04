@@ -25,6 +25,13 @@ FORBIDDEN_NAME_PARTS = (
     "private-key",
     "private_key",
 )
+# Exactly one path under a forbidden prefix is allowed to be tracked: the
+# placeholder that documents the boundary. .gitignore deliberately keeps it with
+# `!00-Private/README.md` while excluding `00-Private/**`, so without this the
+# doctor and .gitignore contradict each other and the daily run can never pass.
+# This is a single literal path, not a prefix or pattern, so everything else
+# under 00-Private/ still hard-fails.
+ALLOWED_TRACKED_PATHS = frozenset({"00-Private/README.md"})
 AUTOMATION_FILES = (
     ".github/workflows/vault-steward-daily.yml",
     "99-System/Automation/run-vault-maintenance.sh",
@@ -51,7 +58,7 @@ def tracked_files() -> list[str]:
 def check_tracked_paths(files: list[str]) -> list[str]:
     errors: list[str] = []
     for rel in files:
-        if rel.startswith(FORBIDDEN_PREFIXES):
+        if rel.startswith(FORBIDDEN_PREFIXES) and rel not in ALLOWED_TRACKED_PATHS:
             errors.append(f"tracked forbidden path: {rel}")
         lowered = rel.lower()
         if any(part in lowered for part in FORBIDDEN_NAME_PARTS):
