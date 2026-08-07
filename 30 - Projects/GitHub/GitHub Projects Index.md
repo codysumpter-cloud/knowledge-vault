@@ -3,7 +3,7 @@ type: github-project-index
 owner: codysumpter-cloud
 repo_count_public: 83
 repo_count_private_local: 0
-last_synced: 2026-08-06
+last_synced: 2026-08-07
 tags:
   - github/index
   - project/index
@@ -78,7 +78,7 @@ Private repo folders are kept under `00-Private/GitHub Projects/codysumpter-clou
 | [[codysumpter-cloud/pixellab-js/Project|pixellab-js]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/pixellab-js) |
 | [[codysumpter-cloud/pixellab-mcp/Project|pixellab-mcp]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/pixellab-mcp) |
 | [[codysumpter-cloud/pixellab-python/Project|pixellab-python]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/pixellab-python) |
-| [[codysumpter-cloud/Pocket-Bird/Project|Pocket-Bird]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Pocket-Bird) |
+| [[codysumpter-cloud/Pocket-Buddy/Project|Pocket-Buddy]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Pocket-Buddy) |
 | [[codysumpter-cloud/PocketBuddyPlus/Project|PocketBuddyPlus]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/PocketBuddyPlus) |
 | [[codysumpter-cloud/ponytail/Project|ponytail]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/ponytail) |
 | [[codysumpter-cloud/Prismbot-BMO/Project|Prismbot-BMO]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Prismbot-BMO) |

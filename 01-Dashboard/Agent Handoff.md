@@ -1,7 +1,7 @@
 ---
 type: dashboard
 scope: agent-handoff
-last_synced: 2026-08-06
+last_synced: 2026-08-07
 tags:
   - dashboard
   - agent
@@ -34,7 +34,7 @@ Read this before making changes in KnowledgeVault.
 
 - Public repos indexed: 83
 - Registry owner: `codysumpter-cloud`
-- Last generated: 2026-08-06
+- Last generated: 2026-08-07
 
 ## Safe change pattern
 
