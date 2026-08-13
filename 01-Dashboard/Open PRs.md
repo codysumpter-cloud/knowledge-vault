@@ -1,7 +1,7 @@
 ---
 type: dashboard
 scope: open-prs
-last_synced: 2026-08-12
+last_synced: 2026-08-13
 tags:
   - dashboard
   - github
