@@ -1,9 +1,9 @@
 ---
 type: github-project-index
 owner: codysumpter-cloud
-repo_count_public: 83
+repo_count_public: 84
 repo_count_private_local: 0
-last_synced: 2026-08-17
+last_synced: 2026-08-18
 tags:
   - github/index
   - project/index
@@ -42,6 +42,7 @@ Private repo folders are kept under `00-Private/GitHub Projects/codysumpter-clou
 | [[codysumpter-cloud/gdfg-minigame-godot-example/Project|gdfg-minigame-godot-example]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/gdfg-minigame-godot-example) |
 | [[codysumpter-cloud/gemma/Project|gemma]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/gemma) |
 | [[codysumpter-cloud/godot-tiny-mmo/Project|godot-tiny-mmo]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/godot-tiny-mmo) |
+| [[codysumpter-cloud/gstack/Project|gstack]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/gstack) |
 | [[codysumpter-cloud/hermes-agent/Project|hermes-agent]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/hermes-agent) |
 | [[codysumpter-cloud/hermes-agent-orange-book/Project|hermes-agent-orange-book]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/hermes-agent-orange-book) |
 | [[codysumpter-cloud/hermes-agent-self-evolution/Project|hermes-agent-self-evolution]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/hermes-agent-self-evolution) |
