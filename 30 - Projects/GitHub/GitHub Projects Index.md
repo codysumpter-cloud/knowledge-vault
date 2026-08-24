@@ -1,9 +1,9 @@
 ---
 type: github-project-index
 owner: codysumpter-cloud
-repo_count_public: 84
+repo_count_public: 85
 repo_count_private_local: 0
-last_synced: 2026-08-23
+last_synced: 2026-08-24
 tags:
   - github/index
   - project/index
@@ -99,3 +99,4 @@ Private repo folders are kept under `00-Private/GitHub Projects/codysumpter-clou
 | [[codysumpter-cloud/twenty/Project|twenty]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/twenty) |
 | [[codysumpter-cloud/Whisky/Project|Whisky]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Whisky) |
 | [[codysumpter-cloud/Wildlands-Critter-Clash/Project|Wildlands-Critter-Clash]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/Wildlands-Critter-Clash) |
+| [[codysumpter-cloud/yugens-terrain-authoring-toolkit/Project|yugens-terrain-authoring-toolkit]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/yugens-terrain-authoring-toolkit) |
