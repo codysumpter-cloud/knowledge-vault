@@ -1,9 +1,9 @@
 ---
 type: github-project-index
 owner: codysumpter-cloud
-repo_count_public: 85
+repo_count_public: 86
 repo_count_private_local: 0
-last_synced: 2026-09-02
+last_synced: 2026-09-03
 tags:
   - github/index
   - project/index
@@ -62,6 +62,7 @@ Private repo folders are kept under `00-Private/GitHub Projects/codysumpter-clou
 | [[codysumpter-cloud/LibreSprite/Project|LibreSprite]] | `master` | public | [GitHub](https://github.com/codysumpter-cloud/LibreSprite) |
 | [[codysumpter-cloud/LiteRT-LM/Project|LiteRT-LM]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/LiteRT-LM) |
 | [[codysumpter-cloud/mcporter/Project|mcporter]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/mcporter) |
+| [[codysumpter-cloud/microduck/Project|microduck]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/microduck) |
 | [[codysumpter-cloud/ml-intern/Project|ml-intern]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/ml-intern) |
 | [[codysumpter-cloud/mlc-llm/Project|mlc-llm]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/mlc-llm) |
 | [[codysumpter-cloud/mlx-swift/Project|mlx-swift]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/mlx-swift) |
