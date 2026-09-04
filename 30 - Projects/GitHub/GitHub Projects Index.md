@@ -1,9 +1,9 @@
 ---
 type: github-project-index
 owner: codysumpter-cloud
-repo_count_public: 86
+repo_count_public: 87
 repo_count_private_local: 0
-last_synced: 2026-09-03
+last_synced: 2026-09-04
 tags:
   - github/index
   - project/index
@@ -91,6 +91,7 @@ Private repo folders are kept under `00-Private/GitHub Projects/codysumpter-clou
 | [[codysumpter-cloud/prismtek.dev/Project|prismtek.dev]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/prismtek.dev) |
 | [[codysumpter-cloud/prismteksmods/Project|prismteksmods]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/prismteksmods) |
 | [[codysumpter-cloud/qwen-code/Project|qwen-code]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/qwen-code) |
+| [[codysumpter-cloud/roblox/Project|roblox]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/roblox) |
 | [[codysumpter-cloud/sideband/Project|sideband]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/sideband) |
 | [[codysumpter-cloud/superpowers-zh/Project|superpowers-zh]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/superpowers-zh) |
 | [[codysumpter-cloud/symphony/Project|symphony]] | `main` | public | [GitHub](https://github.com/codysumpter-cloud/symphony) |
